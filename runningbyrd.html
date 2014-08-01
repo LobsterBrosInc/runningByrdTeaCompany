@@ -31,22 +31,7 @@ SYMBOL ATTRIBUTION
 	     <script src="libs/jquery.mousewheel.js" type="text/javascript"></script>
 	     <script src="libs/jquery.contentcarousel.js" type="text/javascript"></script>
 	     <script src="libs/jquery.touchSwipe.min.js" type="text/javascript"></script>
-	     <script>
-			$(document).ready(function(){
-				$('a[href^="#"]').on('click',function (e) {
-				    e.preventDefault();
-
-				    var target = this.hash,
-				    $target = $(target);
-
-				    $('html, body').stop().animate({
-				        'scrollTop': $target.offset().top
-				    }, 500, 'swing', function () {
-				        window.location.hash = target;
-				    });
-				});
-			});
-	     </script>
+	     <script src="libs/scrollTo.js" type="text/javascript"></script>
 	</head>
 	<body id="body">
 		<div class="big-byrd-container">
