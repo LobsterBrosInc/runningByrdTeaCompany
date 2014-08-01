@@ -141,3 +141,8 @@ body, html{
 	background: url('../pics/local-market.png') 50% 40% no-repeat;
 	background-size: 90%;	
 }
+
+.b-logo.willowsford{
+	background: url('../pics/willowsford.png') 50% 40% no-repeat;
+	background-size: 90%;
+}
