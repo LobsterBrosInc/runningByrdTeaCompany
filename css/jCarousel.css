@@ -26,7 +26,7 @@
 }
 
 .jcarousel img{
-    max-height: 338px;
+    height: 338px;
     max-width: 600px;
     margin: 0 auto;
     display: block;

@@ -15,7 +15,7 @@
 			});
 
 			$('<img></img>', {
-				src: post.photos[0].alt_sizes[0].url
+				src: post.photos[0].alt_sizes[1].url
 			}).appendTo($link);
 
 			$link.appendTo($li);
