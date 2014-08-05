@@ -1,0 +1,40 @@
+.jcarousel-wrapper {
+    width: 80%;
+    margin: 40px auto 0 auto;
+    overflow: visible;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel img{
+    max-height: 338px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.jcarousel p{
+    color: white;
+    max-width: 300px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
