@@ -165,5 +165,9 @@ h2{
 	src: url('../fonts/landrygo.ttf');
 }
 
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div{
+	overflow: hidden !important;
+}
 
 
