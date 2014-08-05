@@ -130,7 +130,7 @@ h2{
 }
 
 .contact-circle-container{
-	width: 400px;
+	width: 600px;
 	margin: 50px auto;
 	height: 100px;
 }
@@ -152,6 +152,11 @@ h2{
 .contact-circle.email{
 	background: url('../pics/mail.svg') 18px 25px no-repeat;
 	background-size: 60%;
+}
+
+.contact-circle.tumblr{
+	background: url('../pics/tumblr-logo.png') 5px 8px no-repeat;
+	background-size: 85%;
 }
 
 @font-face
