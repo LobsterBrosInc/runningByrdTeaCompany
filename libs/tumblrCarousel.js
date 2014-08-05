@@ -29,7 +29,7 @@
 	    var jcarousel = $('.jcarousel').jcarousel({
             wrap: 'circular'
         }).jcarouselAutoscroll({
-            interval: 1500,
+            interval: 2500,
             target: '+=1'
         });
 	});
