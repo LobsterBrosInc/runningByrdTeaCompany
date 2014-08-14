@@ -151,11 +151,12 @@
 		var map_canvas = $('.map-container').get(0);
 		var mapOptions = {
 			center: new google.maps.LatLng(38.899075, -77.117438),
-			zoom: 10,
+			zoom: 9,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false
 		}
 		var map = new google.maps.Map(map_canvas, mapOptions);
+		var markerClusteredMap = new MarkerClusterer(map, [], {gridSize: 35});
 
 		var infowindow = new google.maps.InfoWindow({
 				maxWidth: 800
@@ -164,11 +165,11 @@
 		//Google Maps API only allows 10 requests per second
 		var rateLimitSetMarkers = rateLimit(5, setMarkers);
 		_.each(locations, function(location){
-			rateLimitSetMarkers(map, infowindow, location);
+			rateLimitSetMarkers(map, markerClusteredMap, infowindow, location);
 		});
 	});
 
-	var setMarkers = function(map, infowindow, location){
+	var setMarkers = function(map, markerClusteredMap, infowindow, location){
 		$.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=' + location.address)
 			.then(function (json) {
 				if(!json.results[0]){
@@ -180,12 +181,10 @@
 			    var marker = new google.maps.Marker({
 			    	title: location.title,
 			    	position: latLong,
-			    	map: map,
 			    	icon: 'pics/location-pin.png'
 			    });
 
-			    google.maps.event.addListener(marker, "click", function() { 
-			    	infowindow.close();
+			    google.maps.event.addListener(marker, "click", function() {
 			    	infowindow.setContent("<a class='location-link' target='_blank' href='"
 			    							+ location.link + "'>"
 			    							+ location.title + "<h4>" 
@@ -193,6 +192,8 @@
 			    							+ "</h4></a>");
 			    	infowindow.open(map, marker);
 			    });
+
+			    markerClusteredMap.addMarker(marker);
 		});
 	}
 
