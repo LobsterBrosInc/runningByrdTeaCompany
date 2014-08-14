@@ -26,11 +26,12 @@
 			$li.appendTo($('#pictures ul'));
 		});
 
-	    var jcarousel = $('.jcarousel').jcarousel({
-            wrap: 'circular'
-        }).jcarouselAutoscroll({
-            interval: 2500,
-            target: '+=1'
-        });
+	    $('.jcarousel').jcarousel({
+            	wrap: 'circular'
+        	})
+	    	.jcarouselAutoscroll({
+            	interval: 2500,
+            	target: '+=1'
+        	});
 	});
 })(jQuery);
