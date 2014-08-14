@@ -146,3 +146,8 @@ body, html{
 	background: url('../pics/willowsford.png') 50% 40% no-repeat;
 	background-size: 90%;
 }
+
+.b-logo.takorean{
+	background: url('../pics/takorean.png') 50% 40% no-repeat;
+	background-size: 90%;
+}

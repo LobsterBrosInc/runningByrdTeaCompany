@@ -119,6 +119,30 @@
 		  position: new google.maps.LatLng(38.967152, -77.555776),
 		  title: "Willowsford Virginia",
 		  content: "<a class='location-link' target='_blank' href='http://www.willowsford.com/home/'>Willowsford Virginia<h4>23595 Founders Drive Ashburn, VA 20148</h4></a>"	
+		{
+		  title: "Lebanese Taverna Congressional Plaza",
+		  address: "1605 Rockville Pike Congressional Plaza Rockville, MD 20852",
+		  link: "http://www.lebanesetaverna.com/lebanese-cafe-congressional-plaza-rockville-maryland.html"
+		},
+		{
+		  title: "Lebanese Taverna Town Square Plaza",
+		  address: "115 A Gibbs St Rockville, MD 20850",
+		  link: "http://www.lebanesetaverna.com/lebanese-cafe-rockville-town-square-plaza.html"
+		},
+		{
+		  title: "Lebanese Taverna Silver Spring",
+		  address: "933 Ellsworth Dr Silver Spring, MD 20910",
+		  link: "http://www.lebanesetaverna.com/lebanese-cafe-silver-spring-md.html"
+		},
+		{
+		  title: "Lebanese Taverna Annapolis Harbour Center",
+		  address: "2478 Solomons Island Rd, Annapolis Harbour Center, Annapolis, MD 21401",
+		  link: "http://www.lebanesetaverna.com/lebanese-cafe-annapolis-harbour-center.html"
+		},
+		{
+		  title: "Takorean Yards Park",
+		  address: "1212 4th St SE Washington, DC 20003",
+		  link: "http://takorean.com/"
 		}
 	];
 
