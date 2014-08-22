@@ -164,9 +164,9 @@
 
 		//Google Maps API only allows 10 requests per second
 		var rateLimitSetMarkers = rateLimit(5, setMarkers);
-		// _.each(locations, function(location){
-		// 	rateLimitSetMarkers(map, markerClusteredMap, infowindow, location);
-		// });
+		_.each(locations, function(location){
+			rateLimitSetMarkers(map, markerClusteredMap, infowindow, location);
+		});
 	});
 
 	var setMarkers = function(map, markerClusteredMap, infowindow, location){
