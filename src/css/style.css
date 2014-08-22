@@ -1,0 +1,10775 @@
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
+
+/* Circular Content Carousel Style */
+.ca-container {
+  position: relative;
+  margin: 25px auto 20px auto;
+  width: 990px;
+  height: 450px;
+}
+
+.ca-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ca-item {
+  position: relative;
+  float: left;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+}
+
+.ca-more {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  padding: 4px 15px;
+  font-weight: bold;
+  background: #EEEEEE;
+  text-align: center;
+  color: white;
+  font-family: landrygo,"Times New Roman",serif;
+  text-shadow: 1px 1px 1px #897c63;
+  z-index: 3;
+}
+
+.ca-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white url(../pics/cross.png) no-repeat center center;
+  width: 27px;
+  height: 27px;
+  text-indent: -9000px;
+  outline: none;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+}
+
+.ca-close:hover {
+  opacity: 1.0;
+}
+
+.ca-item-main {
+  border-radius: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ca-icon {
+  width: 100%;
+  height: 440px;
+}
+
+.out-of-season .ca-item-main {
+  padding-top: 20px;
+}
+
+.out-of-season .ca-icon {
+  width: 233px;
+  height: 189px;
+  position: relative;
+  margin: 0 auto;
+  background-size: 60%;
+}
+
+.ca-item-1 .ca-icon {
+  background: url("../pics/mont-mint-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-2 .ca-icon {
+  background: url("../pics/white-peach-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-3 .ca-icon {
+  background: url("../pics/smoke-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-4 .ca-icon {
+  background: url("../pics/summer-rain-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-5 .ca-icon {
+  background: url("../pics/spicy-thai-flavor-small.png") 0px -35px no-repeat;
+  background-size: 100%;
+}
+
+.ca-item-6 .ca-icon {
+  background: url("../pics/cane.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-7 .ca-icon {
+  background: url("../pics/sun.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-8 .ca-icon {
+  background: url("../pics/apple.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-9 .ca-icon {
+  background: url("../pics/berry.svg") 60px -10px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-10 .ca-icon {
+  background: url("../pics/pie.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item-11 .ca-icon {
+  background: url("../pics/chocolate.svg") 50px 0px no-repeat;
+  background-size: 65%;
+}
+
+.ca-item h3 {
+  font-family: landrygo, 'Coustard', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+  margin: 20px;
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+.out-of-season h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 20px;
+  height: 85px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #e4ebe9;
+}
+
+span.out-of-season {
+  font-size: 20px;
+  color: orange;
+  height: 50px;
+  width: 165%;
+  border: 2px solid orange;
+  position: absolute;
+  left: -100px;
+  top: 120px;
+  text-align: center;
+  line-height: 50px;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.ca-item h4 {
+  font-family: landrygo,"Times New Roman",serif;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.58);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 2;
+  display: none;
+}
+
+.ca-item h4 span {
+  top: 150px;
+  width: 90%;
+  margin: 125px auto 0 auto;
+}
+
+.ca-item-main:hover h4 {
+  display: block;
+}
+
+.ca-item h4 span {
+  display: block;
+}
+
+.ca-item h4 span.ca-quote {
+  color: #f4eee3;
+  font-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  text-indent: 0px;
+}
+
+.ca-content-wrapper {
+  background: #EEEEEE;
+  position: absolute;
+  width: 0px;
+  /* expands to width of the wrapper minus 1 element */
+  height: 440px;
+  top: 5px;
+  text-align: left;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.ca-content {
+  width: 660px;
+  overflow: hidden;
+}
+
+.ca-content-text {
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Georgia","Times New Roman",serif;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  line-height: 24px;
+}
+
+.ca-content-text p {
+  padding-bottom: 5px;
+}
+
+.ca-content h6 {
+  text-indent: 30px;
+  line-height: 30px;
+  margin: 25px 20px 0px 35px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: landrygo, 'Coustard', sans-serif;
+}
+
+.ca-content ul {
+  margin: 20px 35px;
+  height: 30px;
+}
+
+.ca-content ul li {
+  float: left;
+  margin: 0px 2px;
+}
+
+.ca-content ul li a {
+  color: #fff;
+  background: #000;
+  padding: 3px 6px;
+  font-size: 14px;
+  font-family: "Georgia","Times New Roman",serif;
+  font-style: italic;
+}
+
+.ca-content ul li a:hover {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+.ca-nav span {
+  width: 30px;
+  height: 50px;
+  background: transparent url(../pics/arrows.png) no-repeat top left;
+  position: absolute;
+  top: 48%;
+  margin-top: -19px;
+  left: -40px;
+  text-indent: -9000px;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 225%;
+}
+
+.ca-nav span.ca-nav-next {
+  background-position: top right;
+  left: auto;
+  right: -40px;
+}
+
+.ca-nav span:hover {
+  opacity: 1.0;
+}
+
+.jcarousel-wrapper {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: visible;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel img {
+  height: 338px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jcarousel p {
+  color: white;
+  max-width: 300px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #fff;
+}
+
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar * {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+
+.jspTrack {
+  background: #fff;
+  position: relative;
+}
+
+.jspDrag {
+  background: #000;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow {
+  height: 10px;
+}
+
+.jspHorizontalBar .jspArrow {
+  width: 10px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+
+.map-container {
+  margin: 40px auto 0 auto;
+  height: 600px;
+  width: 60%;
+}
+
+.location-link, .location-link h4 {
+  text-decoration: underline;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+.big-nav h2 {
+  font-size: 0.8em;
+}
+
+.big-nav.contact {
+  background-position: 15px 15px;
+}
+
+.location-list {
+  overflow: hidden;
+  width: 15%;
+  position: absolute;
+}
+
+.location-list.left {
+  left: 10px;
+}
+
+.location-list.right {
+  right: 10px;
+}
+
+.b-logo {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.b-logo.each-peach {
+  background: url("../pics/each-peach.svg") 50% 30px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.nourish-market {
+  background: url("../pics/nourish-market.png") 40px 0 no-repeat;
+  background-size: 65%;
+}
+
+.b-logo.nalls {
+  background: url("../pics/nalls.png") 50% 0 no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.red-fox {
+  background: url("../pics/red-fox.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.ob-mclean {
+  background: url("../pics/ob-mclean.png") 50% 0px no-repeat;
+  background-size: 250%;
+}
+
+.b-logo.hallow {
+  background: url("../pics/heritage-hollow.png") 50% 0 no-repeat;
+  background-size: 45%;
+}
+
+.b-logo.relay-foods {
+  background: url("../pics/relay-foods.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+.b-logo.hometown {
+  background: url("../pics/hometown.png") 50% 0 no-repeat;
+  background-size: 75%;
+}
+
+.b-logo.meet-market {
+  background: url("../pics/meet-market.jpeg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.mrs-greens {
+  background: url("../pics/mrs-greens.png") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.from-the-farmer {
+  background: url("../pics/from-the-farmer.jpg") 50% 25px no-repeat;
+  background-size: 95%;
+}
+
+.b-logo.sona {
+  background: url("../pics/sona.png") 50% 0px no-repeat;
+  background-size: 85%;
+}
+
+.b-logo.union-kitchen {
+  background: url("../pics/union-kitchen.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.urban-pantry {
+  background: url("../pics/urban-pantry.jpg") 50% 0px no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.lebanese-taverna {
+  background: url("../pics/lebanese-taverna.jpg") 50% 40% no-repeat;
+  background-size: 110%;
+}
+
+.b-logo.whole-foods {
+  background: url("../pics/whole-foods.jpg") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.yes-market {
+  background: url("../pics/yes-market.png") 50% 40% no-repeat;
+  background-size: 70%;
+}
+
+.b-logo.vigilante {
+  background: url("../pics/vigilante.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.nurish {
+  background: url("../pics/nurish.png") 50% 40% no-repeat;
+  background-size: 60%;
+}
+
+.b-logo.red-truck {
+  background: url("../pics/red-truck.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.local-market {
+  background: url("../pics/local-market.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.willowsford {
+  background: url("../pics/willowsford.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+.b-logo.takorean {
+  background: url("../pics/takorean.png") 50% 40% no-repeat;
+  background-size: 90%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  font-family: landrygo, 'American Typewriter';
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*.new-flavor{
+	font-family: landrygo, 'American Typewriter';
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	color: orange;
+	font-size: 1em
+}*/
+h3 {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.big-byrd-container img {
+  width: 100%;
+  display: block;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  margin: 10px;
+  z-index: 501;
+  width: 100%;
+  overflow: hidden;
+}
+
+.statement {
+  -webkit-transition: width 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  font-size: 70%;
+  position: absolute;
+  z-index: 500;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.statement h3 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.statement.closed h3 {
+  display: none;
+}
+
+.statement.left {
+  left: 0;
+  width: 50%;
+}
+
+.statement.right {
+  right: 0;
+  width: 50%;
+}
+
+.statement.right h3 {
+  float: left;
+}
+
+.statement.left h3 {
+  float: right;
+}
+
+.statement.closed {
+  width: 50px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 200px;
+  overflow: visible;
+}
+
+.toggle-statement {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.right .toggle-statement, .statement.left.closed .toggle-statement {
+  right: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: right 48%;
+  background-size: 180%;
+}
+
+.left .toggle-statement, .statement.right.closed .toggle-statement {
+  left: 5px;
+  background: transparent url(../pics/arrows.png) no-repeat;
+  background-position: 0 48%;
+  background-size: 180%;
+}
+
+.big-nav {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-size: 80%;
+  opacity: 0.7;
+  margin-right: 15px;
+  padding-left: 2px;
+}
+
+.big-nav:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.big-nav h2 {
+  font-size: 15px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.big-byrd {
+  border: none;
+  background: url("../pics/just-byrd.png") 5px 0px no-repeat;
+  background-size: 80%;
+  width: 50px;
+  height: 40px;
+}
+
+.section-container {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #515151;
+  padding: 50px 0;
+}
+
+#locations {
+  width: 100%;
+}
+
+#contact {
+  background: #00B4FF;
+  margin-top: 0px;
+  min-height: 200px;
+  padding-bottom: 0;
+}
+
+#flavors {
+  background: gray;
+}
+
+#pictures {
+  background: #353535;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.contact-circle-container {
+  width: 600px;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.contact-circle {
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+  border-radius: 200px;
+  border: 5px solid white;
+  margin: 0 25px 0 50px;
+}
+
+.contact-circle.twitter {
+  background: url("../pics/twitter.svg") 15px 15px no-repeat;
+  background-size: 70%;
+}
+
+.contact-circle.email {
+  background: url("../pics/mail.svg") 18px 25px no-repeat;
+  background-size: 60%;
+}
+
+.contact-circle.tumblr {
+  background: url("../pics/tumblr-logo.png") 7px 8px no-repeat;
+  background-size: 85%;
+}
+
+@font-face {
+  font-family: landrygo;
+  src: url("../fonts/landrygo.ttf");
+}
+
+/*remove scrollbar from google maps markers*/
+.gm-style-iw div {
+  overflow: hidden !important;
+}
