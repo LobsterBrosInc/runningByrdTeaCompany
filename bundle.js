@@ -10023,11 +10023,6 @@ var OrderForm = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (OrderForm.__proto__ || Object.getPrototypeOf(OrderForm)).call(this, props));
 
     _this.state = {
-      cardNumber: null,
-      expMonth: null,
-      expYear: null,
-      cvc: null,
-      token: 0,
       name: "",
       email: "",
       streetAddress1: "",
@@ -10036,6 +10031,7 @@ var OrderForm = function (_React$Component) {
     };
 
     _this.update = _this.update.bind(_this);
+    _this.stripeTokenHandler = _this.stripeTokenHandler.bind(_this);
     return _this;
   }
 
@@ -10044,7 +10040,7 @@ var OrderForm = function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var stripe = Stripe('pk_test_qadX9aFJ22MpdYgR91pOzMVD');
+      var stripe = Stripe('');
       var elements = stripe.elements();
 
       var style = {
@@ -10098,7 +10094,7 @@ var OrderForm = function (_React$Component) {
             console.log(result.token);
             _this2.setState({ token: result.token.id });
             console.log(_this2.state);
-            stripeTokenHandler(result.token);
+            _this2.stripeTokenHandler(result.token);
           }
         });
       });
@@ -10112,6 +10108,19 @@ var OrderForm = function (_React$Component) {
       return function (e) {
         _this3.setState(_defineProperty({}, field, e.target.value));
       };
+    }
+  }, {
+    key: 'stripeTokenHandler',
+    value: function stripeTokenHandler(token) {
+      var form = document.getElementById('payment-form');
+      var hiddenInput = document.createElement('input');
+      hiddenInput.setAttribute('type', 'hidden');
+      hiddenInput.setAttribute('name', 'stripeToken');
+      hiddenInput.setAttribute('value', token.id);
+      form.appendChild(hiddenInput);
+
+      // Submit the form
+      form.submit();
     }
   }, {
     key: 'render',

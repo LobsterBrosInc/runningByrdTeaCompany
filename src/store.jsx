@@ -6,11 +6,6 @@ class OrderForm extends React.Component {
     super(props);
 
     this.state = {
-      cardNumber: null,
-      expMonth: null,
-      expYear: null,
-      cvc: null,
-      token: 0,
       name: "",
       email: "",
       streetAddress1: "",
@@ -19,10 +14,11 @@ class OrderForm extends React.Component {
     };
 
     this.update = this.update.bind(this);
+    this.stripeTokenHandler = this.stripeTokenHandler.bind(this);
   }
 
   componentDidMount() {
-    const stripe = Stripe('pk_test_qadX9aFJ22MpdYgR91pOzMVD');
+    const stripe = Stripe('');
     const elements = stripe.elements();
 
     const style = {
@@ -75,7 +71,7 @@ class OrderForm extends React.Component {
           console.log(result.token);
           this.setState({ token: result.token.id });
           console.log(this.state);
-          stripeTokenHandler(result.token);
+          this.stripeTokenHandler(result.token);
         }
       });
     });
@@ -86,6 +82,18 @@ class OrderForm extends React.Component {
     return (e) => {
       this.setState({[field]: e.target.value});
     };
+  }
+
+  stripeTokenHandler(token) {
+    const form = document.getElementById('payment-form');
+    const hiddenInput = document.createElement('input');
+    hiddenInput.setAttribute('type', 'hidden');
+    hiddenInput.setAttribute('name', 'stripeToken');
+    hiddenInput.setAttribute('value', token.id);
+    form.appendChild(hiddenInput);
+
+    // Submit the form
+    form.submit();
   }
 
   render () {
