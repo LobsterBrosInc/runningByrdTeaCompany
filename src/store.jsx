@@ -10,8 +10,15 @@ class OrderForm extends React.Component {
       expMonth: null,
       expYear: null,
       cvc: null,
-      token: null
+      token: null,
+      name: "",
+      email: "",
+      streetAddress1: "",
+      city: "",
+      zip: ""
     };
+
+    this.update = this.update.bind(this);
   }
 
   componentDidMount() {
@@ -20,9 +27,14 @@ class OrderForm extends React.Component {
 
     const style = {
       base: {
-        // Add base input styles here:
+        iconColor: '#666EE8',
+        color: '#31325F',
+        lineHeight: '40px',
         fontSize: '16px',
-        lineHeight: '24px',
+
+        '::placeholder': {
+          color: '#CFD7E0',
+        },
       },
     };
 
@@ -42,23 +54,36 @@ class OrderForm extends React.Component {
       }
     });
 
-    // Create a token or display an error the form is submitted.
+    // Create a token or display an error after the form is submitted.
     const form = document.getElementById('payment-form');
 
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      stripe.createToken(card).then(function(result) {
+      let extraDetails = {
+        name: this.state.name
+      }
+
+      stripe.createToken(card, extraDetails).then(function(result) {
         if (result.error) {
           // Inform the user if there was an error
           var errorElement = document.getElementById('card-errors');
           errorElement.textContent = result.error.message;
         } else {
           // Send the token to your server
+          console.log(result.token);
+          this.setState({token: result.token})
+          console.log(this.state);
           stripeTokenHandler(result.token);
         }
       });
     });
+  }
+
+  update(field) {
+    return (e) => {
+      this.setState({[field]: e.target.value});
+    };
   }
 
   render () {
@@ -70,19 +95,40 @@ class OrderForm extends React.Component {
           <div className='payment-form-group'>
             <label className='payment-form-label'>
               <span>Name</span>
-              <input name='cardholder-name' className='payment-form-field' placeholder='Jane Doe' />
+              <input
+                name='cardholder-name'
+                className='payment-form-field'
+                placeholder='Jane Doe'
+                onChange={this.update('name')} />
             </label>
             <label className='payment-form-label'>
-              <span>Phone</span>
-              <input className='payment-form-field' placeholder='(123) 456-7890' type='tel' />
+              <span>E-mail</span>
+              <input
+                className='payment-form-field'
+                placeholder='janedoe@gmail.com'
+                type='email'
+                onChange={this.update('email')} />
             </label>
             <label className='payment-form-label'>
               <span>Address</span>
-              <input className='payment-form-field' placeholder='Street Address' />
+              <input
+                className='payment-form-field'
+                placeholder='Street Address'
+                onChange={this.update('streetAddress1')} />
             </label>
             <label className='payment-form-label'>
-              <span>Zip</span>
-              <input className='payment-form-field' placeholder='90210' />
+              <span>City</span>
+              <input
+                className='payment-form-field'
+                placeholder='San Francisco'
+                onChange={this.update('city')} />
+            </label>
+            <label className='payment-form-label'>
+              <span>State</span>
+              <input
+                className='payment-form-field'
+                placeholder='CA'
+                onChange={this.update('state')} />
             </label>
           </div>
           <div className='payment-form-group'>
@@ -91,13 +137,13 @@ class OrderForm extends React.Component {
               <div id='card-element' className='payment-form-field'></div>
             </label>
           </div>
-          <button className='payment-submit-button' type='submit'>Pay $25</button>
           <div className='outcome'>
-            <div className='error'></div>
+            <div id='card-errors'></div>
             <div className='success'>
               Success! Your Stripe token is <span className='token'></span>
             </div>
           </div>
+          <button className='payment-submit-button' type='submit'>Pay $25</button>
         </form>
       </div>
     )

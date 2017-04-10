@@ -10006,6 +10006,8 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -10025,8 +10027,15 @@ var OrderForm = function (_React$Component) {
       expMonth: null,
       expYear: null,
       cvc: null,
-      token: null
+      token: null,
+      name: "",
+      email: "",
+      streetAddress1: "",
+      city: "",
+      zip: ""
     };
+
+    _this.update = _this.update.bind(_this);
     return _this;
   }
 
@@ -10038,9 +10047,14 @@ var OrderForm = function (_React$Component) {
 
       var style = {
         base: {
-          // Add base input styles here:
+          iconColor: '#666EE8',
+          color: '#31325F',
+          lineHeight: '40px',
           fontSize: '16px',
-          lineHeight: '24px'
+
+          '::placeholder': {
+            color: '#CFD7E0'
+          }
         }
       };
 
@@ -10062,23 +10076,39 @@ var OrderForm = function (_React$Component) {
         }
       });
 
-      // Create a token or display an error the form is submitted.
+      // Create a token or display an error after the form is submitted.
       var form = document.getElementById('payment-form');
 
       form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        stripe.createToken(card).then(function (result) {
+        var extraDetails = {
+          name: this.state.name
+        };
+
+        stripe.createToken(card, extraDetails).then(function (result) {
           if (result.error) {
             // Inform the user if there was an error
             var errorElement = document.getElementById('card-errors');
             errorElement.textContent = result.error.message;
           } else {
             // Send the token to your server
+            console.log(result.token);
+            this.setState({ token: result.token });
+            console.log(this.state);
             stripeTokenHandler(result.token);
           }
         });
       });
+    }
+  }, {
+    key: 'update',
+    value: function update(field) {
+      var _this2 = this;
+
+      return function (e) {
+        _this2.setState(_defineProperty({}, field, e.target.value));
+      };
     }
   }, {
     key: 'render',
@@ -10106,7 +10136,11 @@ var OrderForm = function (_React$Component) {
                 null,
                 'Name'
               ),
-              _react2.default.createElement('input', { name: 'cardholder-name', className: 'payment-form-field', placeholder: 'Jane Doe' })
+              _react2.default.createElement('input', {
+                name: 'cardholder-name',
+                className: 'payment-form-field',
+                placeholder: 'Jane Doe',
+                onChange: this.update('name') })
             ),
             _react2.default.createElement(
               'label',
@@ -10114,9 +10148,13 @@ var OrderForm = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                'Phone'
+                'E-mail'
               ),
-              _react2.default.createElement('input', { className: 'payment-form-field', placeholder: '(123) 456-7890', type: 'tel' })
+              _react2.default.createElement('input', {
+                className: 'payment-form-field',
+                placeholder: 'janedoe@gmail.com',
+                type: 'email',
+                onChange: this.update('email') })
             ),
             _react2.default.createElement(
               'label',
@@ -10126,7 +10164,10 @@ var OrderForm = function (_React$Component) {
                 null,
                 'Address'
               ),
-              _react2.default.createElement('input', { className: 'payment-form-field', placeholder: 'Street Address' })
+              _react2.default.createElement('input', {
+                className: 'payment-form-field',
+                placeholder: 'Street Address',
+                onChange: this.update('streetAddress1') })
             ),
             _react2.default.createElement(
               'label',
@@ -10134,9 +10175,25 @@ var OrderForm = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                'Zip'
+                'City'
               ),
-              _react2.default.createElement('input', { className: 'payment-form-field', placeholder: '90210' })
+              _react2.default.createElement('input', {
+                className: 'payment-form-field',
+                placeholder: 'San Francisco',
+                onChange: this.update('city') })
+            ),
+            _react2.default.createElement(
+              'label',
+              { className: 'payment-form-label' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'State'
+              ),
+              _react2.default.createElement('input', {
+                className: 'payment-form-field',
+                placeholder: 'CA',
+                onChange: this.update('state') })
             )
           ),
           _react2.default.createElement(
@@ -10154,20 +10211,20 @@ var OrderForm = function (_React$Component) {
             )
           ),
           _react2.default.createElement(
-            'button',
-            { className: 'payment-submit-button', type: 'submit' },
-            'Pay $25'
-          ),
-          _react2.default.createElement(
             'div',
             { className: 'outcome' },
-            _react2.default.createElement('div', { className: 'error' }),
+            _react2.default.createElement('div', { id: 'card-errors' }),
             _react2.default.createElement(
               'div',
               { className: 'success' },
               'Success! Your Stripe token is ',
               _react2.default.createElement('span', { className: 'token' })
             )
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'payment-submit-button', type: 'submit' },
+            'Pay $25'
           )
         )
       );

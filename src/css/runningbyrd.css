@@ -35,8 +35,8 @@ h2{
 }
 
 #store-container{
-	height: 425px;
-	background-color: gray;
+	height: 550px;
+  background-color: gray;
 }
 
 .payment-form-container{
@@ -96,10 +96,6 @@ label > span {
 .payment-form-field::-webkit-input-placeholder { color: #CFD7E0; }
 .payment-form-field::-moz-placeholder { color: #CFD7E0; }
 .payment-form-field:-ms-input-placeholder { color: #CFD7E0; }
-
-#card-element{
-	margin-top: 9px;
-}
 
 .payment-submit-button {
   float: left;
