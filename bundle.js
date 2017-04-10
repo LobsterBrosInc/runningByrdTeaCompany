@@ -10027,7 +10027,7 @@ var OrderForm = function (_React$Component) {
       expMonth: null,
       expYear: null,
       cvc: null,
-      token: null,
+      token: 0,
       name: "",
       email: "",
       streetAddress1: "",
@@ -10042,6 +10042,8 @@ var OrderForm = function (_React$Component) {
   _createClass(OrderForm, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
+      var _this2 = this;
+
       var stripe = Stripe('pk_test_qadX9aFJ22MpdYgR91pOzMVD');
       var elements = stripe.elements();
 
@@ -10083,7 +10085,7 @@ var OrderForm = function (_React$Component) {
         event.preventDefault();
 
         var extraDetails = {
-          name: this.state.name
+          name: _this2.state.name
         };
 
         stripe.createToken(card, extraDetails).then(function (result) {
@@ -10094,8 +10096,8 @@ var OrderForm = function (_React$Component) {
           } else {
             // Send the token to your server
             console.log(result.token);
-            this.setState({ token: result.token });
-            console.log(this.state);
+            _this2.setState({ token: result.token.id });
+            console.log(_this2.state);
             stripeTokenHandler(result.token);
           }
         });
@@ -10104,10 +10106,11 @@ var OrderForm = function (_React$Component) {
   }, {
     key: 'update',
     value: function update(field) {
-      var _this2 = this;
+      var _this3 = this;
 
+      // console.log(this.state);
       return function (e) {
-        _this2.setState(_defineProperty({}, field, e.target.value));
+        _this3.setState(_defineProperty({}, field, e.target.value));
       };
     }
   }, {

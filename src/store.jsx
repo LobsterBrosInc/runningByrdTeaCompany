@@ -10,7 +10,7 @@ class OrderForm extends React.Component {
       expMonth: null,
       expYear: null,
       cvc: null,
-      token: null,
+      token: 0,
       name: "",
       email: "",
       streetAddress1: "",
@@ -57,14 +57,15 @@ class OrderForm extends React.Component {
     // Create a token or display an error after the form is submitted.
     const form = document.getElementById('payment-form');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', event => {
       event.preventDefault();
 
       let extraDetails = {
         name: this.state.name
-      }
+      };
 
-      stripe.createToken(card, extraDetails).then(function(result) {
+
+      stripe.createToken(card, extraDetails).then( result => {
         if (result.error) {
           // Inform the user if there was an error
           var errorElement = document.getElementById('card-errors');
@@ -72,7 +73,7 @@ class OrderForm extends React.Component {
         } else {
           // Send the token to your server
           console.log(result.token);
-          this.setState({token: result.token})
+          this.setState({ token: result.token.id });
           console.log(this.state);
           stripeTokenHandler(result.token);
         }
@@ -81,6 +82,7 @@ class OrderForm extends React.Component {
   }
 
   update(field) {
+    // console.log(this.state);
     return (e) => {
       this.setState({[field]: e.target.value});
     };
