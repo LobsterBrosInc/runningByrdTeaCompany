@@ -105,8 +105,8 @@ var Carousel = function (_React$Component) {
   }
 
   _createClass(Carousel, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
       $('#ca-container').contentcarousel();
     }
   }, {
@@ -115,17 +115,17 @@ var Carousel = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { id: 'ca-container', 'class': 'ca-container' },
+        { id: 'ca-container', className: 'ca-container' },
         _react2.default.createElement(
           'div',
-          { 'class': 'ca-wrapper' },
+          { className: 'ca-wrapper' },
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-13' },
+            { className: 'ca-item ca-item-13' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main in-season' },
-              _react2.default.createElement('div', { 'class': 'ca-icon' }),
+              { className: 'ca-item-main in-season' },
+              _react2.default.createElement('div', { className: 'ca-icon' }),
               _react2.default.createElement(
                 'h4',
                 null,
@@ -137,24 +137,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h3',
                     null,
@@ -171,11 +171,11 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-4' },
+            { className: 'ca-item ca-item-4' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main in-season' },
-              _react2.default.createElement('div', { 'class': 'ca-icon' }),
+              { className: 'ca-item-main in-season' },
+              _react2.default.createElement('div', { className: 'ca-icon' }),
               _react2.default.createElement(
                 'h4',
                 null,
@@ -187,24 +187,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h3',
                     null,
@@ -221,11 +221,11 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-5' },
+            { className: 'ca-item ca-item-5' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main in-season' },
-              _react2.default.createElement('div', { 'class': 'ca-icon' }),
+              { className: 'ca-item-main in-season' },
+              _react2.default.createElement('div', { className: 'ca-icon' }),
               _react2.default.createElement(
                 'h4',
                 null,
@@ -237,25 +237,25 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               ),
               _react2.default.createElement('div', { id: 'carousel-buy-button' })
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h3',
                     null,
@@ -272,11 +272,11 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-2' },
+            { className: 'ca-item ca-item-2' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
-              _react2.default.createElement('div', { 'class': 'ca-icon' }),
+              { className: 'ca-item-main' },
+              _react2.default.createElement('div', { className: 'ca-icon' }),
               _react2.default.createElement(
                 'h4',
                 null,
@@ -288,24 +288,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h3',
                     null,
@@ -322,11 +322,11 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-1' },
+            { className: 'ca-item ca-item-1' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main in-season' },
-              _react2.default.createElement('div', { 'class': 'ca-icon' }),
+              { className: 'ca-item-main in-season' },
+              _react2.default.createElement('div', { className: 'ca-icon' }),
               _react2.default.createElement(
                 'h4',
                 null,
@@ -338,24 +338,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h3',
                     null,
@@ -372,11 +372,11 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-3' },
+            { className: 'ca-item ca-item-3' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main in-season' },
-              _react2.default.createElement('div', { 'class': 'ca-icon' }),
+              { className: 'ca-item-main in-season' },
+              _react2.default.createElement('div', { className: 'ca-icon' }),
               _react2.default.createElement(
                 'h4',
                 null,
@@ -388,24 +388,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h3',
                     null,
@@ -427,16 +427,16 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-10 out-of-season' },
+            { className: 'ca-item ca-item-10 out-of-season' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
+              { className: 'ca-item-main' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season coming-soon' },
+                { className: 'out-of-season coming-soon' },
                 '4th of July Only'
               ),
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon slices' }),
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon slices' }),
               _react2.default.createElement(
                 'h3',
                 null,
@@ -453,24 +453,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
@@ -487,16 +487,16 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-11 whole-food-exclusive' },
+            { className: 'ca-item ca-item-11 whole-food-exclusive' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
+              { className: 'ca-item-main' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season coming-soon' },
+                { className: 'out-of-season coming-soon' },
                 'Whole Foods Exclusive'
               ),
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon' }),
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
               _react2.default.createElement(
                 'h3',
                 null,
@@ -513,24 +513,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
@@ -542,14 +542,14 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-8 out-of-season' },
+            { className: 'ca-item ca-item-8 out-of-season' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon' }),
+              { className: 'ca-item-main' },
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season' },
+                { className: 'out-of-season' },
                 'Out Of Season'
               ),
               _react2.default.createElement(
@@ -568,24 +568,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
@@ -602,14 +602,14 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-7 out-of-season' },
+            { className: 'ca-item ca-item-7 out-of-season' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon' }),
+              { className: 'ca-item-main' },
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season' },
+                { className: 'out-of-season' },
                 'Out Of Season'
               ),
               _react2.default.createElement(
@@ -628,24 +628,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
@@ -667,14 +667,14 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-12 out-of-season' },
+            { className: 'ca-item ca-item-12 out-of-season' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main in-season' },
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon breakfast' }),
+              { className: 'ca-item-main in-season' },
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon breakfast' }),
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season' },
+                { className: 'out-of-season' },
                 'Out Of Season'
               ),
               _react2.default.createElement(
@@ -693,24 +693,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
@@ -722,16 +722,16 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-9 out-of-season' },
+            { className: 'ca-item ca-item-9 out-of-season' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
+              { className: 'ca-item-main' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season' },
+                { className: 'out-of-season' },
                 'Out Of Season'
               ),
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon' }),
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
               _react2.default.createElement(
                 'h3',
                 null,
@@ -748,24 +748,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
@@ -777,16 +777,16 @@ var Carousel = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { 'class': 'ca-item ca-item-6 out-of-season' },
+            { className: 'ca-item ca-item-6 out-of-season' },
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-item-main' },
+              { className: 'ca-item-main' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'out-of-season' },
+                { className: 'out-of-season' },
                 'Out Of Season'
               ),
-              _react2.default.createElement('div', { 'class': 'ca-icon flavor-icon' }),
+              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
               _react2.default.createElement(
                 'h3',
                 null,
@@ -803,24 +803,24 @@ var Carousel = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'a',
-                { href: '#', 'class': 'ca-more' },
+                { href: '#', className: 'ca-more' },
                 'Read the story'
               )
             ),
             _react2.default.createElement(
               'div',
-              { 'class': 'ca-content-wrapper' },
+              { className: 'ca-content-wrapper' },
               _react2.default.createElement(
                 'div',
-                { 'class': 'ca-content' },
+                { className: 'ca-content' },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', 'class': 'ca-close' },
+                  { href: '#', className: 'ca-close' },
                   'close'
                 ),
                 _react2.default.createElement(
                   'div',
-                  { 'class': 'ca-content-text' },
+                  { className: 'ca-content-text' },
                   _react2.default.createElement(
                     'h6',
                     null,
