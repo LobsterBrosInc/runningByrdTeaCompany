@@ -5,156 +5,109 @@ class OrderForm extends React.Component {
   constructor(props){
     super(props);
 
-    this.state = {
-      name: "",
-      email: "",
-      streetAddress1: "",
-      city: "",
-      zip: ""
-    };
-
-    this.update = this.update.bind(this);
-    this.stripeTokenHandler = this.stripeTokenHandler.bind(this);
   }
 
   componentDidMount() {
-    const stripe = Stripe('');
-    const elements = stripe.elements();
-
-    const style = {
-      base: {
-        iconColor: '#666EE8',
-        color: '#31325F',
-        lineHeight: '40px',
-        fontSize: '16px',
-
-        '::placeholder': {
-          color: '#CFD7E0',
-        },
-      },
-    };
-
-    // Create an instance of the card Element
-    const card = elements.create('card', {style});
-
-    // Add an instance of the card Element into the `card-element` <div>
-    card.mount('#card-element');
-
-    // Displays errors
-    card.addEventListener('change', ({error}) => {
-      const displayError = document.getElementById('card-errors');
-      if (error) {
-        displayError.textContent = error.message;
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) {
+      if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
       } else {
-        displayError.textContent = '';
+        loadScript();
       }
-    });
+    } else {
+      loadScript();
+    }
 
-    // Create a token or display an error after the form is submitted.
-    const form = document.getElementById('payment-form');
+    function loadScript() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = scriptURL;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+      script.onload = ShopifyBuyInit;
+    }
 
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-
-      let extraDetails = {
-        name: this.state.name
-      };
-
-
-      stripe.createToken(card, extraDetails).then( result => {
-        if (result.error) {
-          // Inform the user if there was an error
-          var errorElement = document.getElementById('card-errors');
-          errorElement.textContent = result.error.message;
-        } else {
-          // Send the token to your server
-          console.log(result.token);
-          this.setState({ token: result.token.id });
-          console.log(this.state);
-          this.stripeTokenHandler(result.token);
-        }
+    function ShopifyBuyInit() {
+      var client = ShopifyBuy.buildClient({
+        domain: 'adrian-test-store.myshopify.com',
+        apiKey: 'a34f449fa755290f5441c327c17f0338',
+        appId: '6',
       });
-    });
+
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('collection', {
+          id: 378505475,
+          node: document.getElementById('collection-component-8fa3bb44873'),
+          moneyFormat: '%24%7B%7Bamount%7D%7D',
+          options: {
+    "product": {
+      "variantId": "all",
+      "contents": {
+        "imgWithCarousel": false,
+        "variantTitle": false,
+        "description": false,
+        "buttonWithQuantity": false,
+        "quantity": false
+      },
+      "styles": {
+        "product": {
+          "@media (min-width: 601px)": {
+            "max-width": "calc(25% - 20px)",
+            "margin-left": "20px",
+            "margin-bottom": "50px"
+          }
+        }
+      }
+    },
+    "cart": {
+      "contents": {
+        "button": true
+      },
+      "styles": {
+        "footer": {
+          "background-color": "#ffffff"
+        }
+      }
+    },
+    "modalProduct": {
+      "contents": {
+        "img": false,
+        "imgWithCarousel": true,
+        "variantTitle": false,
+        "buttonWithQuantity": true,
+        "button": false,
+        "quantity": false
+      },
+      "styles": {
+        "product": {
+          "@media (min-width: 601px)": {
+            "max-width": "100%",
+            "margin-left": "0px",
+            "margin-bottom": "0px"
+          }
+        }
+      }
+    },
+    "productSet": {
+      "styles": {
+        "products": {
+          "@media (min-width: 601px)": {
+            "margin-left": "-20px"
+          }
+        }
+      }
+    }
+  }
+        });
+      });
+    }
   }
 
-  update(field) {
-    // console.log(this.state);
-    return (e) => {
-      this.setState({[field]: e.target.value});
-    };
-  }
-
-  stripeTokenHandler(token) {
-    const form = document.getElementById('payment-form');
-    const hiddenInput = document.createElement('input');
-    hiddenInput.setAttribute('type', 'hidden');
-    hiddenInput.setAttribute('name', 'stripeToken');
-    hiddenInput.setAttribute('value', token.id);
-    form.appendChild(hiddenInput);
-
-    // Submit the form
-    form.submit();
-  }
-
-  render () {
+  render() {
 
     return (
-      <div className='payment-form-container'>
-        <h1>BYRD STORE</h1>
-        <form id='payment-form'>
-          <div className='payment-form-group'>
-            <label className='payment-form-label'>
-              <span>Name</span>
-              <input
-                name='cardholder-name'
-                className='payment-form-field'
-                placeholder='Jane Doe'
-                onChange={this.update('name')} />
-            </label>
-            <label className='payment-form-label'>
-              <span>E-mail</span>
-              <input
-                className='payment-form-field'
-                placeholder='janedoe@gmail.com'
-                type='email'
-                onChange={this.update('email')} />
-            </label>
-            <label className='payment-form-label'>
-              <span>Address</span>
-              <input
-                className='payment-form-field'
-                placeholder='Street Address'
-                onChange={this.update('streetAddress1')} />
-            </label>
-            <label className='payment-form-label'>
-              <span>City</span>
-              <input
-                className='payment-form-field'
-                placeholder='San Francisco'
-                onChange={this.update('city')} />
-            </label>
-            <label className='payment-form-label'>
-              <span>State</span>
-              <input
-                className='payment-form-field'
-                placeholder='CA'
-                onChange={this.update('state')} />
-            </label>
-          </div>
-          <div className='payment-form-group'>
-            <label className='payment-form-label'>
-              <span>Card</span>
-              <div id='card-element' className='payment-form-field'></div>
-            </label>
-          </div>
-          <div className='outcome'>
-            <div id='card-errors'></div>
-            <div className='success'>
-              Success! Your Stripe token is <span className='token'></span>
-            </div>
-          </div>
-          <button className='payment-submit-button' type='submit'>Pay $25</button>
-        </form>
+      <div>
+        <div id='collection-component-8fa3bb44873'></div>
       </div>
     )
   }
