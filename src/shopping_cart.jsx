@@ -8,20 +8,29 @@ class ShoppingCart extends React.Component {
     this.closeCart = this.closeCart.bind(this);
   }
 
-  openCart() {
+  componentDidMount() {
+    // click away listener to close cart
+    // $(document).on('click', function(evt) {
+    //   if((!$(evt.target).closest('.cart').length) && (!$(evt.target).closest('.js-prevent-cart-listener').length)) {
+    //     this.closeCart();
+    //   }
+    // });
+  }
+
+  openCart(){
     $('.cart').addClass('js-active');
   }
 
-  closeCart() {
-    $('.cart .btn--close').click(function () {
-      $('.cart').removeClass('js-active');
-    });
+  closeCart(){
+    $('.cart').removeClass('js-active');
   }
 
   render() {
     return (
       <div>
-        <button className="btn btn--cart-tab js-prevent-cart-listener">
+        <button
+          className="btn btn--cart-tab js-prevent-cart-listener"
+          onClick={() => this.openCart()}>
           <span className="btn__counter"></span>
           <div xmlns="http://www.w3.org/2000/svg" className="icon-cart icon-cart--side"></div>
         </button>
@@ -31,9 +40,11 @@ class ShoppingCart extends React.Component {
 
           <div className="cart-section cart-section--top">
             <h2 className="cart-title">Your cart</h2>
-            <button className="btn--close">
-              <span aria-role="hidden">×</span>
-              <span className="visuallyhidden">Close</span>
+            <button
+              className="btn--close"
+              onClick={() => this.closeCart()}>
+                <span>×</span>
+                <span className="visuallyhidden">Close</span>
             </button>
           </div>
 

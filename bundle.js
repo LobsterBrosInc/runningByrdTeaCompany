@@ -27636,6 +27636,16 @@ var ShoppingCart = function (_React$Component) {
   }
 
   _createClass(ShoppingCart, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      // click away listener to close cart
+      // $(document).on('click', function(evt) {
+      //   if((!$(evt.target).closest('.cart').length) && (!$(evt.target).closest('.js-prevent-cart-listener').length)) {
+      //     this.closeCart();
+      //   }
+      // });
+    }
+  }, {
     key: 'openCart',
     value: function openCart() {
       $('.cart').addClass('js-active');
@@ -27643,19 +27653,23 @@ var ShoppingCart = function (_React$Component) {
   }, {
     key: 'closeCart',
     value: function closeCart() {
-      $('.cart .btn--close').click(function () {
-        $('.cart').removeClass('js-active');
-      });
+      $('.cart').removeClass('js-active');
     }
   }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
           'button',
-          { className: 'btn btn--cart-tab js-prevent-cart-listener' },
+          {
+            className: 'btn btn--cart-tab js-prevent-cart-listener',
+            onClick: function onClick() {
+              return _this2.openCart();
+            } },
           _react2.default.createElement('span', { className: 'btn__counter' }),
           _react2.default.createElement('div', { xmlns: 'http://www.w3.org/2000/svg', className: 'icon-cart icon-cart--side' })
         ),
@@ -27672,10 +27686,14 @@ var ShoppingCart = function (_React$Component) {
             ),
             _react2.default.createElement(
               'button',
-              { className: 'btn--close' },
+              {
+                className: 'btn--close',
+                onClick: function onClick() {
+                  return _this2.closeCart();
+                } },
               _react2.default.createElement(
                 'span',
-                { 'aria-role': 'hidden' },
+                null,
                 '\xD7'
               ),
               _react2.default.createElement(
