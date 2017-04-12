@@ -33,7 +33,7 @@ class ShoppingCart extends React.Component {
       // debugger;
       console.log(item);
       return (
-        <div className='cart-item'>
+        <div key={item.id} className='cart-item'>
           <h3>{item.title}</h3>
         </div>
       )

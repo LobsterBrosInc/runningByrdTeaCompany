@@ -10071,7 +10071,7 @@ var ShoppingCart = function (_React$Component) {
         console.log(item);
         return _react2.default.createElement(
           'div',
-          { className: 'cart-item' },
+          { key: item.id, className: 'cart-item' },
           _react2.default.createElement(
             'h3',
             null,
