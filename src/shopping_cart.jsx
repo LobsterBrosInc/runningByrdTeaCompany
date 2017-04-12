@@ -4,17 +4,20 @@ class ShoppingCart extends React.Component {
   constructor(props){
     super(props);
 
+    this.state = {
+      cart: {
+        lineItems: []
+      }
+    }
+
     this.openCart = this.openCart.bind(this);
     this.closeCart = this.closeCart.bind(this);
   }
 
-  componentDidMount() {
-    // click away listener to close cart
-    // $(document).on('click', function(evt) {
-    //   if((!$(evt.target).closest('.cart').length) && (!$(evt.target).closest('.js-prevent-cart-listener').length)) {
-    //     this.closeCart();
-    //   }
-    // });
+  componentWillReceiveProps(nextProps){
+    // debugger;
+    console.log(nextProps);
+    this.setState({cart: nextProps.cart});
   }
 
   openCart(){
@@ -26,6 +29,16 @@ class ShoppingCart extends React.Component {
   }
 
   render() {
+    const cartItems = this.state.cart.lineItems.map(item => {
+      // debugger;
+      console.log(item);
+      return (
+        <div className='cart-item'>
+          <h3>{item.title}</h3>
+        </div>
+      )
+    });
+
     return (
       <div>
         <button
@@ -50,7 +63,7 @@ class ShoppingCart extends React.Component {
 
           <div className="cart-form">
             <div className="cart-item-container cart-section">
-
+              {cartItems}
             </div>
 
             <div className="cart-bottom">

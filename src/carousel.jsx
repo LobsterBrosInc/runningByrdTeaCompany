@@ -10,7 +10,9 @@ class Carousel extends React.Component {
 
     this.state = {
       shopifyClient: "",
-      cart: ""
+      cart: {
+        lineItems: []
+      }
     }
 
     this.addToCart = this.addToCart.bind(this);
@@ -43,6 +45,7 @@ class Carousel extends React.Component {
       this.state.cart.createLineItemsFromVariants({variant: selectedVariant, quantity: 1})
       .then((cart) => {
         console.log(cart);
+        this.setState({cart});
       });
     })
 
