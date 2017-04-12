@@ -52,7 +52,8 @@ class Carousel extends React.Component {
 
     return (
       <div>
-        <ShoppingCart />
+        <ShoppingCart
+          cart={this.state.cart} />
         <div id="ca-container" className="ca-container">
           <div className="ca-wrapper">
             <div className="ca-item ca-item-13">

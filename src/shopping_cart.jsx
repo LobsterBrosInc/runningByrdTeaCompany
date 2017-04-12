@@ -57,7 +57,7 @@ class ShoppingCart extends React.Component {
               <div className="cart-info clearfix cart-section">
                 <div className="type--caps cart-info__total cart-info__small">Total</div>
                 <div className="cart-info__pricing">
-                  <span className="cart-info__small cart-info__total">CAD</span>
+                  <span className="cart-info__small cart-info__total">USD</span>
                   <span className="pricing pricing--no-padding"></span>
                 </div>
               </div>

@@ -10081,7 +10081,8 @@ var Carousel = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_shopping_cart2.default, null),
+        _react2.default.createElement(_shopping_cart2.default, {
+          cart: this.state.cart }),
         _react2.default.createElement(
           'div',
           { id: 'ca-container', className: 'ca-container' },
@@ -27724,7 +27725,7 @@ var ShoppingCart = function (_React$Component) {
                   _react2.default.createElement(
                     'span',
                     { className: 'cart-info__small cart-info__total' },
-                    'CAD'
+                    'USD'
                   ),
                   _react2.default.createElement('span', { className: 'pricing pricing--no-padding' })
                 )
