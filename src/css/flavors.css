@@ -1,0 +1,103 @@
+.flavor-container{
+	width: 65%;
+	float: right;
+	margin: 0 20px 0 0;
+
+}
+
+.flavors li{
+	width: 80%;
+	overflow: hidden;
+	border: 3px solid black;
+	border-radius: 30px;
+	float: left;
+	padding: 15px;
+	margin: 0 auto 3% auto;
+}
+
+
+
+.flavors p{
+	font-family: "Georgia Sans", "Helvetica";
+}
+
+.flavor-container h1{
+	margin-bottom: 40px;
+	font-size: 2em;
+	line-height: 30px;
+}
+
+.flavor-container h2{
+	margin-bottom: 30px;
+	font-size: 1em;
+	line-height: 20px;
+	width: 90%;
+	font-family: "Georgia Sans", "Helvetica";
+}
+
+.label{
+	width: 90%;
+}
+
+.flavors h2{
+	font-size: .9em;
+	margin-bottom: 15px;
+	font-family: landrygo, 'American Typewriter';
+}
+
+.flavors p{
+	line-height: 20px;
+}
+
+.flavors span{
+	height: 30px;
+	width: 30px;
+	float: left;
+}
+
+.flavors .pepper{
+	background: url('../pics/pepper.svg') no-repeat;
+	background-size: 70%;
+}
+
+.flavors .chocolate{
+	background: url('../pics/chocolate.svg') no-repeat;
+	background-size: 80%;
+}
+
+.flavors .rain{
+	background: url('../pics/rain.svg') no-repeat;
+	background-size: 80%;
+}
+
+.flavors .pie{
+	background: url('../pics/pie.svg') no-repeat;
+	background-size: 80%;
+}
+
+.flavors .berry{
+	background: url('../pics/berry.svg') no-repeat;
+	background-size: 80%;
+}
+
+.flavors .slices{
+	background: url('../pics/apple.svg') no-repeat;
+	background-size: 70%;
+}
+
+.flavors .sun{
+	background: url('../pics/sun.svg') no-repeat;
+	background-size: 80%;
+}
+
+.flavors .cane{
+	background: url('../pics/cane.svg') no-repeat;
+	background-size: 80%;
+}
+
+.flavors .smoke{
+	background: url('../pics/smoke.svg') no-repeat;
+	background-size: 100%;
+}
+
+

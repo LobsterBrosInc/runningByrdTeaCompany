@@ -1,0 +1,16 @@
+@import url('reset.css');
+
+/* General Demo Style */
+body{
+	font-family: landrygo, Arial, sans-serif;
+	font-size:12px;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+@font-face
+{
+	font-family: landrygo;
+	src: url('../fonts/landrygo.ttf');
+}

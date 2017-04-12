@@ -10,5 +10,32 @@
     "grunt-contrib-sass": "^0.8.0",
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "description": "RBMF ====",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/readelobdill/runningByrdTeaCompany.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/readelobdill/runningByrdTeaCompany/issues"
+  },
+  "homepage": "https://github.com/readelobdill/runningByrdTeaCompany#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.5.1",
+    "react-dom": "^15.5.1",
+    "stripe": "^4.17.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   }
 }
