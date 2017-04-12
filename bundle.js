@@ -63,800 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 82);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(82);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(81);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Carousel = function (_React$Component) {
-  _inherits(Carousel, _React$Component);
-
-  function Carousel(props) {
-    _classCallCheck(this, Carousel);
-
-    return _possibleConstructorReturn(this, (Carousel.__proto__ || Object.getPrototypeOf(Carousel)).call(this, props));
-  }
-
-  _createClass(Carousel, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      $('#ca-container').contentcarousel();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { id: 'ca-container', className: 'ca-container' },
-        _react2.default.createElement(
-          'div',
-          { className: 'ca-wrapper' },
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-13' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main in-season' },
-              _react2.default.createElement('div', { className: 'ca-icon' }),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Peachy. Delicious.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'George\'s Peach'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'George\'s Peach is dedicated to the memory of my father, the original Runningbyrd. Time spent driving Highway 441 past peach orchards in our home state help define its flavor, along with the stories and laughs we shared over tall jars of iced tea on countless southern porches. While he missed Runningbyrd Tea\'s final journey to the bottle, I\'ve created George\'s Peach to share some of his spirit with our customers.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-4' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main in-season' },
-              _react2.default.createElement('div', { className: 'ca-icon' }),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Indian masala chai tea. Peppery finish.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Summer Rain'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'On hot nights, nothing compares to sitting on the front porch swing feeling a thunderstorm roll in, its wind ruffling your feathers, its fire making you cool. We\u2019ve had a long summer, so open a bottle of this spiced tea to swing the breezes your way. If slowly savored, lightning will crash on your palate.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-5' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main in-season' },
-              _react2.default.createElement('div', { className: 'ca-icon' }),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Thai inspired spiced chai tea, notes of lemongrass and ginger.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              ),
-              _react2.default.createElement('div', { id: 'carousel-buy-button' })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Spiced Thai'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'While visiting tea plantations in Thailand, I met an elderly man who spent his entire working life tasting teas, judging and critiquing their flavor. I created Spicy Thai for him, melding the flavors of my trip with an idea that he might taste something different after all these years, gifting him a new experience that still felt like an old friend.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-2' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement('div', { className: 'ca-icon' }),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Blended with lemongrass, white peach tea and a touch of lavender, a lower caffeine, unsweetened option for today\'s modern lifestyle.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Lemongrass White Peach'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Over the past year, the RBTea Co has welcomed the opportunity to share our stories with DC and listen to your stories. It has been a great experience. We have heard from many customers who just can\'t have sugar and others who want to enjoy tea at night but need less caffeine.And so we have created Lemongrass White Peach,a no sugar, lower caffeine blend that fits the best parts of our story to the needs of yours. DC, enjoy your story.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-1' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main in-season' },
-              _react2.default.createElement('div', { className: 'ca-icon' }),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'A lightly minty tea that tells a story you\'ll want to hear again and again.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Montgomery Mint'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'The Montgomery house in Georgia is a place where travelers, family and friends meet on the front porch, sharing stories between sips. Our childhood there began with a swing from the walnut tree out back, grew into a climb up the magnolia in front and ended with a glass of tea, poured from a carafe always kept full. Without that tea and those fine people, RBTea would not exist. We pay homage with a smooth, welcoming mint tea. Find a friend and some shade; brew your story.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main in-season' },
-              _react2.default.createElement('div', { className: 'ca-icon' }),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Smoked hazlenut tea, spiced pu erh finish.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Shenandoah Smoke'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Shenandoah Smoke is hand crafted from the finest smoked teas, blended with hazelnut and spices for an almost coffee-like flavor.'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'No storytelling is needed for this substantial tea; it\'s just hard-hitting flavor for the lumberjack in us all.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-10 out-of-season' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season coming-soon' },
-                '4th of July Only'
-              ),
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon slices' }),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Apple Pie'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'An American tradition, mix of apple teas with notes of cinnamon and vanilla.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Independence Day in my Georgia home meant deciding whether to make the run to Carolina for fireworks. Everyone has a different tradition for the 4th, but across the south, sweet tea and apple pie come standard. Runningbyrd Tea combines those flavors for an Independence Day Special, Apple Pie Tea'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Fireworks not included.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-11 whole-food-exclusive' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season coming-soon' },
-                'Whole Foods Exclusive'
-              ),
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Chocolate Peppermint'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Tastes like a peppermint patty. Very refreshing.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Legend has it that John Henry, after bursting his heart defeating the steam powered hammer, asked for two cool drinks of water. I imagine Chocolate Peppermint as those two cool drinks; two flavors, blending to provide a refreshing calm. It is a tea to give pause, to separate your long hard day from the relaxing evening to come.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-8 out-of-season' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season' },
-                'Out Of Season'
-              ),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Apple Cider Tea'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'A fall mix of hibiscus, rosehips and apple teas. Mulling spices for warmth, wrapped in caramel'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'We gather fresh apples in myriad ways. I used to wait for my little brothers to waltz back down Rural Route 2 pushing a stroller filled with Jonagold, but my godsons race through crunchy leaves to beat each other to the best Braeburn. If time or circumstance keeps you from picking your own apples this season, pluck a bottle of Apple Cider Tea from the shelf instead.'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Apple cider tea is a perfect mix of mulling spices, apple and tea. Let it keep you company in your orchard this autumn.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-7 out-of-season' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season' },
-                'Out Of Season'
-              ),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Winter Sun'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'A spiced orange tea, hints of grapefruit and sweet oolong.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'On a dreary winter day it can seem like months since you\'ve seen the sun.'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Fortunately, RunningbyTea Co has figured out how to bottle this precious resource.'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Let Winter Sun tea light up your life with its warming blend of orange and spiced teas'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-12 out-of-season' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main in-season' },
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon breakfast' }),
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season' },
-                'Out Of Season'
-              ),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'District Breakfast'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'An unsweetened oolong with a hint of herbal sweetness.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'My childhood weekends were spent in the garden or the greenhouse. And when your parents are gardeners, sometimes herbs make it into your tea blends. District Breakfast mixes rich Oolong teas with a touch of tarragon to make what we believe is the perfect unsweetened tea. Our journey brought us to the District, let our breakfast tea refresh yours.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-9 out-of-season' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season' },
-                'Out Of Season'
-              ),
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Berry Season'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'Refreshing mix of 5 berry teas, Huckleberry, Raspberry, Blackberry, Mulberry, Strawberry. Raspberry leaves for finish.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Most of the country has a season in which local berries are abundant. In Seattle, blackberries are available all summer. At times in Georgia, mulberries rain down. Folks in the Twin Cities pick free raspberries. Runningbyrd Tea is bringing berry season to a bottle in DC, saving you the flights and sticky fingers.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'ca-item ca-item-6 out-of-season' },
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-item-main' },
-              _react2.default.createElement(
-                'span',
-                { className: 'out-of-season' },
-                'Out Of Season'
-              ),
-              _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
-              _react2.default.createElement(
-                'h3',
-                null,
-                'Candy Cane'
-              ),
-              _react2.default.createElement(
-                'h4',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  'A blend of cinnamon and peppermint teas, All the flavor of its namesake, but with an adult level of sweetness.'
-                )
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'ca-more' },
-                'Read the story'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'ca-content-wrapper' },
-              _react2.default.createElement(
-                'div',
-                { className: 'ca-content' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#', className: 'ca-close' },
-                  'close'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ca-content-text' },
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Every year, my brother and I found a giant candy cane log in our stockings. We would work on them for a month, keeping them untidily wrapped in the fridge, making sure not to grab the wrong stick.'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Candy Cane tea, a wintry mix of cinnamon and mint, stores more nicely on the shelf and can be shared more readily with friends.'
-                  ),
-                  _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Or not...'
-                  )
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Carousel;
-}(_react2.default.Component);
-
-exports.default = Carousel;
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  _reactDom2.default.render(_react2.default.createElement(Carousel, null), document.getElementById('ca-wrapper'));
-});
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -1042,7 +253,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1101,10 +312,10 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1120,7 +331,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(10);
+var emptyFunction = __webpack_require__(9);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -1174,10 +385,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1221,7 +432,7 @@ function reactProdInvariant(code) {
 module.exports = reactProdInvariant;
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1318,7 +529,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1334,12 +545,12 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var DOMProperty = __webpack_require__(14);
-var ReactDOMComponentFlags = __webpack_require__(59);
+var DOMProperty = __webpack_require__(13);
+var ReactDOMComponentFlags = __webpack_require__(58);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
 var Flags = ReactDOMComponentFlags;
@@ -1516,10 +727,10 @@ var ReactDOMComponentTree = {
 };
 
 module.exports = ReactDOMComponentTree;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1560,7 +771,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1577,12 +788,12 @@ module.exports = ExecutionEnvironment;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(16);
 
-var ReactCurrentOwner = __webpack_require__(12);
+var ReactCurrentOwner = __webpack_require__(11);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 function isNative(fn) {
   // Based on isNative() from Lodash
@@ -1897,10 +1108,10 @@ var ReactComponentTreeHook = {
 };
 
 module.exports = ReactComponentTreeHook;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1927,10 +1138,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = { debugTool: debugTool };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1974,7 +1185,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1990,16 +1201,16 @@ module.exports = emptyFunction;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(57);
-var PooledClass = __webpack_require__(15);
-var ReactFeatureFlags = __webpack_require__(62);
-var ReactReconciler = __webpack_require__(19);
-var Transaction = __webpack_require__(29);
+var CallbackQueue = __webpack_require__(56);
+var PooledClass = __webpack_require__(14);
+var ReactFeatureFlags = __webpack_require__(61);
+var ReactReconciler = __webpack_require__(18);
+var Transaction = __webpack_require__(28);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 var dirtyComponents = [];
 var updateBatchNumber = 0;
@@ -2228,10 +1439,10 @@ var ReactUpdates = {
 };
 
 module.exports = ReactUpdates;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2267,7 +1478,7 @@ var ReactCurrentOwner = {
 module.exports = ReactCurrentOwner;
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2283,12 +1494,12 @@ module.exports = ReactCurrentOwner;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(15);
+var PooledClass = __webpack_require__(14);
 
-var emptyFunction = __webpack_require__(10);
-var warning = __webpack_require__(3);
+var emptyFunction = __webpack_require__(9);
+var warning = __webpack_require__(2);
 
 var didWarnForAddedNewProperty = false;
 var isProxySupported = typeof Proxy === 'function';
@@ -2538,10 +1749,10 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
     process.env.NODE_ENV !== 'production' ? warning(warningCondition, 'This synthetic event is reused for performance reasons. If you\'re seeing this, ' + 'you\'re %s `%s` on a released/nullified synthetic event. %s. ' + 'If you must keep the original synthetic event around, use event.persist(). ' + 'See https://fb.me/react-event-pooling for more information.', action, propName, result) : void 0;
   }
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2557,9 +1768,9 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 function checkMask(value, bitmask) {
   return (value & bitmask) === bitmask;
@@ -2754,10 +1965,10 @@ var DOMProperty = {
 };
 
 module.exports = DOMProperty;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2774,9 +1985,9 @@ module.exports = DOMProperty;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Static poolers. Several custom versions for each potential number of
@@ -2872,10 +2083,10 @@ var PooledClass = {
 };
 
 module.exports = PooledClass;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2891,15 +2102,15 @@ module.exports = PooledClass;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var ReactCurrentOwner = __webpack_require__(12);
+var ReactCurrentOwner = __webpack_require__(11);
 
-var warning = __webpack_require__(3);
-var canDefineProperty = __webpack_require__(32);
+var warning = __webpack_require__(2);
+var canDefineProperty = __webpack_require__(31);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(77);
+var REACT_ELEMENT_TYPE = __webpack_require__(76);
 
 var RESERVED_PROPS = {
   key: true,
@@ -3219,10 +2430,10 @@ ReactElement.isValidElement = function (object) {
 };
 
 module.exports = ReactElement;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3266,7 +2477,7 @@ function reactProdInvariant(code) {
 module.exports = reactProdInvariant;
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3282,11 +2493,11 @@ module.exports = reactProdInvariant;
 
 
 
-var DOMNamespaces = __webpack_require__(35);
-var setInnerHTML = __webpack_require__(31);
+var DOMNamespaces = __webpack_require__(34);
+var setInnerHTML = __webpack_require__(30);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(42);
-var setTextContent = __webpack_require__(75);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(41);
+var setTextContent = __webpack_require__(74);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -3389,7 +2600,7 @@ DOMLazyTree.queueText = queueText;
 module.exports = DOMLazyTree;
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3406,9 +2617,9 @@ module.exports = DOMLazyTree;
 
 
 var ReactRef = __webpack_require__(140);
-var ReactInstrumentation = __webpack_require__(9);
+var ReactInstrumentation = __webpack_require__(8);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 /**
  * Helper to call ReactRef.attachRefs with this composite component, split out
@@ -3560,10 +2771,10 @@ var ReactReconciler = {
 };
 
 module.exports = ReactReconciler;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3579,27 +2790,27 @@ module.exports = ReactReconciler;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
 var ReactChildren = __webpack_require__(170);
-var ReactComponent = __webpack_require__(49);
+var ReactComponent = __webpack_require__(48);
 var ReactPureComponent = __webpack_require__(175);
 var ReactClass = __webpack_require__(171);
 var ReactDOMFactories = __webpack_require__(172);
-var ReactElement = __webpack_require__(16);
+var ReactElement = __webpack_require__(15);
 var ReactPropTypes = __webpack_require__(173);
 var ReactVersion = __webpack_require__(176);
 
 var onlyChild = __webpack_require__(179);
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var createElement = ReactElement.createElement;
 var createFactory = ReactElement.createFactory;
 var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
-  var canDefineProperty = __webpack_require__(32);
-  var ReactElementValidator = __webpack_require__(78);
+  var canDefineProperty = __webpack_require__(31);
+  var ReactElementValidator = __webpack_require__(77);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -3670,10 +2881,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = React;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3696,10 +2907,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3715,15 +2926,15 @@ module.exports = emptyObject;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(26);
-var EventPluginUtils = __webpack_require__(36);
-var ReactErrorUtils = __webpack_require__(40);
+var EventPluginRegistry = __webpack_require__(25);
+var EventPluginUtils = __webpack_require__(35);
+var ReactErrorUtils = __webpack_require__(39);
 
-var accumulateInto = __webpack_require__(69);
-var forEachAccumulated = __webpack_require__(70);
-var invariant = __webpack_require__(2);
+var accumulateInto = __webpack_require__(68);
+var forEachAccumulated = __webpack_require__(69);
+var invariant = __webpack_require__(1);
 
 /**
  * Internal store for event listeners
@@ -3980,10 +3191,10 @@ var EventPluginHub = {
 };
 
 module.exports = EventPluginHub;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3999,12 +3210,12 @@ module.exports = EventPluginHub;
 
 
 
-var EventPluginHub = __webpack_require__(22);
-var EventPluginUtils = __webpack_require__(36);
+var EventPluginHub = __webpack_require__(21);
+var EventPluginUtils = __webpack_require__(35);
 
-var accumulateInto = __webpack_require__(69);
-var forEachAccumulated = __webpack_require__(70);
-var warning = __webpack_require__(3);
+var accumulateInto = __webpack_require__(68);
+var forEachAccumulated = __webpack_require__(69);
+var warning = __webpack_require__(2);
 
 var getListener = EventPluginHub.getListener;
 
@@ -4120,10 +3331,10 @@ var EventPropagators = {
 };
 
 module.exports = EventPropagators;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4176,7 +3387,7 @@ var ReactInstanceMap = {
 module.exports = ReactInstanceMap;
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4192,9 +3403,9 @@ module.exports = ReactInstanceMap;
 
 
 
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 
-var getEventTarget = __webpack_require__(45);
+var getEventTarget = __webpack_require__(44);
 
 /**
  * @interface UIEvent
@@ -4240,7 +3451,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 module.exports = SyntheticUIEvent;
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4257,9 +3468,9 @@ module.exports = SyntheticUIEvent;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Injectable ordering of event plugins.
@@ -4498,10 +3709,10 @@ var EventPluginRegistry = {
 };
 
 module.exports = EventPluginRegistry;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4517,14 +3728,14 @@ module.exports = EventPluginRegistry;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var EventPluginRegistry = __webpack_require__(26);
+var EventPluginRegistry = __webpack_require__(25);
 var ReactEventEmitterMixin = __webpack_require__(130);
-var ViewportMetrics = __webpack_require__(68);
+var ViewportMetrics = __webpack_require__(67);
 
 var getVendorPrefixedEventName = __webpack_require__(165);
-var isEventSupported = __webpack_require__(46);
+var isEventSupported = __webpack_require__(45);
 
 /**
  * Summary of `ReactBrowserEventEmitter` event handling:
@@ -4834,7 +4045,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4850,10 +4061,10 @@ module.exports = ReactBrowserEventEmitter;
 
 
 
-var SyntheticUIEvent = __webpack_require__(25);
-var ViewportMetrics = __webpack_require__(68);
+var SyntheticUIEvent = __webpack_require__(24);
+var ViewportMetrics = __webpack_require__(67);
 
-var getEventModifierState = __webpack_require__(44);
+var getEventModifierState = __webpack_require__(43);
 
 /**
  * @interface MouseEvent
@@ -4911,7 +4122,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4928,9 +4139,9 @@ module.exports = SyntheticMouseEvent;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 var OBSERVED_ERROR = {};
 
@@ -5139,10 +4350,10 @@ var TransactionImpl = {
 };
 
 module.exports = TransactionImpl;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5270,7 +4481,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5286,13 +4497,13 @@ module.exports = escapeTextContentForBrowser;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
-var DOMNamespaces = __webpack_require__(35);
+var ExecutionEnvironment = __webpack_require__(6);
+var DOMNamespaces = __webpack_require__(34);
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(42);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(41);
 
 // SVG temp container for IE lacking innerHTML
 var reusableSVGContainer;
@@ -5373,7 +4584,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5402,10 +4613,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = canDefineProperty;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5478,7 +4689,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5494,14 +4705,14 @@ module.exports = shallowEqual;
 
 
 
-var DOMLazyTree = __webpack_require__(18);
+var DOMLazyTree = __webpack_require__(17);
 var Danger = __webpack_require__(103);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInstrumentation = __webpack_require__(9);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactInstrumentation = __webpack_require__(8);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(42);
-var setInnerHTML = __webpack_require__(31);
-var setTextContent = __webpack_require__(75);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(30);
+var setTextContent = __webpack_require__(74);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -5706,10 +4917,10 @@ var DOMChildrenOperations = {
 };
 
 module.exports = DOMChildrenOperations;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5734,7 +4945,7 @@ var DOMNamespaces = {
 module.exports = DOMNamespaces;
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5750,12 +4961,12 @@ module.exports = DOMNamespaces;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var ReactErrorUtils = __webpack_require__(40);
+var ReactErrorUtils = __webpack_require__(39);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 /**
  * Injected dependencies:
@@ -5963,10 +5174,10 @@ var EventPluginUtils = {
 };
 
 module.exports = EventPluginUtils;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6030,7 +5241,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6046,16 +5257,16 @@ module.exports = KeyEscapeUtils;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(67);
-var propTypesFactory = __webpack_require__(54);
+var ReactPropTypesSecret = __webpack_require__(66);
+var propTypesFactory = __webpack_require__(53);
 
-var React = __webpack_require__(20);
+var React = __webpack_require__(19);
 var PropTypes = propTypesFactory(React.isValidElement);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 var hasReadOnlyValue = {
   'button': true,
@@ -6171,10 +5382,10 @@ var LinkedValueUtils = {
 };
 
 module.exports = LinkedValueUtils;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6191,9 +5402,9 @@ module.exports = LinkedValueUtils;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 var injected = false;
 
@@ -6223,10 +5434,10 @@ var ReactComponentEnvironment = {
 };
 
 module.exports = ReactComponentEnvironment;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6305,10 +5516,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactErrorUtils;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6324,15 +5535,15 @@ module.exports = ReactErrorUtils;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var ReactCurrentOwner = __webpack_require__(12);
-var ReactInstanceMap = __webpack_require__(24);
-var ReactInstrumentation = __webpack_require__(9);
-var ReactUpdates = __webpack_require__(11);
+var ReactCurrentOwner = __webpack_require__(11);
+var ReactInstanceMap = __webpack_require__(23);
+var ReactInstrumentation = __webpack_require__(8);
+var ReactUpdates = __webpack_require__(10);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 function enqueueUpdate(internalInstance) {
   ReactUpdates.enqueueUpdate(internalInstance);
@@ -6547,10 +5758,10 @@ var ReactUpdateQueue = {
 };
 
 module.exports = ReactUpdateQueue;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6587,7 +5798,7 @@ var createMicrosoftUnsafeLocalFunction = function (func) {
 module.exports = createMicrosoftUnsafeLocalFunction;
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6642,7 +5853,7 @@ function getEventCharCode(nativeEvent) {
 module.exports = getEventCharCode;
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6690,7 +5901,7 @@ function getEventModifierState(nativeEvent) {
 module.exports = getEventModifierState;
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6730,7 +5941,7 @@ function getEventTarget(nativeEvent) {
 module.exports = getEventTarget;
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6746,7 +5957,7 @@ module.exports = getEventTarget;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var useHasFeature;
 if (ExecutionEnvironment.canUseDOM) {
@@ -6795,7 +6006,7 @@ function isEventSupported(eventNameSuffix, capture) {
 module.exports = isEventSupported;
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6842,7 +6053,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 module.exports = shouldUpdateReactComponent;
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6858,10 +6069,10 @@ module.exports = shouldUpdateReactComponent;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var emptyFunction = __webpack_require__(10);
-var warning = __webpack_require__(3);
+var emptyFunction = __webpack_require__(9);
+var warning = __webpack_require__(2);
 
 var validateDOMNesting = emptyFunction;
 
@@ -7222,10 +6433,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = validateDOMNesting;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7241,14 +6452,14 @@ module.exports = validateDOMNesting;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(16);
 
-var ReactNoopUpdateQueue = __webpack_require__(50);
+var ReactNoopUpdateQueue = __webpack_require__(49);
 
-var canDefineProperty = __webpack_require__(32);
-var emptyObject = __webpack_require__(21);
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var canDefineProperty = __webpack_require__(31);
+var emptyObject = __webpack_require__(20);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 /**
  * Base class helpers for the updating state of a component.
@@ -7346,10 +6557,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactComponent;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7365,7 +6576,7 @@ module.exports = ReactComponent;
 
 
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 function warnNoop(publicInstance, callerName) {
   if (process.env.NODE_ENV !== 'production') {
@@ -7448,10 +6659,10 @@ var ReactNoopUpdateQueue = {
 };
 
 module.exports = ReactNoopUpdateQueue;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7475,7 +6686,7 @@ module.exports = ReactNoopUpdateQueue;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(10);
+var emptyFunction = __webpack_require__(9);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -7538,10 +6749,10 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7573,7 +6784,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7617,7 +6828,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7632,11 +6843,11 @@ module.exports = getActiveElement;
 
 
 
-var emptyFunction = __webpack_require__(10);
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var emptyFunction = __webpack_require__(9);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(55);
+var ReactPropTypesSecret = __webpack_require__(54);
 var checkPropTypes = __webpack_require__(97);
 
 module.exports = function (isValidElement) {
@@ -8106,10 +7317,10 @@ module.exports = function (isValidElement) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8130,7 +7341,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8283,7 +7494,7 @@ var CSSProperty = {
 module.exports = CSSProperty;
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8300,13 +7511,13 @@ module.exports = CSSProperty;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var PooledClass = __webpack_require__(15);
+var PooledClass = __webpack_require__(14);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * A specialized pseudo-event module to help keep track of components waiting to
@@ -8405,10 +7616,10 @@ var CallbackQueue = function () {
 }();
 
 module.exports = PooledClass.addPoolingTo(CallbackQueue);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8424,12 +7635,12 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(14);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInstrumentation = __webpack_require__(9);
+var DOMProperty = __webpack_require__(13);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactInstrumentation = __webpack_require__(8);
 
 var quoteAttributeValueForBrowser = __webpack_require__(166);
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
 var illegalAttributeNameCache = {};
@@ -8648,10 +7859,10 @@ var DOMPropertyOperations = {
 };
 
 module.exports = DOMPropertyOperations;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8674,7 +7885,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8690,13 +7901,13 @@ module.exports = ReactDOMComponentFlags;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var LinkedValueUtils = __webpack_require__(38);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactUpdates = __webpack_require__(11);
+var LinkedValueUtils = __webpack_require__(37);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactUpdates = __webpack_require__(10);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var didWarnValueLink = false;
 var didWarnValueDefaultValue = false;
@@ -8877,10 +8088,10 @@ function _handleChange(event) {
 }
 
 module.exports = ReactDOMSelect;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8915,7 +8126,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8942,7 +8153,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8958,9 +8169,9 @@ module.exports = ReactFeatureFlags;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 var genericComponentClass = null;
 var textComponentClass = null;
@@ -9013,10 +8224,10 @@ var ReactHostComponent = {
 };
 
 module.exports = ReactHostComponent;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9035,8 +8246,8 @@ module.exports = ReactHostComponent;
 var ReactDOMSelection = __webpack_require__(121);
 
 var containsNode = __webpack_require__(85);
-var focusNode = __webpack_require__(52);
-var getActiveElement = __webpack_require__(53);
+var focusNode = __webpack_require__(51);
+var getActiveElement = __webpack_require__(52);
 
 function isInDocument(node) {
   return containsNode(document.documentElement, node);
@@ -9145,7 +8356,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9161,30 +8372,30 @@ module.exports = ReactInputSelection;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(18);
-var DOMProperty = __webpack_require__(14);
-var React = __webpack_require__(20);
-var ReactBrowserEventEmitter = __webpack_require__(27);
-var ReactCurrentOwner = __webpack_require__(12);
-var ReactDOMComponentTree = __webpack_require__(6);
+var DOMLazyTree = __webpack_require__(17);
+var DOMProperty = __webpack_require__(13);
+var React = __webpack_require__(19);
+var ReactBrowserEventEmitter = __webpack_require__(26);
+var ReactCurrentOwner = __webpack_require__(11);
+var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMContainerInfo = __webpack_require__(113);
 var ReactDOMFeatureFlags = __webpack_require__(115);
-var ReactFeatureFlags = __webpack_require__(62);
-var ReactInstanceMap = __webpack_require__(24);
-var ReactInstrumentation = __webpack_require__(9);
+var ReactFeatureFlags = __webpack_require__(61);
+var ReactInstanceMap = __webpack_require__(23);
+var ReactInstrumentation = __webpack_require__(8);
 var ReactMarkupChecksum = __webpack_require__(135);
-var ReactReconciler = __webpack_require__(19);
-var ReactUpdateQueue = __webpack_require__(41);
-var ReactUpdates = __webpack_require__(11);
+var ReactReconciler = __webpack_require__(18);
+var ReactUpdateQueue = __webpack_require__(40);
+var ReactUpdates = __webpack_require__(10);
 
-var emptyObject = __webpack_require__(21);
-var instantiateReactComponent = __webpack_require__(73);
-var invariant = __webpack_require__(2);
-var setInnerHTML = __webpack_require__(31);
-var shouldUpdateReactComponent = __webpack_require__(47);
-var warning = __webpack_require__(3);
+var emptyObject = __webpack_require__(20);
+var instantiateReactComponent = __webpack_require__(72);
+var invariant = __webpack_require__(1);
+var setInnerHTML = __webpack_require__(30);
+var shouldUpdateReactComponent = __webpack_require__(46);
+var warning = __webpack_require__(2);
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
 var ROOT_ATTR_NAME = DOMProperty.ROOT_ATTRIBUTE_NAME;
@@ -9686,10 +8897,10 @@ var ReactMount = {
 };
 
 module.exports = ReactMount;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9706,11 +8917,11 @@ module.exports = ReactMount;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var React = __webpack_require__(20);
+var React = __webpack_require__(19);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 var ReactNodeTypes = {
   HOST: 0,
@@ -9732,10 +8943,10 @@ var ReactNodeTypes = {
 };
 
 module.exports = ReactNodeTypes;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9757,7 +8968,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9789,7 +9000,7 @@ var ViewportMetrics = {
 module.exports = ViewportMetrics;
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9806,9 +9017,9 @@ module.exports = ViewportMetrics;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Accumulates items that must not be null or undefined into the first one. This
@@ -9850,10 +9061,10 @@ function accumulateInto(current, next) {
 }
 
 module.exports = accumulateInto;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9889,7 +9100,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9905,7 +9116,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ReactNodeTypes = __webpack_require__(66);
+var ReactNodeTypes = __webpack_require__(65);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -9924,7 +9135,7 @@ function getHostComponentFromComposite(inst) {
 module.exports = getHostComponentFromComposite;
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9940,7 +9151,7 @@ module.exports = getHostComponentFromComposite;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var contentKey = null;
 
@@ -9962,7 +9173,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9978,16 +9189,16 @@ module.exports = getTextContentAccessor;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
 var ReactCompositeComponent = __webpack_require__(110);
-var ReactEmptyComponent = __webpack_require__(61);
-var ReactHostComponent = __webpack_require__(63);
+var ReactEmptyComponent = __webpack_require__(60);
+var ReactHostComponent = __webpack_require__(62);
 
 var getNextDebugID = __webpack_require__(178);
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 // To avoid a cyclic dependency, we create the final class in this module
 var ReactCompositeComponentWrapper = function (element) {
@@ -10094,10 +9305,10 @@ _assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent, {
 });
 
 module.exports = instantiateReactComponent;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10153,7 +9364,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10169,9 +9380,9 @@ module.exports = isTextInputElement;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
-var escapeTextContentForBrowser = __webpack_require__(30);
-var setInnerHTML = __webpack_require__(31);
+var ExecutionEnvironment = __webpack_require__(6);
+var escapeTextContentForBrowser = __webpack_require__(29);
+var setInnerHTML = __webpack_require__(30);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -10210,7 +9421,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10226,15 +9437,15 @@ module.exports = setTextContent;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var ReactCurrentOwner = __webpack_require__(12);
+var ReactCurrentOwner = __webpack_require__(11);
 var REACT_ELEMENT_TYPE = __webpack_require__(129);
 
 var getIteratorFn = __webpack_require__(163);
-var invariant = __webpack_require__(2);
-var KeyEscapeUtils = __webpack_require__(37);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var KeyEscapeUtils = __webpack_require__(36);
+var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
 var SUBSEPARATOR = ':';
@@ -10389,10 +9600,10 @@ function traverseAllChildren(children, callback, traverseContext) {
 }
 
 module.exports = traverseAllChildren;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10417,7 +9628,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10440,15 +9651,15 @@ module.exports = REACT_ELEMENT_TYPE;
 
 
 
-var ReactCurrentOwner = __webpack_require__(12);
-var ReactComponentTreeHook = __webpack_require__(8);
-var ReactElement = __webpack_require__(16);
+var ReactCurrentOwner = __webpack_require__(11);
+var ReactComponentTreeHook = __webpack_require__(7);
+var ReactElement = __webpack_require__(15);
 
 var checkReactTypeSpec = __webpack_require__(177);
 
-var canDefineProperty = __webpack_require__(32);
-var getIteratorFn = __webpack_require__(80);
-var warning = __webpack_require__(3);
+var canDefineProperty = __webpack_require__(31);
+var getIteratorFn = __webpack_require__(79);
+var warning = __webpack_require__(2);
 
 function getDeclarationErrorAddendum() {
   if (ReactCurrentOwner.current) {
@@ -10673,10 +9884,10 @@ var ReactElementValidator = {
 };
 
 module.exports = ReactElementValidator;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10704,10 +9915,10 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactPropTypeLocationNames;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10753,7 +9964,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10763,14 +9974,877 @@ module.exports = __webpack_require__(111);
 
 
 /***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(19);
+
+
+/***/ }),
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(20);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(81);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(80);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _shopifyBuy = __webpack_require__(182);
+
+var _shopifyBuy2 = _interopRequireDefault(_shopifyBuy);
+
+var _shopping_cart = __webpack_require__(189);
+
+var _shopping_cart2 = _interopRequireDefault(_shopping_cart);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Carousel = function (_React$Component) {
+  _inherits(Carousel, _React$Component);
+
+  function Carousel(props) {
+    _classCallCheck(this, Carousel);
+
+    var _this = _possibleConstructorReturn(this, (Carousel.__proto__ || Object.getPrototypeOf(Carousel)).call(this, props));
+
+    _this.state = {
+      shopifyClient: "",
+      cart: ""
+    };
+
+    _this.addToCart = _this.addToCart.bind(_this);
+    return _this;
+  }
+
+  _createClass(Carousel, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var _this2 = this;
+
+      var newShopifyClient = _shopifyBuy2.default.buildClient({
+        domain: 'adrian-test-store.myshopify.com',
+        accessToken: 'a34f449fa755290f5441c327c17f0338',
+        appId: '6'
+      });
+
+      this.setState({ shopifyClient: newShopifyClient });
+
+      newShopifyClient.createCart().then(function (newCart) {
+        _this2.setState({ cart: newCart });
+        // console.log(this.state.cart.checkoutUrl);
+      });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      $('#ca-container').contentcarousel();
+    }
+  }, {
+    key: 'addToCart',
+    value: function addToCart(itemId) {
+      var _this3 = this;
+
+      var selectedVariant = void 0;
+      this.state.shopifyClient.fetchProduct(itemId).then(function (fetchedProduct) {
+        selectedVariant = fetchedProduct.selectedVariant;
+      }).then(function () {
+        _this3.state.cart.createLineItemsFromVariants({ variant: selectedVariant, quantity: 1 }).then(function (cart) {
+          console.log(cart);
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_shopping_cart2.default, null),
+        _react2.default.createElement(
+          'div',
+          { id: 'ca-container', className: 'ca-container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'ca-wrapper' },
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-13' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main in-season' },
+                _react2.default.createElement('div', { className: 'ca-icon' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Peachy. Delicious.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  {
+                    className: 'buy-button-container',
+                    onClick: this.addToCart.bind(this, 9891387715) },
+                  'ADD TO CART'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h3',
+                      null,
+                      'George\'s Peach'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'George\'s Peach is dedicated to the memory of my father, the original Runningbyrd. Time spent driving Highway 441 past peach orchards in our home state help define its flavor, along with the stories and laughs we shared over tall jars of iced tea on countless southern porches. While he missed Runningbyrd Tea\'s final journey to the bottle, I\'ve created George\'s Peach to share some of his spirit with our customers.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-4' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main in-season' },
+                _react2.default.createElement('div', { className: 'ca-icon' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Indian masala chai tea. Peppery finish.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  {
+                    className: 'buy-button-container',
+                    onClick: this.addToCart.bind(this, 9904759939) },
+                  'ADD TO CART'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h3',
+                      null,
+                      'Summer Rain'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'On hot nights, nothing compares to sitting on the front porch swing feeling a thunderstorm roll in, its wind ruffling your feathers, its fire making you cool. We\u2019ve had a long summer, so open a bottle of this spiced tea to swing the breezes your way. If slowly savored, lightning will crash on your palate.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-5' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main in-season' },
+                _react2.default.createElement('div', { className: 'ca-icon' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Thai inspired spiced chai tea, notes of lemongrass and ginger.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  {
+                    className: 'buy-button-container',
+                    onClick: this.addToCart.bind(this, 9904780419) },
+                  'ADD TO CART'
+                ),
+                _react2.default.createElement('div', { id: 'carousel-buy-button' })
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h3',
+                      null,
+                      'Spiced Thai'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'While visiting tea plantations in Thailand, I met an elderly man who spent his entire working life tasting teas, judging and critiquing their flavor. I created Spicy Thai for him, melding the flavors of my trip with an idea that he might taste something different after all these years, gifting him a new experience that still felt like an old friend.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-2' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement('div', { className: 'ca-icon' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Blended with lemongrass, white peach tea and a touch of lavender, a lower caffeine, unsweetened option for today\'s modern lifestyle.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h3',
+                      null,
+                      'Lemongrass White Peach'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Over the past year, the RBTea Co has welcomed the opportunity to share our stories with DC and listen to your stories. It has been a great experience. We have heard from many customers who just can\'t have sugar and others who want to enjoy tea at night but need less caffeine.And so we have created Lemongrass White Peach,a no sugar, lower caffeine blend that fits the best parts of our story to the needs of yours. DC, enjoy your story.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-1' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main in-season' },
+                _react2.default.createElement('div', { className: 'ca-icon' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'A lightly minty tea that tells a story you\'ll want to hear again and again.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h3',
+                      null,
+                      'Montgomery Mint'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'The Montgomery house in Georgia is a place where travelers, family and friends meet on the front porch, sharing stories between sips. Our childhood there began with a swing from the walnut tree out back, grew into a climb up the magnolia in front and ended with a glass of tea, poured from a carafe always kept full. Without that tea and those fine people, RBTea would not exist. We pay homage with a smooth, welcoming mint tea. Find a friend and some shade; brew your story.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-3' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main in-season' },
+                _react2.default.createElement('div', { className: 'ca-icon' }),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Smoked hazlenut tea, spiced pu erh finish.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h3',
+                      null,
+                      'Shenandoah Smoke'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Shenandoah Smoke is hand crafted from the finest smoked teas, blended with hazelnut and spices for an almost coffee-like flavor.'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'No storytelling is needed for this substantial tea; it\'s just hard-hitting flavor for the lumberjack in us all.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-10 out-of-season' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season coming-soon' },
+                  '4th of July Only'
+                ),
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon slices' }),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'Apple Pie'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'An American tradition, mix of apple teas with notes of cinnamon and vanilla.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Independence Day in my Georgia home meant deciding whether to make the run to Carolina for fireworks. Everyone has a different tradition for the 4th, but across the south, sweet tea and apple pie come standard. Runningbyrd Tea combines those flavors for an Independence Day Special, Apple Pie Tea'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Fireworks not included.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-11 whole-food-exclusive' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season coming-soon' },
+                  'Whole Foods Exclusive'
+                ),
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'Chocolate Peppermint'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Tastes like a peppermint patty. Very refreshing.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Legend has it that John Henry, after bursting his heart defeating the steam powered hammer, asked for two cool drinks of water. I imagine Chocolate Peppermint as those two cool drinks; two flavors, blending to provide a refreshing calm. It is a tea to give pause, to separate your long hard day from the relaxing evening to come.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-8 out-of-season' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season' },
+                  'Out Of Season'
+                ),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'Apple Cider Tea'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'A fall mix of hibiscus, rosehips and apple teas. Mulling spices for warmth, wrapped in caramel'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'We gather fresh apples in myriad ways. I used to wait for my little brothers to waltz back down Rural Route 2 pushing a stroller filled with Jonagold, but my godsons race through crunchy leaves to beat each other to the best Braeburn. If time or circumstance keeps you from picking your own apples this season, pluck a bottle of Apple Cider Tea from the shelf instead.'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Apple cider tea is a perfect mix of mulling spices, apple and tea. Let it keep you company in your orchard this autumn.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-7 out-of-season' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season' },
+                  'Out Of Season'
+                ),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'Winter Sun'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'A spiced orange tea, hints of grapefruit and sweet oolong.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'On a dreary winter day it can seem like months since you\'ve seen the sun.'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Fortunately, RunningbyTea Co has figured out how to bottle this precious resource.'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Let Winter Sun tea light up your life with its warming blend of orange and spiced teas'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-12 out-of-season' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main in-season' },
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon breakfast' }),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season' },
+                  'Out Of Season'
+                ),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'District Breakfast'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'An unsweetened oolong with a hint of herbal sweetness.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'My childhood weekends were spent in the garden or the greenhouse. And when your parents are gardeners, sometimes herbs make it into your tea blends. District Breakfast mixes rich Oolong teas with a touch of tarragon to make what we believe is the perfect unsweetened tea. Our journey brought us to the District, let our breakfast tea refresh yours.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-9 out-of-season' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season' },
+                  'Out Of Season'
+                ),
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'Berry Season'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Refreshing mix of 5 berry teas, Huckleberry, Raspberry, Blackberry, Mulberry, Strawberry. Raspberry leaves for finish.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Most of the country has a season in which local berries are abundant. In Seattle, blackberries are available all summer. At times in Georgia, mulberries rain down. Folks in the Twin Cities pick free raspberries. Runningbyrd Tea is bringing berry season to a bottle in DC, saving you the flights and sticky fingers.'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'ca-item ca-item-6 out-of-season' },
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-item-main' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'out-of-season' },
+                  'Out Of Season'
+                ),
+                _react2.default.createElement('div', { className: 'ca-icon flavor-icon' }),
+                _react2.default.createElement(
+                  'h3',
+                  null,
+                  'Candy Cane'
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'A blend of cinnamon and peppermint teas, All the flavor of its namesake, but with an adult level of sweetness.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: '#', className: 'ca-more' },
+                  'Read the story'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'ca-content-wrapper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ca-content' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: '#', className: 'ca-close' },
+                    'close'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'ca-content-text' },
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Every year, my brother and I found a giant candy cane log in our stockings. We would work on them for a month, keeping them untidily wrapped in the fridge, making sure not to grab the wrong stick.'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Candy Cane tea, a wintry mix of cinnamon and mint, stores more nicely on the shelf and can be shared more readily with friends.'
+                    ),
+                    _react2.default.createElement(
+                      'h6',
+                      null,
+                      'Or not...'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Carousel;
+}(_react2.default.Component);
+
+exports.default = Carousel;
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  _reactDom2.default.render(_react2.default.createElement(Carousel, null), document.getElementById('ca-react-component'));
+});
 
 /***/ }),
 /* 83 */
@@ -10917,7 +10991,7 @@ module.exports = containsNode;
  * @typechecks
  */
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Convert array-like objects to arrays.
@@ -11030,7 +11104,7 @@ function createArrayFromMixed(obj) {
 }
 
 module.exports = createArrayFromMixed;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 87 */
@@ -11052,11 +11126,11 @@ module.exports = createArrayFromMixed;
 
 /*eslint-disable fb-www/unsafe-html*/
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var createArrayFromMixed = __webpack_require__(86);
 var getMarkupWrap = __webpack_require__(88);
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Dummy container used to render all markup.
@@ -11120,7 +11194,7 @@ function createNodesFromMarkup(markup, handleScript) {
 }
 
 module.exports = createNodesFromMarkup;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 88 */
@@ -11141,9 +11215,9 @@ module.exports = createNodesFromMarkup;
 
 /*eslint-disable fb-www/unsafe-html */
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Dummy container used to detect which wraps are necessary.
@@ -11221,7 +11295,7 @@ function getMarkupWrap(nodeName) {
 }
 
 module.exports = getMarkupWrap;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 89 */
@@ -11462,7 +11536,7 @@ module.exports = memoizeStringOnly;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var performance;
 
@@ -11527,10 +11601,10 @@ module.exports = performanceNow;
 
 
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(55);
+var ReactPropTypesSecret = __webpack_require__(54);
 
 var loggedTypeFailures = {};
 
@@ -11578,7 +11652,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 98 */
@@ -11676,9 +11750,9 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var ReactDOMComponentTree = __webpack_require__(6);
+var ReactDOMComponentTree = __webpack_require__(5);
 
-var focusNode = __webpack_require__(52);
+var focusNode = __webpack_require__(51);
 
 var AutoFocusUtils = {
   focusDOMComponent: function () {
@@ -11705,8 +11779,8 @@ module.exports = AutoFocusUtils;
 
 
 
-var EventPropagators = __webpack_require__(23);
-var ExecutionEnvironment = __webpack_require__(7);
+var EventPropagators = __webpack_require__(22);
+var ExecutionEnvironment = __webpack_require__(6);
 var FallbackCompositionState = __webpack_require__(106);
 var SyntheticCompositionEvent = __webpack_require__(149);
 var SyntheticInputEvent = __webpack_require__(152);
@@ -12095,15 +12169,15 @@ module.exports = BeforeInputEventPlugin;
 
 
 
-var CSSProperty = __webpack_require__(56);
-var ExecutionEnvironment = __webpack_require__(7);
-var ReactInstrumentation = __webpack_require__(9);
+var CSSProperty = __webpack_require__(55);
+var ExecutionEnvironment = __webpack_require__(6);
+var ReactInstrumentation = __webpack_require__(8);
 
 var camelizeStyleName = __webpack_require__(84);
 var dangerousStyleValue = __webpack_require__(159);
 var hyphenateStyleName = __webpack_require__(91);
 var memoizeStringOnly = __webpack_require__(94);
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
   return hyphenateStyleName(styleName);
@@ -12291,7 +12365,7 @@ var CSSPropertyOperations = {
 };
 
 module.exports = CSSPropertyOperations;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 102 */
@@ -12310,16 +12384,16 @@ module.exports = CSSPropertyOperations;
 
 
 
-var EventPluginHub = __webpack_require__(22);
-var EventPropagators = __webpack_require__(23);
-var ExecutionEnvironment = __webpack_require__(7);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactUpdates = __webpack_require__(11);
-var SyntheticEvent = __webpack_require__(13);
+var EventPluginHub = __webpack_require__(21);
+var EventPropagators = __webpack_require__(22);
+var ExecutionEnvironment = __webpack_require__(6);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactUpdates = __webpack_require__(10);
+var SyntheticEvent = __webpack_require__(12);
 
-var getEventTarget = __webpack_require__(45);
-var isEventSupported = __webpack_require__(46);
-var isTextInputElement = __webpack_require__(74);
+var getEventTarget = __webpack_require__(44);
+var isEventSupported = __webpack_require__(45);
+var isTextInputElement = __webpack_require__(73);
 
 var eventTypes = {
   change: {
@@ -12661,14 +12735,14 @@ module.exports = ChangeEventPlugin;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(18);
-var ExecutionEnvironment = __webpack_require__(7);
+var DOMLazyTree = __webpack_require__(17);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var createNodesFromMarkup = __webpack_require__(87);
-var emptyFunction = __webpack_require__(10);
-var invariant = __webpack_require__(2);
+var emptyFunction = __webpack_require__(9);
+var invariant = __webpack_require__(1);
 
 var Danger = {
 
@@ -12696,7 +12770,7 @@ var Danger = {
 };
 
 module.exports = Danger;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 104 */
@@ -12746,9 +12820,9 @@ module.exports = DefaultEventPluginOrder;
 
 
 
-var EventPropagators = __webpack_require__(23);
-var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticMouseEvent = __webpack_require__(28);
+var EventPropagators = __webpack_require__(22);
+var ReactDOMComponentTree = __webpack_require__(5);
+var SyntheticMouseEvent = __webpack_require__(27);
 
 var eventTypes = {
   mouseEnter: {
@@ -12851,11 +12925,11 @@ module.exports = EnterLeaveEventPlugin;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(15);
+var PooledClass = __webpack_require__(14);
 
-var getTextContentAccessor = __webpack_require__(72);
+var getTextContentAccessor = __webpack_require__(71);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -12951,7 +13025,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(14);
+var DOMProperty = __webpack_require__(13);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -13192,13 +13266,13 @@ module.exports = HTMLDOMPropertyConfig;
 
 
 
-var ReactReconciler = __webpack_require__(19);
+var ReactReconciler = __webpack_require__(18);
 
-var instantiateReactComponent = __webpack_require__(73);
-var KeyEscapeUtils = __webpack_require__(37);
-var shouldUpdateReactComponent = __webpack_require__(47);
-var traverseAllChildren = __webpack_require__(76);
-var warning = __webpack_require__(3);
+var instantiateReactComponent = __webpack_require__(72);
+var KeyEscapeUtils = __webpack_require__(36);
+var shouldUpdateReactComponent = __webpack_require__(46);
+var traverseAllChildren = __webpack_require__(75);
+var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
@@ -13208,7 +13282,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 function instantiateChild(childInstances, child, name, selfDebugID) {
@@ -13216,7 +13290,7 @@ function instantiateChild(childInstances, child, name, selfDebugID) {
   var keyUnique = childInstances[name] === undefined;
   if (process.env.NODE_ENV !== 'production') {
     if (!ReactComponentTreeHook) {
-      ReactComponentTreeHook = __webpack_require__(8);
+      ReactComponentTreeHook = __webpack_require__(7);
     }
     if (!keyUnique) {
       process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -13333,7 +13407,7 @@ var ReactChildReconciler = {
 };
 
 module.exports = ReactChildReconciler;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 109 */
@@ -13352,7 +13426,7 @@ module.exports = ReactChildReconciler;
 
 
 
-var DOMChildrenOperations = __webpack_require__(34);
+var DOMChildrenOperations = __webpack_require__(33);
 var ReactDOMIDOperations = __webpack_require__(116);
 
 /**
@@ -13387,27 +13461,27 @@ module.exports = ReactComponentBrowserEnvironment;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
-var React = __webpack_require__(20);
-var ReactComponentEnvironment = __webpack_require__(39);
-var ReactCurrentOwner = __webpack_require__(12);
-var ReactErrorUtils = __webpack_require__(40);
-var ReactInstanceMap = __webpack_require__(24);
-var ReactInstrumentation = __webpack_require__(9);
-var ReactNodeTypes = __webpack_require__(66);
-var ReactReconciler = __webpack_require__(19);
+var React = __webpack_require__(19);
+var ReactComponentEnvironment = __webpack_require__(38);
+var ReactCurrentOwner = __webpack_require__(11);
+var ReactErrorUtils = __webpack_require__(39);
+var ReactInstanceMap = __webpack_require__(23);
+var ReactInstrumentation = __webpack_require__(8);
+var ReactNodeTypes = __webpack_require__(65);
+var ReactReconciler = __webpack_require__(18);
 
 if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(158);
 }
 
-var emptyObject = __webpack_require__(21);
-var invariant = __webpack_require__(2);
-var shallowEqual = __webpack_require__(33);
-var shouldUpdateReactComponent = __webpack_require__(47);
-var warning = __webpack_require__(3);
+var emptyObject = __webpack_require__(20);
+var invariant = __webpack_require__(1);
+var shallowEqual = __webpack_require__(32);
+var shouldUpdateReactComponent = __webpack_require__(46);
+var warning = __webpack_require__(2);
 
 var CompositeTypes = {
   ImpureClass: 0,
@@ -14276,7 +14350,7 @@ var ReactCompositeComponent = {
 };
 
 module.exports = ReactCompositeComponent;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 111 */
@@ -14297,17 +14371,17 @@ module.exports = ReactCompositeComponent;
 
 
 
-var ReactDOMComponentTree = __webpack_require__(6);
+var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDefaultInjection = __webpack_require__(128);
-var ReactMount = __webpack_require__(65);
-var ReactReconciler = __webpack_require__(19);
-var ReactUpdates = __webpack_require__(11);
+var ReactMount = __webpack_require__(64);
+var ReactReconciler = __webpack_require__(18);
+var ReactUpdates = __webpack_require__(10);
 var ReactVersion = __webpack_require__(143);
 
 var findDOMNode = __webpack_require__(160);
-var getHostComponentFromComposite = __webpack_require__(71);
+var getHostComponentFromComposite = __webpack_require__(70);
 var renderSubtreeIntoContainer = __webpack_require__(167);
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
 
@@ -14346,7 +14420,7 @@ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVT
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ExecutionEnvironment = __webpack_require__(7);
+  var ExecutionEnvironment = __webpack_require__(6);
   if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 
     // First check if devtools is not installed
@@ -14382,7 +14456,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactInstrumentation = __webpack_require__(9);
+  var ReactInstrumentation = __webpack_require__(8);
   var ReactDOMUnknownPropertyHook = __webpack_require__(125);
   var ReactDOMNullInputValuePropHook = __webpack_require__(119);
   var ReactDOMInvalidARIAHook = __webpack_require__(118);
@@ -14393,7 +14467,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactDOM;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 112 */
@@ -14414,35 +14488,35 @@ module.exports = ReactDOM;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
 var AutoFocusUtils = __webpack_require__(99);
 var CSSPropertyOperations = __webpack_require__(101);
-var DOMLazyTree = __webpack_require__(18);
-var DOMNamespaces = __webpack_require__(35);
-var DOMProperty = __webpack_require__(14);
-var DOMPropertyOperations = __webpack_require__(58);
-var EventPluginHub = __webpack_require__(22);
-var EventPluginRegistry = __webpack_require__(26);
-var ReactBrowserEventEmitter = __webpack_require__(27);
-var ReactDOMComponentFlags = __webpack_require__(59);
-var ReactDOMComponentTree = __webpack_require__(6);
+var DOMLazyTree = __webpack_require__(17);
+var DOMNamespaces = __webpack_require__(34);
+var DOMProperty = __webpack_require__(13);
+var DOMPropertyOperations = __webpack_require__(57);
+var EventPluginHub = __webpack_require__(21);
+var EventPluginRegistry = __webpack_require__(25);
+var ReactBrowserEventEmitter = __webpack_require__(26);
+var ReactDOMComponentFlags = __webpack_require__(58);
+var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMInput = __webpack_require__(117);
 var ReactDOMOption = __webpack_require__(120);
-var ReactDOMSelect = __webpack_require__(60);
+var ReactDOMSelect = __webpack_require__(59);
 var ReactDOMTextarea = __webpack_require__(123);
-var ReactInstrumentation = __webpack_require__(9);
+var ReactInstrumentation = __webpack_require__(8);
 var ReactMultiChild = __webpack_require__(136);
 var ReactServerRenderingTransaction = __webpack_require__(141);
 
-var emptyFunction = __webpack_require__(10);
-var escapeTextContentForBrowser = __webpack_require__(30);
-var invariant = __webpack_require__(2);
-var isEventSupported = __webpack_require__(46);
-var shallowEqual = __webpack_require__(33);
-var validateDOMNesting = __webpack_require__(48);
-var warning = __webpack_require__(3);
+var emptyFunction = __webpack_require__(9);
+var escapeTextContentForBrowser = __webpack_require__(29);
+var invariant = __webpack_require__(1);
+var isEventSupported = __webpack_require__(45);
+var shallowEqual = __webpack_require__(32);
+var validateDOMNesting = __webpack_require__(47);
+var warning = __webpack_require__(2);
 
 var Flags = ReactDOMComponentFlags;
 var deleteListener = EventPluginHub.deleteListener;
@@ -15400,7 +15474,7 @@ ReactDOMComponent.Mixin = {
 _assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mixin);
 
 module.exports = ReactDOMComponent;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 113 */
@@ -15419,7 +15493,7 @@ module.exports = ReactDOMComponent;
 
 
 
-var validateDOMNesting = __webpack_require__(48);
+var validateDOMNesting = __webpack_require__(47);
 
 var DOC_NODE_TYPE = 9;
 
@@ -15439,7 +15513,7 @@ function ReactDOMContainerInfo(topLevelWrapper, node) {
 }
 
 module.exports = ReactDOMContainerInfo;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 114 */
@@ -15458,10 +15532,10 @@ module.exports = ReactDOMContainerInfo;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var DOMLazyTree = __webpack_require__(18);
-var ReactDOMComponentTree = __webpack_require__(6);
+var DOMLazyTree = __webpack_require__(17);
+var ReactDOMComponentTree = __webpack_require__(5);
 
 var ReactDOMEmptyComponent = function (instantiate) {
   // ReactCompositeComponent uses this:
@@ -15547,8 +15621,8 @@ module.exports = ReactDOMFeatureFlags;
 
 
 
-var DOMChildrenOperations = __webpack_require__(34);
-var ReactDOMComponentTree = __webpack_require__(6);
+var DOMChildrenOperations = __webpack_require__(33);
+var ReactDOMComponentTree = __webpack_require__(5);
 
 /**
  * Operations used to process updates to DOM nodes.
@@ -15586,16 +15660,16 @@ module.exports = ReactDOMIDOperations;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
-var DOMPropertyOperations = __webpack_require__(58);
-var LinkedValueUtils = __webpack_require__(38);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactUpdates = __webpack_require__(11);
+var DOMPropertyOperations = __webpack_require__(57);
+var LinkedValueUtils = __webpack_require__(37);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactUpdates = __webpack_require__(10);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 var didWarnValueLink = false;
 var didWarnCheckedLink = false;
@@ -15858,7 +15932,7 @@ function _handleChange(event) {
 }
 
 module.exports = ReactDOMInput;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 118 */
@@ -15877,10 +15951,10 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(14);
-var ReactComponentTreeHook = __webpack_require__(8);
+var DOMProperty = __webpack_require__(13);
+var ReactComponentTreeHook = __webpack_require__(7);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var warnedProperties = {};
 var rARIA = new RegExp('^(aria)-[' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -15957,7 +16031,7 @@ var ReactDOMInvalidARIAHook = {
 };
 
 module.exports = ReactDOMInvalidARIAHook;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 119 */
@@ -15976,9 +16050,9 @@ module.exports = ReactDOMInvalidARIAHook;
 
 
 
-var ReactComponentTreeHook = __webpack_require__(8);
+var ReactComponentTreeHook = __webpack_require__(7);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var didWarnValueNull = false;
 
@@ -16006,7 +16080,7 @@ var ReactDOMNullInputValuePropHook = {
 };
 
 module.exports = ReactDOMNullInputValuePropHook;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 120 */
@@ -16025,13 +16099,13 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var React = __webpack_require__(20);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMSelect = __webpack_require__(60);
+var React = __webpack_require__(19);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMSelect = __webpack_require__(59);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 var didWarnInvalidOptionChildren = false;
 
 function flattenChildren(children) {
@@ -16135,7 +16209,7 @@ var ReactDOMOption = {
 };
 
 module.exports = ReactDOMOption;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 121 */
@@ -16154,10 +16228,10 @@ module.exports = ReactDOMOption;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var getNodeForCharacterOffset = __webpack_require__(164);
-var getTextContentAccessor = __webpack_require__(72);
+var getTextContentAccessor = __webpack_require__(71);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -16371,16 +16445,16 @@ module.exports = ReactDOMSelection;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
-var DOMChildrenOperations = __webpack_require__(34);
-var DOMLazyTree = __webpack_require__(18);
-var ReactDOMComponentTree = __webpack_require__(6);
+var DOMChildrenOperations = __webpack_require__(33);
+var DOMLazyTree = __webpack_require__(17);
+var ReactDOMComponentTree = __webpack_require__(5);
 
-var escapeTextContentForBrowser = __webpack_require__(30);
-var invariant = __webpack_require__(2);
-var validateDOMNesting = __webpack_require__(48);
+var escapeTextContentForBrowser = __webpack_require__(29);
+var invariant = __webpack_require__(1);
+var validateDOMNesting = __webpack_require__(47);
 
 /**
  * Text nodes violate a couple assumptions that React makes about components:
@@ -16522,7 +16596,7 @@ _assign(ReactDOMTextComponent.prototype, {
 });
 
 module.exports = ReactDOMTextComponent;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 123 */
@@ -16541,15 +16615,15 @@ module.exports = ReactDOMTextComponent;
 
 
 
-var _prodInvariant = __webpack_require__(4),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(3),
+    _assign = __webpack_require__(4);
 
-var LinkedValueUtils = __webpack_require__(38);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactUpdates = __webpack_require__(11);
+var LinkedValueUtils = __webpack_require__(37);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactUpdates = __webpack_require__(10);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 var didWarnValueLink = false;
 var didWarnValDefaultVal = false;
@@ -16688,7 +16762,7 @@ function _handleChange(event) {
 }
 
 module.exports = ReactDOMTextarea;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 124 */
@@ -16707,9 +16781,9 @@ module.exports = ReactDOMTextarea;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Return the lowest common ancestor of A and B, or null if they are in
@@ -16830,7 +16904,7 @@ module.exports = {
   traverseTwoPhase: traverseTwoPhase,
   traverseEnterLeave: traverseEnterLeave
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 125 */
@@ -16849,11 +16923,11 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(14);
-var EventPluginRegistry = __webpack_require__(26);
-var ReactComponentTreeHook = __webpack_require__(8);
+var DOMProperty = __webpack_require__(13);
+var EventPluginRegistry = __webpack_require__(25);
+var ReactComponentTreeHook = __webpack_require__(7);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 if (process.env.NODE_ENV !== 'production') {
   var reactProps = {
@@ -16948,7 +17022,7 @@ var ReactDOMUnknownPropertyHook = {
 };
 
 module.exports = ReactDOMUnknownPropertyHook;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 126 */
@@ -16970,11 +17044,11 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 var ReactInvalidSetStateWarningHook = __webpack_require__(134);
 var ReactHostOperationHistoryHook = __webpack_require__(132);
-var ReactComponentTreeHook = __webpack_require__(8);
-var ExecutionEnvironment = __webpack_require__(7);
+var ReactComponentTreeHook = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 var performanceNow = __webpack_require__(96);
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var hooks = [];
 var didHookThrowForEvent = {};
@@ -17313,7 +17387,7 @@ if (/[?&]react_perf\b/.test(url)) {
 }
 
 module.exports = ReactDebugTool;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 127 */
@@ -17332,12 +17406,12 @@ module.exports = ReactDebugTool;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var ReactUpdates = __webpack_require__(11);
-var Transaction = __webpack_require__(29);
+var ReactUpdates = __webpack_require__(10);
+var Transaction = __webpack_require__(28);
 
-var emptyFunction = __webpack_require__(10);
+var emptyFunction = __webpack_require__(9);
 
 var RESET_BATCHED_UPDATES = {
   initialize: emptyFunction,
@@ -17413,7 +17487,7 @@ var EnterLeaveEventPlugin = __webpack_require__(105);
 var HTMLDOMPropertyConfig = __webpack_require__(107);
 var ReactComponentBrowserEnvironment = __webpack_require__(109);
 var ReactDOMComponent = __webpack_require__(112);
-var ReactDOMComponentTree = __webpack_require__(6);
+var ReactDOMComponentTree = __webpack_require__(5);
 var ReactDOMEmptyComponent = __webpack_require__(114);
 var ReactDOMTreeTraversal = __webpack_require__(124);
 var ReactDOMTextComponent = __webpack_require__(122);
@@ -17521,7 +17595,7 @@ module.exports = REACT_ELEMENT_TYPE;
 
 
 
-var EventPluginHub = __webpack_require__(22);
+var EventPluginHub = __webpack_require__(21);
 
 function runEventQueueInBatch(events) {
   EventPluginHub.enqueueEvents(events);
@@ -17559,15 +17633,15 @@ module.exports = ReactEventEmitterMixin;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var EventListener = __webpack_require__(51);
-var ExecutionEnvironment = __webpack_require__(7);
-var PooledClass = __webpack_require__(15);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactUpdates = __webpack_require__(11);
+var EventListener = __webpack_require__(50);
+var ExecutionEnvironment = __webpack_require__(6);
+var PooledClass = __webpack_require__(14);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactUpdates = __webpack_require__(10);
 
-var getEventTarget = __webpack_require__(45);
+var getEventTarget = __webpack_require__(44);
 var getUnboundedScrollPosition = __webpack_require__(89);
 
 /**
@@ -17758,14 +17832,14 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(14);
-var EventPluginHub = __webpack_require__(22);
-var EventPluginUtils = __webpack_require__(36);
-var ReactComponentEnvironment = __webpack_require__(39);
-var ReactEmptyComponent = __webpack_require__(61);
-var ReactBrowserEventEmitter = __webpack_require__(27);
-var ReactHostComponent = __webpack_require__(63);
-var ReactUpdates = __webpack_require__(11);
+var DOMProperty = __webpack_require__(13);
+var EventPluginHub = __webpack_require__(21);
+var EventPluginUtils = __webpack_require__(35);
+var ReactComponentEnvironment = __webpack_require__(38);
+var ReactEmptyComponent = __webpack_require__(60);
+var ReactBrowserEventEmitter = __webpack_require__(26);
+var ReactHostComponent = __webpack_require__(62);
+var ReactUpdates = __webpack_require__(10);
 
 var ReactInjection = {
   Component: ReactComponentEnvironment.injection,
@@ -17798,7 +17872,7 @@ module.exports = ReactInjection;
 
 
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 if (process.env.NODE_ENV !== 'production') {
   var processingChildContext = false;
@@ -17821,7 +17895,7 @@ var ReactInvalidSetStateWarningHook = {
 };
 
 module.exports = ReactInvalidSetStateWarningHook;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 135 */
@@ -17895,19 +17969,19 @@ module.exports = ReactMarkupChecksum;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var ReactComponentEnvironment = __webpack_require__(39);
-var ReactInstanceMap = __webpack_require__(24);
-var ReactInstrumentation = __webpack_require__(9);
+var ReactComponentEnvironment = __webpack_require__(38);
+var ReactInstanceMap = __webpack_require__(23);
+var ReactInstrumentation = __webpack_require__(8);
 
-var ReactCurrentOwner = __webpack_require__(12);
-var ReactReconciler = __webpack_require__(19);
+var ReactCurrentOwner = __webpack_require__(11);
+var ReactReconciler = __webpack_require__(18);
 var ReactChildReconciler = __webpack_require__(108);
 
-var emptyFunction = __webpack_require__(10);
+var emptyFunction = __webpack_require__(9);
 var flattenChildren = __webpack_require__(161);
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Make an update for markup to be rendered and inserted at a supplied index.
@@ -18332,7 +18406,7 @@ var ReactMultiChild = {
 };
 
 module.exports = ReactMultiChild;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 137 */
@@ -18352,9 +18426,9 @@ module.exports = ReactMultiChild;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * @param {?object} object
@@ -18432,7 +18506,7 @@ var ReactOwner = {
 };
 
 module.exports = ReactOwner;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 138 */
@@ -18463,7 +18537,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = ReactPropTypeLocationNames;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 139 */
@@ -18482,15 +18556,15 @@ module.exports = ReactPropTypeLocationNames;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var CallbackQueue = __webpack_require__(57);
-var PooledClass = __webpack_require__(15);
-var ReactBrowserEventEmitter = __webpack_require__(27);
-var ReactInputSelection = __webpack_require__(64);
-var ReactInstrumentation = __webpack_require__(9);
-var Transaction = __webpack_require__(29);
-var ReactUpdateQueue = __webpack_require__(41);
+var CallbackQueue = __webpack_require__(56);
+var PooledClass = __webpack_require__(14);
+var ReactBrowserEventEmitter = __webpack_require__(26);
+var ReactInputSelection = __webpack_require__(63);
+var ReactInstrumentation = __webpack_require__(8);
+var Transaction = __webpack_require__(28);
+var ReactUpdateQueue = __webpack_require__(40);
 
 /**
  * Ensures that, when possible, the selection range (currently selected text
@@ -18647,7 +18721,7 @@ _assign(ReactReconcileTransaction.prototype, Transaction, Mixin);
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 140 */
@@ -18760,11 +18834,11 @@ module.exports = ReactRef;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(15);
-var Transaction = __webpack_require__(29);
-var ReactInstrumentation = __webpack_require__(9);
+var PooledClass = __webpack_require__(14);
+var Transaction = __webpack_require__(28);
+var ReactInstrumentation = __webpack_require__(8);
 var ReactServerUpdateQueue = __webpack_require__(142);
 
 /**
@@ -18837,7 +18911,7 @@ _assign(ReactServerRenderingTransaction.prototype, Transaction, Mixin);
 PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 142 */
@@ -18859,9 +18933,9 @@ module.exports = ReactServerRenderingTransaction;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var ReactUpdateQueue = __webpack_require__(41);
+var ReactUpdateQueue = __webpack_require__(40);
 
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 function warnNoop(publicInstance, callerName) {
   if (process.env.NODE_ENV !== 'production') {
@@ -18982,7 +19056,7 @@ var ReactServerUpdateQueue = function () {
 }();
 
 module.exports = ReactServerUpdateQueue;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 143 */
@@ -19327,15 +19401,15 @@ module.exports = SVGDOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(23);
-var ExecutionEnvironment = __webpack_require__(7);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInputSelection = __webpack_require__(64);
-var SyntheticEvent = __webpack_require__(13);
+var EventPropagators = __webpack_require__(22);
+var ExecutionEnvironment = __webpack_require__(6);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactInputSelection = __webpack_require__(63);
+var SyntheticEvent = __webpack_require__(12);
 
-var getActiveElement = __webpack_require__(53);
-var isTextInputElement = __webpack_require__(74);
-var shallowEqual = __webpack_require__(33);
+var getActiveElement = __webpack_require__(52);
+var isTextInputElement = __webpack_require__(73);
+var shallowEqual = __webpack_require__(32);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
 
@@ -19524,26 +19598,26 @@ module.exports = SelectEventPlugin;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var EventListener = __webpack_require__(51);
-var EventPropagators = __webpack_require__(23);
-var ReactDOMComponentTree = __webpack_require__(6);
+var EventListener = __webpack_require__(50);
+var EventPropagators = __webpack_require__(22);
+var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(147);
 var SyntheticClipboardEvent = __webpack_require__(148);
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 var SyntheticFocusEvent = __webpack_require__(151);
 var SyntheticKeyboardEvent = __webpack_require__(153);
-var SyntheticMouseEvent = __webpack_require__(28);
+var SyntheticMouseEvent = __webpack_require__(27);
 var SyntheticDragEvent = __webpack_require__(150);
 var SyntheticTouchEvent = __webpack_require__(154);
 var SyntheticTransitionEvent = __webpack_require__(155);
-var SyntheticUIEvent = __webpack_require__(25);
+var SyntheticUIEvent = __webpack_require__(24);
 var SyntheticWheelEvent = __webpack_require__(156);
 
-var emptyFunction = __webpack_require__(10);
-var getEventCharCode = __webpack_require__(43);
-var invariant = __webpack_require__(2);
+var emptyFunction = __webpack_require__(9);
+var getEventCharCode = __webpack_require__(42);
+var invariant = __webpack_require__(1);
 
 /**
  * Turns
@@ -19738,7 +19812,7 @@ var SimpleEventPlugin = {
 };
 
 module.exports = SimpleEventPlugin;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 147 */
@@ -19757,7 +19831,7 @@ module.exports = SimpleEventPlugin;
 
 
 
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 
 /**
  * @interface Event
@@ -19801,7 +19875,7 @@ module.exports = SyntheticAnimationEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 
 /**
  * @interface Event
@@ -19844,7 +19918,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 
 /**
  * @interface Event
@@ -19885,7 +19959,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(28);
+var SyntheticMouseEvent = __webpack_require__(27);
 
 /**
  * @interface DragEvent
@@ -19926,7 +20000,7 @@ module.exports = SyntheticDragEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(25);
+var SyntheticUIEvent = __webpack_require__(24);
 
 /**
  * @interface FocusEvent
@@ -19967,7 +20041,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 
 /**
  * @interface Event
@@ -20009,11 +20083,11 @@ module.exports = SyntheticInputEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(25);
+var SyntheticUIEvent = __webpack_require__(24);
 
-var getEventCharCode = __webpack_require__(43);
+var getEventCharCode = __webpack_require__(42);
 var getEventKey = __webpack_require__(162);
-var getEventModifierState = __webpack_require__(44);
+var getEventModifierState = __webpack_require__(43);
 
 /**
  * @interface KeyboardEvent
@@ -20098,9 +20172,9 @@ module.exports = SyntheticKeyboardEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(25);
+var SyntheticUIEvent = __webpack_require__(24);
 
-var getEventModifierState = __webpack_require__(44);
+var getEventModifierState = __webpack_require__(43);
 
 /**
  * @interface TouchEvent
@@ -20148,7 +20222,7 @@ module.exports = SyntheticTouchEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(13);
+var SyntheticEvent = __webpack_require__(12);
 
 /**
  * @interface Event
@@ -20192,7 +20266,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(28);
+var SyntheticMouseEvent = __webpack_require__(27);
 
 /**
  * @interface WheelEvent
@@ -20300,13 +20374,13 @@ module.exports = adler32;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
 var ReactPropTypeLocationNames = __webpack_require__(138);
-var ReactPropTypesSecret = __webpack_require__(67);
+var ReactPropTypesSecret = __webpack_require__(66);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
@@ -20316,7 +20390,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 var loggedTypeFailures = {};
@@ -20358,7 +20432,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(8);
+            ReactComponentTreeHook = __webpack_require__(7);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -20374,7 +20448,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 }
 
 module.exports = checkReactTypeSpec;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 159 */
@@ -20393,8 +20467,8 @@ module.exports = checkReactTypeSpec;
 
 
 
-var CSSProperty = __webpack_require__(56);
-var warning = __webpack_require__(3);
+var CSSProperty = __webpack_require__(55);
+var warning = __webpack_require__(2);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 var styleWarnings = {};
@@ -20459,7 +20533,7 @@ function dangerousStyleValue(name, value, component) {
 }
 
 module.exports = dangerousStyleValue;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 160 */
@@ -20478,15 +20552,15 @@ module.exports = dangerousStyleValue;
 
 
 
-var _prodInvariant = __webpack_require__(4);
+var _prodInvariant = __webpack_require__(3);
 
-var ReactCurrentOwner = __webpack_require__(12);
-var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInstanceMap = __webpack_require__(24);
+var ReactCurrentOwner = __webpack_require__(11);
+var ReactDOMComponentTree = __webpack_require__(5);
+var ReactInstanceMap = __webpack_require__(23);
 
-var getHostComponentFromComposite = __webpack_require__(71);
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var getHostComponentFromComposite = __webpack_require__(70);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 /**
  * Returns the DOM node rendered by this element.
@@ -20525,7 +20599,7 @@ function findDOMNode(componentOrElement) {
 }
 
 module.exports = findDOMNode;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 161 */
@@ -20545,9 +20619,9 @@ module.exports = findDOMNode;
 
 
 
-var KeyEscapeUtils = __webpack_require__(37);
-var traverseAllChildren = __webpack_require__(76);
-var warning = __webpack_require__(3);
+var KeyEscapeUtils = __webpack_require__(36);
+var traverseAllChildren = __webpack_require__(75);
+var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
@@ -20557,7 +20631,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 /**
@@ -20573,7 +20647,7 @@ function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID
     var keyUnique = result[name] === undefined;
     if (process.env.NODE_ENV !== 'production') {
       if (!ReactComponentTreeHook) {
-        ReactComponentTreeHook = __webpack_require__(8);
+        ReactComponentTreeHook = __webpack_require__(7);
       }
       if (!keyUnique) {
         process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -20607,7 +20681,7 @@ function flattenChildren(children, selfDebugID) {
 }
 
 module.exports = flattenChildren;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 162 */
@@ -20626,7 +20700,7 @@ module.exports = flattenChildren;
 
 
 
-var getEventCharCode = __webpack_require__(43);
+var getEventCharCode = __webpack_require__(42);
 
 /**
  * Normalization of deprecated HTML5 `key` values
@@ -20858,7 +20932,7 @@ module.exports = getNodeForCharacterOffset;
 
 
 
-var ExecutionEnvironment = __webpack_require__(7);
+var ExecutionEnvironment = __webpack_require__(6);
 
 /**
  * Generate a mapping of standard vendor prefixes using the defined style property and event name.
@@ -20964,7 +21038,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(30);
+var escapeTextContentForBrowser = __webpack_require__(29);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -20995,7 +21069,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var ReactMount = __webpack_require__(65);
+var ReactMount = __webpack_require__(64);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -21081,9 +21155,9 @@ module.exports = KeyEscapeUtils;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(16);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Static poolers. Several custom versions for each potential number of
@@ -21179,7 +21253,7 @@ var PooledClass = {
 };
 
 module.exports = PooledClass;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 170 */
@@ -21199,9 +21273,9 @@ module.exports = PooledClass;
 
 
 var PooledClass = __webpack_require__(169);
-var ReactElement = __webpack_require__(16);
+var ReactElement = __webpack_require__(15);
 
-var emptyFunction = __webpack_require__(10);
+var emptyFunction = __webpack_require__(9);
 var traverseAllChildren = __webpack_require__(180);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -21394,17 +21468,17 @@ module.exports = ReactChildren;
 
 
 
-var _prodInvariant = __webpack_require__(17),
-    _assign = __webpack_require__(5);
+var _prodInvariant = __webpack_require__(16),
+    _assign = __webpack_require__(4);
 
-var ReactComponent = __webpack_require__(49);
-var ReactElement = __webpack_require__(16);
-var ReactPropTypeLocationNames = __webpack_require__(79);
-var ReactNoopUpdateQueue = __webpack_require__(50);
+var ReactComponent = __webpack_require__(48);
+var ReactElement = __webpack_require__(15);
+var ReactPropTypeLocationNames = __webpack_require__(78);
+var ReactNoopUpdateQueue = __webpack_require__(49);
 
-var emptyObject = __webpack_require__(21);
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var emptyObject = __webpack_require__(20);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 var MIXINS_KEY = 'mixins';
 
@@ -22104,7 +22178,7 @@ var ReactClass = {
 };
 
 module.exports = ReactClass;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 172 */
@@ -22123,7 +22197,7 @@ module.exports = ReactClass;
 
 
 
-var ReactElement = __webpack_require__(16);
+var ReactElement = __webpack_require__(15);
 
 /**
  * Create a factory that creates HTML tag elements.
@@ -22132,7 +22206,7 @@ var ReactElement = __webpack_require__(16);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(78);
+  var ReactElementValidator = __webpack_require__(77);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -22280,7 +22354,7 @@ var ReactDOMFactories = {
 };
 
 module.exports = ReactDOMFactories;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 173 */
@@ -22299,10 +22373,10 @@ module.exports = ReactDOMFactories;
 
 
 
-var _require = __webpack_require__(16),
+var _require = __webpack_require__(15),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(54);
+var factory = __webpack_require__(53);
 
 module.exports = factory(isValidElement);
 
@@ -22345,12 +22419,12 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var _assign = __webpack_require__(5);
+var _assign = __webpack_require__(4);
 
-var ReactComponent = __webpack_require__(49);
-var ReactNoopUpdateQueue = __webpack_require__(50);
+var ReactComponent = __webpack_require__(48);
+var ReactNoopUpdateQueue = __webpack_require__(49);
 
-var emptyObject = __webpack_require__(21);
+var emptyObject = __webpack_require__(20);
 
 /**
  * Base class helpers for the updating state of a component.
@@ -22411,13 +22485,13 @@ module.exports = '15.5.1';
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(16);
 
-var ReactPropTypeLocationNames = __webpack_require__(79);
+var ReactPropTypeLocationNames = __webpack_require__(78);
 var ReactPropTypesSecret = __webpack_require__(174);
 
-var invariant = __webpack_require__(2);
-var warning = __webpack_require__(3);
+var invariant = __webpack_require__(1);
+var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
@@ -22427,7 +22501,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(8);
+  ReactComponentTreeHook = __webpack_require__(7);
 }
 
 var loggedTypeFailures = {};
@@ -22469,7 +22543,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(8);
+            ReactComponentTreeHook = __webpack_require__(7);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -22485,7 +22559,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 }
 
 module.exports = checkReactTypeSpec;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 178 */
@@ -22529,11 +22603,11 @@ module.exports = getNextDebugID;
  */
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(16);
 
-var ReactElement = __webpack_require__(16);
+var ReactElement = __webpack_require__(15);
 
-var invariant = __webpack_require__(2);
+var invariant = __webpack_require__(1);
 
 /**
  * Returns the first child in a collection of children and verifies that there
@@ -22555,7 +22629,7 @@ function onlyChild(children) {
 }
 
 module.exports = onlyChild;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 180 */
@@ -22574,15 +22648,15 @@ module.exports = onlyChild;
 
 
 
-var _prodInvariant = __webpack_require__(17);
+var _prodInvariant = __webpack_require__(16);
 
-var ReactCurrentOwner = __webpack_require__(12);
-var REACT_ELEMENT_TYPE = __webpack_require__(77);
+var ReactCurrentOwner = __webpack_require__(11);
+var REACT_ELEMENT_TYPE = __webpack_require__(76);
 
-var getIteratorFn = __webpack_require__(80);
-var invariant = __webpack_require__(2);
+var getIteratorFn = __webpack_require__(79);
+var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(168);
-var warning = __webpack_require__(3);
+var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
 var SUBSEPARATOR = ':';
@@ -22737,7 +22811,4927 @@ function traverseAllChildren(children, callback, traverseContext) {
 }
 
 module.exports = traverseAllChildren;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 181 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global, Buffer) {var require;
+
+/* eslint no-undefined: 0 */
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+var assign = void 0;
+
+if (typeof Object.assign === 'function') {
+  assign = Object.assign;
+} else {
+  assign = function assign(target) {
+    if (target === undefined || target === null) {
+      throw new TypeError('Cannot convert undefined or null to object');
+    }
+
+    var output = Object(target);
+
+    var propertyObjects = [].slice.call(arguments, 1);
+
+    if (propertyObjects.length > 0) {
+      propertyObjects.forEach(function (source) {
+        if (source !== undefined && source !== null) {
+          var nextKey = void 0;
+
+          for (nextKey in source) {
+            if (source.hasOwnProperty(nextKey)) {
+              output[nextKey] = source[nextKey];
+            }
+          }
+        }
+      });
+    }
+
+    return output;
+  };
+}
+
+var assign$1 = assign;
+
+var includes = void 0;
+
+if (!Array.prototype.includes) {
+  includes = function includes(array, searchElement) {
+    var ObjectifiedArray = Object(array);
+    var length = parseInt(ObjectifiedArray.length, 10) || 0;
+
+    if (length === 0) {
+      return false;
+    }
+
+    var startIndex = parseInt(arguments[2], 10) || 0;
+    var index = void 0;
+
+    if (startIndex >= 0) {
+      index = startIndex;
+    } else {
+      index = length + startIndex;
+
+      if (index < 0) {
+        index = 0;
+      }
+    }
+
+    while (index < length) {
+      var currentElement = ObjectifiedArray[index];
+
+      /* eslint no-self-compare:0 */
+      if (searchElement === currentElement || searchElement !== searchElement && currentElement !== currentElement) {
+        // NaN !== NaN
+        return true;
+      }
+      index++;
+    }
+
+    return false;
+  };
+} else {
+  includes = function includes(array) {
+    var args = [].slice.call(arguments, 1);
+
+    return Array.prototype.includes.apply(array, args);
+  };
+}
+
+var includes$1 = includes;
+
+function wrap(func, superFunc) {
+  function superWrapper() {
+    var originalSuper = this['super'];
+
+    this['super'] = function () {
+      return superFunc.apply(this, arguments);
+    };
+
+    var ret = func.apply(this, arguments);
+
+    this['super'] = originalSuper;
+
+    return ret;
+  }
+
+  superWrapper.wrappedFunction = func;
+
+  return superWrapper;
+}
+
+function defineProperties(names, proto, destination) {
+  var parentProto = Object.getPrototypeOf(destination);
+
+  names.forEach(function (name) {
+    var descriptor = Object.getOwnPropertyDescriptor(proto, name);
+    var parentDescriptor = parentProto.hasOwnProperty(name) && Object.getOwnPropertyDescriptor(parentProto, name);
+
+    if (typeof parentDescriptor.value === 'function' && typeof descriptor.value === 'function') {
+      var wrappedFunction = wrap(descriptor.value, parentDescriptor.value);
+
+      Object.defineProperty(destination, name, { value: wrappedFunction });
+    } else {
+      Object.defineProperty(destination, name, descriptor);
+    }
+  });
+}
+
+function createClass(props) {
+  var parent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : Object;
+
+  var Constructor = wrap(props.constructor, parent);
+  var instancePropertyNames = Object.getOwnPropertyNames(props).filter(function (key) {
+    return !includes$1(['constructor', 'static'], key);
+  });
+
+  assign$1(Constructor, parent);
+
+  Constructor.prototype = Object.create(parent.prototype);
+  defineProperties(instancePropertyNames, props, Constructor.prototype);
+  Constructor.prototype.constructor = Constructor;
+
+  var staticProps = props['static'];
+
+  if (staticProps) {
+    var staticPropertyNames = Object.getOwnPropertyNames(staticProps);
+
+    defineProperties(staticPropertyNames, staticProps, Constructor);
+  }
+
+  return Constructor;
+}
+
+var CoreObject = createClass({
+  constructor: function constructor() {},
+
+
+  'static': {
+    extend: function extend(subClassProps) {
+      return createClass(subClassProps, this);
+    }
+  }
+});
+
+function wrapConsole(logCommand) {
+  var logMethod = function logMethod() {
+    var log = void 0;
+
+    /* eslint-disable no-console */
+    if (console[logCommand]) {
+      log = Function.prototype.bind.call(console[logCommand], console);
+    } else {
+      log = Function.prototype.bind.call(console.log, console);
+    }
+    log.apply(undefined, arguments);
+    /* eslint-enable no-console */
+  };
+
+  return function () {
+    var args = [].concat(Array.prototype.slice.call(arguments));
+
+    args.unshift('[JS-BUY-SDK]: ');
+    logMethod.apply(undefined, _toConsumableArray(args));
+  };
+}
+
+var Logger = CoreObject.extend({
+  /**
+   * Wrapper around the console log so in the future we can have better dev output.
+   * Also allows us to disable output in production.
+   * @private
+   * @class Logger
+   * @constructor
+   */
+  constructor: function constructor() {},
+
+  debug: wrapConsole('debug'),
+  info: wrapConsole('info'),
+  warn: wrapConsole('warn'),
+  error: wrapConsole('error')
+});
+
+var logger = new Logger();
+
+var Config = CoreObject.extend({
+  constructor: function constructor(attrs) {
+    var _this = this;
+
+    Object.keys(this.deprecatedProperties).forEach(function (key) {
+      if (attrs.hasOwnProperty(key)) {
+        var transformName = _this.deprecatedProperties[key];
+        var transform = _this[transformName];
+
+        transform(attrs[key], attrs);
+      }
+    });
+    this.requiredProperties.forEach(function (key) {
+      if (!attrs.hasOwnProperty(key)) {
+        throw new Error('new Config() requires the option \'' + key + '\'');
+      } else {
+        _this[key] = attrs[key];
+      }
+    });
+    this.optionalProperties.forEach(function (key) {
+      if (attrs.hasOwnProperty(key)) {
+        _this[key] = attrs[key];
+      }
+    });
+  },
+
+
+  /**
+   * An object with keys for deprecated properties and values as functions that
+   * will transform the value into a usable value. A depracation transform should
+   * have the value signature function(deprecated_value, config_to_be_transformed)
+   * @attribute deprecatedProperties
+   * @default { apiKey: this.transformApiKey, myShopifyDomain: this.transformMyShopifyDomain }
+   * @type Object
+   * @private
+   */
+  deprecatedProperties: {
+    apiKey: 'transformApiKey',
+    myShopifyDomain: 'transformMyShopifyDomain'
+  },
+
+  /**
+   * Transform the myShopifyDomain config to a domain config.
+   * @method transformMyShopifyDomain
+   * @static
+   * @private
+   * @param {String} subdomain The original subdomain on myshopify.com
+   * @param {Object} attrs. The config attributes to be transformed to a
+   * non-deprecated state.
+   * @return {Object} the transformed config attributes.
+   */
+  transformMyShopifyDomain: function transformMyShopifyDomain(subdomain, attrs) {
+    logger.warn('Config - ', 'myShopifyDomain is deprecated, please use domain and provide the full shop domain.');
+    attrs.domain = subdomain + '.myshopify.com';
+  },
+
+
+  /**
+   * Transform the apiKey config to an accessToken config.
+   * @method transformApiKey
+   * @static
+   * @private
+   * @param {String} apiKey The original api key
+   * @param {Object} attrs. The config attributes to be transformed to a
+   * non-deprecated state.
+   * @return {Object} the transformed config attributes.
+   */
+  transformApiKey: function transformApiKey(apiKey, attrs) {
+    logger.warn('Config - ', 'apiKey is deprecated, please use accessToken instead.');
+    attrs.accessToken = apiKey;
+  },
+
+
+  /**
+   * Properties that must be set on initializations
+   * @attribute requiredProperties
+   * @default ['accessToken', 'appId', 'myShopifyDomain']
+   * @type Array
+   * @private
+   */
+  requiredProperties: ['accessToken', 'appId', 'domain'],
+
+  /**
+   * Properties that may be set on initializations
+   * @attribute optionalProperties
+   * @default ['ajaxHeaders']
+   * @type Array
+   * @private
+   */
+  optionalProperties: ['ajaxHeaders'],
+
+  /**
+   * The accessToken for authenticating against shopify. This is your api client's
+   * storefront access token. Not the shared secret. Set during initialization.
+   * @attribute accessToken
+   * @default ''
+   * @type String
+   * @private
+   */
+  accessToken: '',
+
+  /**
+   * The apiKey for authenticating against shopify. This is your api client's
+   * public api token. Not the shared secret. Set during initialization.
+   * @attribute apiKey
+   * @default ''
+   * @type String
+   * @private
+   * @deprecated Use `config.accessToken` instead.
+   */
+  apiKey: '',
+
+  /**
+   * @attribute appId
+   * @default ''
+   * @type String
+   * @private
+   */
+  appId: '',
+
+  /**
+   * The domain that all the api requests will go to
+   * @attribute domain
+   * @default ''
+   * @type String
+   * @private
+   */
+  domain: '',
+
+  /**
+   * The subdomain of myshopify.io that all the api requests will go to
+   * @attribute myShopifyDomain
+   * @default ''
+   * @type String
+   * @private
+   * @deprecated Use `config.domain` instead.
+   */
+  myShopifyDomain: '',
+
+  /**
+   * @attribute ajaxHeaders
+   * @default {}
+   * @type Object
+   * @private
+   */
+  ajaxHeaders: {}
+});
+
+var version = 'v0.7.1-66ba4e4'; // eslint-disable-line
+
+var BaseModel = CoreObject.extend({
+  constructor: function constructor() {
+    var attrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var metaAttrs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    this.attrs = attrs;
+
+    assign$1(this, metaAttrs);
+  },
+
+  attrs: null,
+  serializer: null,
+  adapter: null,
+  shopClient: null
+});
+
+/**
+  * Class for product option
+  * @class ProductOptionModel
+  * @constructor
+*/
+var ProductOptionModel = BaseModel.extend(Object.defineProperties({
+  constructor: function constructor() {
+    this['super'].apply(this, arguments);
+
+    this.selected = this.values[0];
+  }
+}, {
+  name: {
+
+    /**
+      * name of option. Example values: `"Size"`, `"Color"`, etc.
+      * @property name
+      * @readOnly
+      * @type String
+    */
+    get: function get() {
+      return this.attrs.name;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  values: {
+
+    /**
+      * an Array possible values for option. For instance if this option is a "Size" option an example value
+      * for values could be: `["Large", "Medium", "Small"]`
+      *
+      * @property values
+      * @readOnly
+      * @type Array
+    */
+    get: function get() {
+      return this.attrs.values;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  selected: {
+
+    /**
+      * get/set the currently selected option value with one of the values from the
+      * {{#crossLink "ProductOptionModel/values"}}ProductOptionModel.values{{/crossLink}} array. For
+      * instance if the option values array had the following `["Large", "Medium", "Small"]` setting `selected` to be
+      * `"Large"`, `"Medium"`, or `"Small"` would be valid any other value would throw an `Error`.
+      *
+      * @property selected
+      * @type String
+    */
+    get: function get() {
+      return this._selected;
+    },
+    set: function set(value) {
+      if (includes$1(this.values, value)) {
+        this._selected = value;
+      } else {
+        throw new Error('Invalid option selection for ' + this.name + '.');
+      }
+
+      return value;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+var variants = [{ name: 'pico', dimension: '16x16' }, { name: 'icon', dimension: '32x32' }, { name: 'thumb', dimension: '50x50' }, { name: 'small', dimension: '100x100' }, { name: 'compact', dimension: '160x160' }, { name: 'medium', dimension: '240x240' }, { name: 'large', dimension: '480x480' }, { name: 'grande', dimension: '600x600' }, { name: '1024x1024', dimension: '1024x1024' }, { name: '2048x2048', dimension: '2048x2048' }];
+
+/**
+* Class for image model
+* @class ImageModel
+*/
+var ImageModel = CoreObject.extend(Object.defineProperties({
+  constructor: function constructor(attrs) {
+    var _this2 = this;
+
+    Object.keys(attrs).forEach(function (key) {
+      _this2[key] = attrs[key];
+    });
+  }
+}, {
+  variants: {
+
+    /**
+      * Image variants available for an image. An example value of `imageVariant`:
+      * ```
+      * [
+      *   {
+      *     "name": "pico",
+      *     "dimensions": "16x16",
+      *     "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/alien_146ef7c1-26e9-4e96-96e6-9d37128d0005_pico.jpg?v=1469046423"
+      *   },
+      *   {
+      *     "name": "compact",
+      *     "dimensions": "160x160",
+      *     "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/alien_146ef7c1-26e9-4e96-96e6-9d37128d0005_compact.jpg?v=1469046423"
+      *   }
+      * ]
+      * ```
+      *
+      * @attribute variants
+      * @type {Array}
+    */
+    get: function get() {
+      var src = this.src;
+      var extensionIndex = src.lastIndexOf('.');
+      var pathAndBasename = src.slice(0, extensionIndex);
+      var extension = src.slice(extensionIndex);
+
+      variants.forEach(function (variant) {
+        variant.src = pathAndBasename + '_' + variant.name + extension;
+      });
+
+      return variants;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+/**
+  * Model for product variant
+  * @class ProductVariantModel
+  * @constructor
+*/
+var ProductVariantModel = BaseModel.extend(Object.defineProperties({
+  constructor: function constructor() {
+    this['super'].apply(this, arguments);
+  },
+
+
+  /**
+    * Get a checkout url for a specific product variant. You can
+    * optionally pass a quantity. If no quantity is passed then quantity
+    * will default to 1. The example below will grab a checkout url for
+    * 3 copies of the first variant:
+    * ```
+    * const checkoutURL = product.variants[ 0 ].checkoutUrl(3);
+    * ```
+    *
+    * @method checkoutUrl
+    * @param {Number} [quantity = 1] quantity of variants
+    * @public
+    * @return {String} Checkout URL
+  */
+  checkoutUrl: function checkoutUrl() {
+    var quantity = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+
+    var config = this.config;
+    var baseUrl = 'https://' + config.domain + '/cart';
+
+    var variantPath = this.id + ':' + parseInt(quantity, 10);
+
+    var query = 'access_token=' + config.accessToken + '&_fd=0';
+
+    return baseUrl + '/' + variantPath + '?' + query;
+  }
+}, {
+  id: {
+
+    /**
+      * Variant unique ID
+      * @property id
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.variant.id;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  productId: {
+
+    /**
+      * ID of product variant belongs to
+      * @property productId
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.product.id;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  title: {
+
+    /**
+      * Title of variant
+      * @property title
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.variant.title;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  productTitle: {
+
+    /**
+      * Title of product variant belongs to
+      * @property productTitle
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.product.title;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  compareAtPrice: {
+
+    /**
+      * Compare at price for variant. The `compareAtPrice` would be
+      * the price of the product previously before the product went on sale. For more info
+      * go <a href="https://docs.shopify.com/manual/products/promoting-marketing/sales" target="_blank">here</a>.
+      *
+      * If no `compareAtPrice` is set then this value will be `null`. An example value: `"5.00"`
+      * @property compareAtPrice
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.variant.compare_at_price;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  price: {
+
+    /**
+      * Price of the variant. The price will be in the following form: `"10.00"`
+      *
+      * @property price
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.variant.price;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  formattedPrice: {
+
+    /**
+      * Price of variant, formatted according to shop currency format string.
+      * For instance `"$10.00"`
+      *
+      * @property formattedPrice
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.variant.formatted_price;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  grams: {
+
+    /**
+      * Variant weight in grams. If no weight is defined grams will be `0`.
+      * @property grams
+      * @type {Number}
+    */
+    get: function get() {
+      return this.attrs.variant.grams;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  optionValues: {
+
+    /**
+      * Option values associated with this variant. Example `optionValues`:
+      * ```
+      * [
+      *   {
+      *     "name": "Size",
+      *     "option_id": 9165336518,
+      *     "value": "small"
+      *   },
+      *   {
+      *     "name": "Color",
+      *     "option_id": 9640532358,
+      *     "value": "blue"
+      *   }
+      * ]
+      * ````
+      *
+      * @property optionValues
+      * @type {Array|Object}
+    */
+    get: function get() {
+      return this.attrs.variant.option_values;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  available: {
+
+    /**
+      * Variant in stock. Always `true` if inventory tracking is disabled.
+      * @property available
+      * @type {Boolean}
+    */
+    get: function get() {
+      return this.attrs.variant.available;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  image: {
+
+    /**
+      * Image for variant. An example image `Object`:
+      * ```
+      * {
+      *   created_at: "2016-08-29T12:35:09-04:00",
+      *   id: 17690553350,
+      *   position: 1,
+      *   product_id: 8291029446,
+      *   src: "https://cdn.shopify.com/s/files/1/1019/0495/products/i11_c3334325-2d67-4623-8cd4-0a6b08aa1b83.jpg?v=1472488509",
+      *   updated_at: "2016-08-29T12:35:09-04:00",
+      *   variant_ids: [ 27690103238 ]
+      * }
+      * ```
+      *
+      * @property image
+      * @type {Object}
+    */
+    get: function get() {
+      var id = this.id;
+      var images = this.attrs.product.images;
+
+      var primaryImage = images[0];
+      var variantImage = images.filter(function (image) {
+        return image.variant_ids.indexOf(id) !== -1;
+      })[0];
+
+      var image = variantImage || primaryImage;
+
+      if (!image) {
+        return null;
+      }
+
+      return new ImageModel(image);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  imageVariants: {
+
+    /**
+      * Image variants available for a variant. An example value of `imageVariant`:
+      * ```
+      * [
+      *   {
+      *     "name": "pico",
+      *     "dimensions": "16x16",
+      *     "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/alien_146ef7c1-26e9-4e96-96e6-9d37128d0005_pico.jpg?v=1469046423"
+      *   },
+      *   {
+      *     "name": "compact",
+      *     "dimensions": "160x160",
+      *     "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/alien_146ef7c1-26e9-4e96-96e6-9d37128d0005_compact.jpg?v=1469046423"
+      *   }
+      * ]
+      * ```
+      *
+      * @property imageVariant
+      * @type {Array}
+    */
+    get: function get() {
+      if (!this.image) {
+        return [];
+      }
+
+      return this.image.variants;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+var uniq = function uniq(array) {
+  return array.reduce(function (uniqueArray, item) {
+    if (uniqueArray.indexOf(item) < 0) {
+      uniqueArray.push(item);
+    }
+
+    return uniqueArray;
+  }, []);
+};
+
+var NO_IMAGE_URI = 'https://widgets.shopifyapps.com/assets/no-image.svg';
+
+/**
+   * Class for products returned by fetch('product')
+   * @class ProductModel
+   * @constructor
+ */
+var ProductModel = BaseModel.extend(Object.defineProperties({
+  constructor: function constructor() {
+    this['super'].apply(this, arguments);
+  }
+}, {
+  id: {
+
+    /**
+      * Product unique ID
+      *
+      * @property id
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.product_id;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  title: {
+
+    /**
+      * The product title
+      * @property title
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.title;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  description: {
+
+    /**
+      * A product description.
+      * @property description
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.body_html;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  images: {
+
+    /**
+      * An `Array` of `Objects` that contain meta data about an image including `src` of the images.
+      *
+      * An example image `Object`:
+      * ```
+      * {
+      *   created_at: "2016-08-29T12:35:09-04:00",
+      *   id: 17690553350,
+      *   position: 1,
+      *   product_id: 8291029446,
+      *   src: "https://cdn.shopify.com/s/files/1/1019/0495/products/i11_c3334325-2d67-4623-8cd4-0a6b08aa1b83.jpg?v=1472488509",
+      *   updated_at: "2016-08-29T12:35:09-04:00",
+      *   variant_ids: [ 27690103238 ]
+      * }
+      * ```
+      * @property images
+      * @type {Array} array of image objects.
+    */
+    get: function get() {
+      return this.attrs.images.map(function (image) {
+        return new ImageModel(image);
+      });
+    },
+    configurable: true,
+    enumerable: true
+  },
+  memoized: {
+    get: function get() {
+      this._memoized = this._memoized || {};
+
+      return this._memoized;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  options: {
+
+    /**
+     *  Get an array of {{#crossLink "ProductOptionModel"}}ProductOptionModels{{/crossLink}}.
+     *  {{#crossLink "ProductOptionModel"}}ProductOptionModels{{/crossLink}} can be used to
+     *  define the currently `selectedVariant` from which you can get a checkout url
+     *  ({{#crossLink "ProductVariantModel/checkoutUrl"}}ProductVariantModel.checkoutUrl{{/crossLink}}) or can
+     *  be added to a cart ({{#crossLink "CartModel/createLineItemsFromVariants"}}CartModel.createLineItemsFromVariants{{/crossLink}}).
+     *
+     *  Below is an example on how to create html for option selections:
+     * ```javascript
+     *  // the following will create an Array of HTML to create multiple select inputs
+     *  // global callbacks are also created which will set the option as selected
+     *  var elements = product.options.map(function(option) {
+     *    // we'll create a callback in global scope
+     *    // which will be called when the select's value changes
+     *    var callBackName = option.name + 'onChange';
+     *    window[ callBackName ] = function(select) {
+     *      // set the products option to be selected
+     *      option.selected = select.value;
+     *    };
+     *
+     *    // return a string which will be HTML for the select
+     *    return '<select name="' + option.name + '" onchange="'callBackName'(this)">' + option.values.map(function(value) {
+     *      return '<option value="' + value + '">' + value + '</option>';
+     *    }) + '</select>';
+     *  });
+     * ```
+     *
+     * @property options
+     * @type {Array|ProductOptionModel}
+     */
+    get: function get() {
+      if (this.memoized.options) {
+        return this.memoized.options;
+      }
+
+      var baseOptions = this.attrs.options;
+      var variants$$1 = this.variants;
+
+      this.memoized.options = baseOptions.map(function (option) {
+        var name = option.name;
+
+        var dupedValues = variants$$1.reduce(function (valueList, variant) {
+          var optionValueForOption = variant.optionValues.filter(function (optionValue) {
+            return optionValue.name === option.name;
+          })[0];
+
+          valueList.push(optionValueForOption.value);
+
+          return valueList;
+        }, []);
+
+        var values = uniq(dupedValues);
+
+        return new ProductOptionModel({ name: name, values: values });
+      });
+
+      return this.memoized.options;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  variants: {
+
+    /**
+      * An `Array` of {{#crossLink "ProductVariantModel"}}ProductVariantModel's{{/crossLink}}
+      * @property variants
+      * @type {Array|ProductVariantModel} array of ProductVariantModel instances.
+    */
+    get: function get() {
+      var _this3 = this;
+
+      return this.attrs.variants.map(function (variant) {
+        return new ProductVariantModel({ variant: variant, product: _this3 }, { config: _this3.config });
+      });
+    },
+    configurable: true,
+    enumerable: true
+  },
+  selections: {
+
+    /**
+      * A read only `Array` of Strings represented currently selected option values. eg. `["Large", "Red"]`
+      * @property selections
+      * @type {Array | String}
+    */
+    get: function get() {
+      return this.options.map(function (option) {
+        return option.selected;
+      });
+    },
+    configurable: true,
+    enumerable: true
+  },
+  selectedVariant: {
+
+    /**
+      * Retrieve variant for currently selected options. By default the first value in each
+      * option is selected which means `selectedVariant` will never be `null`.
+      *
+      * With a `selectedVariant` you can create checkout url
+      * ({{#crossLink "ProductVariantModel/checkoutUrl"}}ProductVariantModel.checkoutUrl{{/crossLink}}) or it can
+      * be added to a cart ({{#crossLink "CartModel/createLineItemsFromVariants"}}CartModel.createLineItemsFromVariants{{/crossLink}}).
+      *
+      * @property selectedVariant
+      * @type {ProductVariantModel}
+    */
+    get: function get() {
+      var variantTitle = this.selections.join(' / ');
+
+      return this.variants.filter(function (variant) {
+        return variant.title === variantTitle;
+      })[0] || null;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  selectedVariantImage: {
+
+    /**
+      * Retrieve image for currently selected variantImage. An example image Object would look like this:
+      * ```
+      * {
+      *   created_at: "2016-08-29T12:35:09-04:00",
+      *   id: 17690553350,
+      *   position: 1,
+      *   product_id: 8291029446,
+      *   src: "https://cdn.shopify.com/s/files/1/1019/0495/products/i11_c3334325-2d67-4623-8cd4-0a6b08aa1b83.jpg?v=1472488509",
+      *   updated_at: "2016-08-29T12:35:09-04:00",
+      *   variant_ids: [ 27690103238 ]
+      * }
+      * ```
+      *
+      * @property selectedVariantImage
+      * @type {Object}
+    */
+    get: function get() {
+      if (!this.selectedVariant) {
+        return null;
+      }
+
+      return this.selectedVariant.image;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+var ListingsSerializer = CoreObject.extend({
+  constructor: function constructor(config) {
+    this.config = config;
+  },
+  rootKeyForType: function rootKeyForType(type) {
+    return type.slice(0, -1) + '_listing';
+  },
+
+
+  models: {
+    collections: BaseModel,
+    products: ProductModel
+  },
+
+  modelForType: function modelForType(type) {
+    return this.models[type];
+  },
+  deserializeSingle: function deserializeSingle(type) {
+    var singlePayload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var metaAttrs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    var modelAttrs = singlePayload[this.rootKeyForType(type)];
+    var model = this.modelFromAttrs(type, modelAttrs, metaAttrs);
+
+    return model;
+  },
+  deserializeMultiple: function deserializeMultiple(type) {
+    var _this4 = this;
+
+    var collectionPayload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var metaAttrs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    var models = collectionPayload[this.rootKeyForType(type) + 's'];
+
+    return models.map(function (attrs) {
+      var model = _this4.modelFromAttrs(type, attrs, metaAttrs);
+
+      return model;
+    });
+  },
+  modelFromAttrs: function modelFromAttrs(type, attrs, metaAttrs) {
+    var Model = this.modelForType(type);
+
+    metaAttrs.config = this.config;
+
+    return new Model(attrs, metaAttrs);
+  }
+});
+
+function authToUrl(url, opts) {
+  var authorization = void 0;
+
+  if (opts.headers) {
+    Object.keys(opts.headers).forEach(function (key) {
+      if (key.toLowerCase() === 'authorization') {
+        authorization = opts.headers[key];
+      }
+    });
+  }
+
+  if (authorization) {
+    var hashedKey = authorization.split(' ').slice(-1)[0];
+
+    try {
+      var plainKey = atob(hashedKey);
+
+      var newUrl = void 0;
+
+      if (url.indexOf('?') > -1) {
+        newUrl = url + '&_x_http_authorization=' + plainKey;
+      } else {
+        newUrl = url + '?_x_http_authorization=' + plainKey;
+      }
+
+      return newUrl;
+    } catch (e) {
+      // atob choked on non-encoded data. Therefore, not a form of auth we
+      // support.
+      //
+      // NOOP
+      //
+    }
+  }
+
+  /* eslint newline-before-return: 0 */
+  return url;
+}
+
+function ie9Ajax(method, url, opts) {
+  return new Promise(function (resolve, reject) {
+    var xdr = new XDomainRequest();
+
+    xdr.onload = function () {
+      try {
+        var json = JSON.parse(xdr.responseText);
+
+        resolve({ json: json, originalResponse: xdr, isJSON: true });
+      } catch (e) {
+        resolve({ text: xdr.responseText, originalResponse: xdr, isText: true });
+      }
+    };
+
+    function handleError() {
+      reject(new Error('There was an error with the XDR'));
+    }
+
+    xdr.onerror = handleError;
+    xdr.ontimeout = handleError;
+
+    xdr.open(method, authToUrl(url, opts));
+    xdr.send(opts.data);
+  });
+}
+
+function isNodeLikeEnvironment() {
+  var windowAbsent = typeof window === 'undefined';
+  var requirePresent = "function" === 'function';
+
+  return windowAbsent && requirePresent;
+}
+
+function checkStatus(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return response;
+  }
+
+  var error = new Error(response.statusText);
+
+  error.status = response.status;
+  error.response = response;
+  throw error;
+}
+
+function parseResponse(response) {
+  return response.json().then(function (json) {
+    return { json: json, originalResponse: response, isJSON: true };
+  })['catch'](function () {
+    var responseClone = response.clone();
+
+    return responseClone.text().then(function (text) {
+      return { text: text, originalResponse: responseClone, isText: true };
+    });
+  });
+}
+
+function ajax(method, url) {
+  var opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+  // we need to check that we're not running in Node
+  // before we should check if this is ie9
+  if (!isNodeLikeEnvironment()) {
+    var xhr = new XMLHttpRequest();
+
+    if (!('withCredentials' in xhr)) {
+      return ie9Ajax.apply(undefined, arguments);
+    }
+  }
+
+  opts.method = method;
+  opts.mode = 'cors';
+
+  return fetch(url, opts).then(checkStatus).then(parseResponse);
+}
+
+var ListingsAdapter = CoreObject.extend(Object.defineProperties({
+  ajax: ajax,
+
+  constructor: function constructor(config) {
+    this.config = config;
+  },
+  pathForType: function pathForType(type) {
+    return '/' + type.slice(0, -1) + '_listings';
+  },
+  buildUrl: function buildUrl(singleOrMultiple, type, idOrQuery) {
+    switch (singleOrMultiple) {
+      case 'multiple':
+        return this.buildMultipleUrl(type, idOrQuery);
+      case 'single':
+        return this.buildSingleUrl(type, idOrQuery);
+      default:
+        return '';
+    }
+  },
+  buildMultipleUrl: function buildMultipleUrl(type) {
+    var query = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    var url = '' + this.baseUrl + this.pathForType(type);
+    var paramNames = Object.keys(query);
+
+    if (paramNames.length > 0) {
+      var queryString = paramNames.map(function (key) {
+        var value = void 0;
+
+        if (Array.isArray(query[key])) {
+          value = query[key].join(',');
+        } else {
+          value = query[key];
+        }
+
+        return key + '=' + encodeURIComponent(value);
+      }).join('&');
+
+      return url + '?' + queryString;
+    }
+
+    return url;
+  },
+  buildSingleUrl: function buildSingleUrl(type, id) {
+    return '' + this.baseUrl + this.pathForType(type) + '/' + id;
+  },
+  fetchMultiple: function fetchMultiple() /* type, [query] */{
+    var url = this.buildUrl.apply(this, ['multiple'].concat(Array.prototype.slice.call(arguments)));
+
+    return this.ajax('GET', url, { headers: this.headers }).then(function (response) {
+      return response.json;
+    });
+  },
+  fetchSingle: function fetchSingle() /* type, id */{
+    var url = this.buildUrl.apply(this, ['single'].concat(Array.prototype.slice.call(arguments)));
+
+    return this.ajax('GET', url, { headers: this.headers }).then(function (response) {
+      return response.json;
+    });
+  }
+}, {
+  base64AccessToken: {
+    get: function get() {
+      return btoa(this.config.accessToken);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  baseUrl: {
+    get: function get() {
+      var _config = this.config,
+          domain = _config.domain,
+          appId = _config.appId;
+
+
+      return 'https://' + domain + '/api/apps/' + appId;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  headers: {
+    get: function get() {
+      return assign$1({}, {
+        Authorization: 'Basic ' + this.base64AccessToken,
+        'Content-Type': 'application/json',
+        'X-SDK-Variant': 'javascript',
+        'X-SDK-Version': version
+
+      }, this.config.ajaxHeaders);
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+var GUID_KEY = 'shopify-buy-uuid';
+
+/**
+ * A cart stores an Array of `CartLineItemModel`'s in it's `lineItems` property.
+ * @class CartLineItemModel
+ * @constructor
+ */
+var CartLineItemModel = BaseModel.extend(Object.defineProperties({
+  constructor: function constructor() {
+    this['super'].apply(this, arguments);
+  }
+}, {
+  id: {
+
+    /**
+     * A line item ID.
+     * @property id
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return this.attrs[GUID_KEY];
+    },
+    configurable: true,
+    enumerable: true
+  },
+  variant_id: {
+
+    /**
+     * ID of line item variant.
+     * @property variant_id
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return this.attrs.variant_id;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  product_id: {
+
+    /**
+     * ID of variant's product.
+     * @property product_id
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return this.attrs.product_id;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  image: {
+
+    /**
+     * Variant's image.
+     * Example `Object` returned:
+     * ```
+     * {
+     *    "id": 18723183238,
+     *    "created_at": "2016-09-14T17:12:12-04:00",
+     *    "position": 1,
+     *    "updated_at": "2016-09-14T17:12:12-04:00",
+     *    "product_id": 8569911558,
+     *    "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/Mop__three_different_mop_handles.jpg?v=1473887532",
+     *    "variant_ids": []
+     *  }
+     * ```
+     * @property image
+     * @readOnly
+     * @type {Object}
+     */
+    get: function get() {
+      if (!this.attrs.image) {
+        return null;
+      }
+
+      return new ImageModel(this.attrs.image);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  imageVariants: {
+
+    /**
+      * Image variants available for a variant. An example value of `imageVariant`:
+      * ```
+      * [
+      *   {
+      *     "name": "pico",
+      *     "dimensions": "16x16",
+      *     "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/alien_146ef7c1-26e9-4e96-96e6-9d37128d0005_pico.jpg?v=1469046423"
+      *   },
+      *   {
+      *     "name": "compact",
+      *     "dimensions": "160x160",
+      *     "src": "https://cdn.shopify.com/s/files/1/1019/0495/products/alien_146ef7c1-26e9-4e96-96e6-9d37128d0005_compact.jpg?v=1469046423"
+      *   }
+      * ]
+      * ```
+      *
+      * @property imageVariant
+      * @type {Array}
+    */
+    get: function get() {
+      if (!this.image) {
+        return [];
+      }
+
+      return this.image.variants;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  title: {
+
+    /**
+     * Product title of variant's parent product.
+     * @property title
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return this.attrs.title;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  quantity: {
+
+    /**
+     * Count of variants to order.
+     * @property quantity
+     * @type {Number}
+     */
+    get: function get() {
+      return this.attrs.quantity;
+    },
+    set: function set(value) {
+      var parsedValue = parseInt(value, 10);
+
+      if (parsedValue < 0) {
+        throw new Error('Quantities must be positive');
+      } else if (parsedValue !== parseFloat(value)) {
+        /* incidentally, this covers all NaN values, because NaN !== Nan */
+        throw new Error('Quantities must be whole numbers');
+      }
+
+      this.attrs.quantity = parsedValue;
+
+      return this.attrs.quantity;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  properties: {
+
+    /**
+     * Customization information for a product.
+     * <a href="https://help.shopify.com/themes/customization/products/get-customization-information-for-products" target="_blank">
+     * See here for more info
+     * </a>.
+     * @property properties
+     * @type {Object}
+     * @private
+     */
+    get: function get() {
+      return this.attrs.properties || {};
+    },
+    set: function set(value) {
+      this.attrs.properties = value || {};
+
+      return value;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  variant_title: {
+
+    /**
+     * Title of variant.
+     * @property variant_title
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return this.attrs.variant_title;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  price: {
+
+    /**
+     * Price of the variant. For example: `"5.00"`.
+     * @property price
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return this.attrs.price;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  compare_at_price: {
+
+    /**
+      * Compare at price for variant. The `compareAtPrice` would be
+      * the price of the product previously before the product went on sale. For more info
+      * go <a href="https://docs.shopify.com/manual/products/promoting-marketing/sales" target="_blank">here</a>.
+      *
+      * If no `compareAtPrice` is set then this value will be `null`. An example value: `"5.00"`.
+      * @property compareAtPrice
+      * @readOnly
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs.compare_at_price;
+    },
+    configurable: true,
+    enumerable: true
+  },
+  line_price: {
+
+    /**
+     * The total price for this line item. For instance if the variant costs `1.50` and you have a quantity
+     * of 2 then `line_price` will be `3.00`.
+     * @property line_price
+     * @readOnly
+     * @type {String}
+     */
+    get: function get() {
+      return (this.quantity * parseFloat(this.price)).toFixed(2);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  grams: {
+
+    /**
+     * Variant's weight in grams. If no weight is set then `0` is returned.
+     * @property grams
+     * @readOnly
+     * @type {Number}
+     */
+    get: function get() {
+      return this.attrs.grams;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+/* eslint no-undefined: 0 complexity: 0 */
+var GUID_PREFIX = 'shopify-buy.' + Date.now();
+
+var GUID_DESC = {
+  writable: true,
+  configurable: true,
+  enumerable: true,
+  value: null
+};
+
+var uuidSeed = 0;
+
+function uuid() {
+  return ++uuidSeed;
+}
+
+var numberCache = {};
+var stringCache = {};
+
+function setGuidFor(obj) {
+  if (obj && obj[GUID_KEY]) {
+    return obj[GUID_KEY];
+  }
+
+  if (obj === undefined) {
+    return '(undefined)';
+  }
+
+  if (obj === null) {
+    return '(null)';
+  }
+
+  var type = typeof obj === 'undefined' ? 'undefined' : _typeof(obj);
+  var id = void 0;
+
+  switch (type) {
+    case 'number':
+      id = numberCache[obj];
+
+      if (!id) {
+        id = numberCache[obj] = 'nu' + obj;
+      }
+
+      break;
+
+    case 'string':
+      id = stringCache[obj];
+
+      if (!id) {
+        id = stringCache[obj] = 'st' + uuid();
+      }
+
+      break;
+
+    case 'boolean':
+      if (obj) {
+        id = '(true)';
+      } else {
+        id = '(false)';
+      }
+
+      break;
+
+    default:
+      if (obj === Object) {
+        id = '(Object)';
+        break;
+      }
+
+      if (obj === Array) {
+        id = '(Array)';
+        break;
+      }
+
+      id = GUID_PREFIX + '.' + uuid();
+
+      if (obj[GUID_KEY] === null) {
+        obj[GUID_KEY] = id;
+      } else {
+        GUID_DESC.value = id;
+        Object.defineProperty(obj, GUID_KEY, GUID_DESC);
+      }
+  }
+
+  return id;
+}
+
+/* global global */
+
+var globalNamespace = void 0;
+
+if (typeof global === 'undefined') {
+  globalNamespace = window;
+} else {
+  globalNamespace = global;
+}
+
+function set(key, value) {
+  if (!globalNamespace[key]) {
+    globalNamespace[key] = value;
+  }
+}
+
+function get(key) {
+  return globalNamespace[key];
+}
+
+var globalVars = { set: set, get: get };
+
+function objectsEqual(one, two) {
+  if (one === two) {
+    return true;
+  }
+
+  return Object.keys(one).every(function (key) {
+    if (one[key] instanceof Date) {
+      return one[key].toString() === two[key].toString();
+    } else if (_typeof(one[key]) === 'object') {
+      return objectsEqual(one[key], two[key]);
+    }
+
+    return one[key] === two[key];
+  });
+}
+
+/**
+* Class for cart model
+* @class CartModel
+*/
+var CartModel = BaseModel.extend(Object.defineProperties({
+  constructor: function constructor() {
+    this['super'].apply(this, arguments);
+  },
+
+
+  /**
+    * Add items to the cart. Updates cart's `lineItems` based on variants passed in.
+    * ```javascript
+    * cart.addVariants({variant: variantObject, quantity: 1}).then(cart => {
+    *   // the cart has created line items
+    * });
+    * ```
+    * @deprecated `createLineItemsFromVariants` will be used in the future as it's more descriptive
+    * @method addVariants
+    * @param {Object} item - One or more variants
+    * @param {ProductVariantModel} item.variant - variant object
+    * @param {Number} item.quantity - quantity
+    * @param {Object} [moreItems...] - further objects defining `variant` and `quantity` maybe passed in
+    * @private
+    * @return {Promise|CartModel} - the cart instance.
+  */
+  addVariants: function addVariants() {
+    logger.warn('CartModel - ', 'addVariants is deprecated, please use createLineItemsFromVariants instead');
+
+    return this.createLineItemsFromVariants.apply(this, arguments);
+  },
+
+
+  /**
+    * Add items to the cart. Updates cart's `lineItems` based on variants passed in.
+    * ```javascript
+    * cart.createLineItemsFromVariants({variant: variantObject, quantity: 1}).then(cart => {
+    *   // the cart has created line items
+    * });
+    * ```
+    * @method createLineItemsFromVariants
+    * @param {Object} item - One or more variants
+    * @param {ProductVariantModel} item.variant - variant object
+    * @param {Number} item.quantity - quantity
+    * @param {Object} [moreItems...] - further objects defining `variant` and `quantity` maybe passed in
+    * @public
+    * @return {Promise|CartModel} - the cart instance.
+  */
+  createLineItemsFromVariants: function createLineItemsFromVariants() {
+    var newLineItems = [].concat(Array.prototype.slice.call(arguments)).map(function (item) {
+      var lineItem = {
+        image: item.variant.image,
+        image_variants: item.variant.imageVariants,
+        variant_id: item.variant.id,
+        product_id: item.variant.productId,
+        title: item.variant.productTitle,
+        quantity: parseInt(item.quantity, 10),
+        properties: item.properties || {},
+        variant_title: item.variant.title,
+        price: item.variant.price,
+        compare_at_price: item.variant.compareAtPrice,
+        grams: item.variant.grams
+      };
+
+      setGuidFor(lineItem);
+
+      return lineItem;
+    });
+    var existingLineItems = this.attrs.line_items;
+
+    existingLineItems.push.apply(existingLineItems, _toConsumableArray(newLineItems));
+
+    var dedupedLineItems = existingLineItems.reduce(function (itemAcc, item) {
+      var matchingItem = itemAcc.filter(function (existingItem) {
+        return existingItem.variant_id === item.variant_id && objectsEqual(existingItem.properties, item.properties);
+      })[0];
+
+      if (matchingItem) {
+        matchingItem.quantity = matchingItem.quantity + item.quantity;
+      } else {
+        itemAcc.push(item);
+      }
+
+      return itemAcc;
+    }, []);
+
+    // Users may pass negative numbers and remove items. This ensures there's no
+    // item with a quantity of zero or less.
+    this.attrs.line_items = dedupedLineItems.reduce(function (itemAcc, item) {
+      if (item.quantity >= 1) {
+        itemAcc.push(item);
+      }
+
+      return itemAcc;
+    }, []);
+
+    return this.updateModel();
+  },
+
+
+  /**
+    * Update a line item quantity based on line item id
+    * ```javascript
+    * // This example changes the quantity for the first line item to 2
+    * const firstLineItemId = cart.lineItems[0].id;
+    *
+    * cart.updateLineItem(firstLineItemId, 2).then(cart => {
+    *   // the cart has updated the line item
+    * });
+    * ```
+    * @method updateLineItem
+    * @param {String} id - line item ID
+    * @param {Number} quantity - new quantity for line item
+    * @throws {Error} if line item with ID is not in cart.
+    * @public
+    * @return {Promise|CartModel} - the cart instance
+  */
+  updateLineItem: function updateLineItem(id, quantity) {
+    if (quantity < 1) {
+      return this.removeLineItem(id);
+    }
+
+    var lineItem = this.lineItems.filter(function (item) {
+      return item.id === id;
+    })[0];
+
+    if (lineItem) {
+      lineItem.quantity = quantity;
+
+      return this.updateModel();
+    }
+
+    return new Promise(function (resolve, reject) {
+      reject(new Error('line item with id: ' + id + ' not found in cart#' + this.id));
+    });
+  },
+
+
+  /**
+    * Remove a line item from cart based on line item id
+    * ```javascript
+    * // This example removes the first line item
+    * const firstLineItemId = cart.lineItems[0].id;
+    *
+    * cart.removeLineItem(firstLineItemId).then(cart => {
+    *   // the cart has removed the line item
+    * });
+    * ```
+    *
+    * @method removeLineItem
+    * @param {String} id - line item ID
+    * @throws {Error} if line item with ID is not in cart.
+    * @public
+    * @return {Promise|CartModel} - the cart instance
+  */
+  removeLineItem: function removeLineItem(id) {
+    var oldLength = this.lineItems.length;
+    var newLineItems = this.lineItems.filter(function (item) {
+      return item.id !== id;
+    });
+    var newLength = newLineItems.length;
+
+    if (newLength < oldLength) {
+      this.attrs.line_items = newLineItems.map(function (item) {
+        return item.attrs;
+      });
+
+      return this.updateModel();
+    }
+
+    return new Promise(function (resolve, reject) {
+      reject(new Error('line item with id: ' + id + ' not found in cart#' + this.id));
+    });
+  },
+
+
+  /**
+    * Remove all line items from cart
+    * ```javascript
+    * // This example removes all line items from the cart
+    * cart.clearLineItems().then(cart => {
+    *   // the cart has removed all line items
+    * });
+    * @method clearLineItems
+    * @public
+    * @return {Promise|CartModel} - the cart instance
+  */
+  clearLineItems: function clearLineItems() {
+    this.attrs.line_items = [];
+
+    return this.updateModel();
+  },
+
+
+  /**
+    * Force update of cart model on server. This function will only be used in advanced situations and does not need to be called
+    * explicitly to update line items. It is automatically called after
+    * {{#crossLink "CartModel/createLineItemsFromVariants"}}{{/crossLink}},
+    * {{#crossLink "CartModel/updateLineItem"}}{{/crossLink}},
+    * {{#crossLink "CartModel/removeLineItem"}}{{/crossLink}},
+    * and {{#crossLink "CartModel/removeLineItem"}}{{/crossLink}}
+    *
+    * @method updateModel
+    * @public
+    * @return {Promise|CartModel} - the cart instance
+  */
+  updateModel: function updateModel() {
+    var _this5 = this;
+
+    return this.shopClient.update('carts', this).then(function (updateCart) {
+      assign$1(_this5.attrs, updateCart.attrs);
+
+      return _this5;
+    });
+  }
+}, {
+  id: {
+
+    /**
+      * get ID for current cart
+      * @property id
+      * @readOnly
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs[GUID_KEY];
+    },
+    configurable: true,
+    enumerable: true
+  },
+  lineItems: {
+
+    /**
+      * Get an `Array` of {{#crossLink "CartLineItemModel"}}CartLineItemModel's{{/crossLink}}
+      * @property lineItems
+      * @readOnly
+      * @type {Array}
+    */
+    get: function get() {
+      return (this.attrs.line_items || []).map(function (item) {
+        return new CartLineItemModel(item);
+      });
+    },
+    configurable: true,
+    enumerable: true
+  },
+  lineItemCount: {
+
+    /**
+      * Gets the total quantity of all line items. Example: you've added two variants with quantities 3 and 2. `lineItemCount` will be 5.
+      * @property lineItemCount
+      * @readOnly
+      * @type {Number}
+    */
+    get: function get() {
+      return this.lineItems.reduce(function (total, item) {
+        return total + item.quantity;
+      }, 0);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  subtotal: {
+
+    /**
+      * Get current subtotal price for all line items. Example: two items have been added to the cart that cost $1.25
+      * then the subtotal will be `2.50`
+      *
+      * @property subtotal
+      * @readOnly
+      * @type {String}
+    */
+    get: function get() {
+      var subtotal = this.lineItems.reduce(function (runningTotal, lineItem) {
+        return runningTotal + parseFloat(lineItem.line_price);
+      }, 0);
+
+      return subtotal.toFixed(2);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  checkoutUrl: {
+
+    /**
+      * Get checkout URL for current cart
+      * @property checkoutUrl
+      * @readOnly
+      * @type {String}
+    */
+    get: function get() {
+      var config = this.config;
+      var baseUrl = 'https://' + config.domain + '/cart';
+      var ga = globalVars.get('ga');
+
+      var variantPath = this.lineItems.map(function (item) {
+        return item.variant_id + ':' + item.quantity;
+      });
+
+      var query = 'access_token=' + config.accessToken + '&_fd=0';
+
+      if (typeof ga === 'function') {
+        var linkerParam = void 0;
+
+        ga(function (tracker) {
+          linkerParam = tracker.get('linkerParam');
+        });
+
+        if (linkerParam) {
+          query += '&' + linkerParam;
+        }
+      }
+
+      return baseUrl + '/' + variantPath + '?' + query;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+var CartSerializer = CoreObject.extend({
+  constructor: function constructor(config) {
+    this.config = config;
+  },
+  rootKeyForType: function rootKeyForType(type) {
+    return type.slice(0, -1);
+  },
+  modelForType: function modelForType() /* type */{
+    return CartModel;
+  },
+  deserializeSingle: function deserializeSingle(type) {
+    var singlePayload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var metaAttrs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    var modelAttrs = singlePayload[this.rootKeyForType(type)];
+    var model = this.modelFromAttrs(type, modelAttrs, metaAttrs);
+
+    return model;
+  },
+  modelFromAttrs: function modelFromAttrs(type, attrs, metaAttrs) {
+    var Model = this.modelForType(type);
+
+    metaAttrs.config = this.config;
+
+    return new Model(attrs, metaAttrs);
+  },
+  serialize: function serialize(type, model) {
+    var root = this.rootKeyForType(type);
+    var payload = {};
+    var attrs = assign$1({}, model.attrs);
+
+    payload[root] = attrs;
+
+    delete attrs.attributes;
+
+    Object.keys(attrs).forEach(function (key) {
+      var value = attrs[key];
+
+      if (value === null || typeof value === 'string' && value.length === 0) {
+        delete attrs[key];
+      }
+    });
+
+    return payload;
+  }
+});
+
+var ReferenceModel = BaseModel.extend(Object.defineProperties({
+
+  /**
+    * Class for reference model
+    * @private
+    * @class ReferenceModel
+    * @constructor
+  */
+  constructor: function constructor(attrs) {
+    if (Object.keys(attrs).indexOf('referenceId') < 0) {
+      throw new Error('Missing key referenceId of reference. References to null are not allowed');
+    }
+
+    this['super'].apply(this, arguments);
+  }
+}, {
+  id: {
+
+    /**
+      * get the ID for current reference (not what it refers to, but its own unique identifier)
+      * @property id
+      * @type {String}
+    */
+    get: function get() {
+      return this.attrs[GUID_KEY];
+    },
+    configurable: true,
+    enumerable: true
+  },
+  referenceId: {
+    get: function get() {
+      return this.attrs.referenceId;
+    },
+    set: function set(value) {
+      this.attrs.referenceId = value;
+
+      return value;
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+var ReferenceSerializer = CoreObject.extend({
+  constructor: function constructor(config) {
+    this.config = config;
+  },
+  modelForType: function modelForType() /* type */{
+    return ReferenceModel;
+  },
+  deserializeSingle: function deserializeSingle(type) {
+    var singlePayload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var metaAttrs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    var Model = this.modelForType(type);
+
+    return new Model(singlePayload, metaAttrs);
+  },
+  serialize: function serialize(type, model) {
+    var attrs = assign$1({}, model.attrs);
+
+    return attrs;
+  }
+});
+
+var Store = CoreObject.extend({
+  constructor: function constructor() {
+    this.localStorageAvailable = this.storageAvailable('localStorage');
+    this.cache = {};
+  },
+  setItem: function setItem(key, value) {
+    if (this.localStorageAvailable) {
+      localStorage.setItem(key, JSON.stringify(value));
+    } else {
+      this.cache[key] = value;
+    }
+
+    return value;
+  },
+  getItem: function getItem(key) {
+    if (this.localStorageAvailable) {
+      var stringValue = localStorage.getItem(key);
+
+      try {
+        return JSON.parse(stringValue);
+      } catch (e) {
+        return null;
+      }
+    } else {
+      return this.cache[key] || null;
+    }
+  },
+  storageAvailable: function storageAvailable(type) {
+    try {
+      var storage = globalVars.get(type);
+      var x = '__storage_test__';
+
+      storage.setItem(x, x);
+      storage.removeItem(x);
+
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+});
+
+var LocalStorageAdapter = CoreObject.extend({
+  constructor: function constructor() {
+    this.store = new Store();
+  },
+  idKeyForType: function idKeyForType() /* type */{
+    return GUID_KEY;
+  },
+  fetchSingle: function fetchSingle(type, id) {
+    var _this6 = this;
+
+    return new Promise(function (resolve, reject) {
+      var value = _this6.store.getItem(_this6.storageKey(type, id));
+
+      if (value === null) {
+        reject(new Error(type + '#' + id + ' not found'));
+
+        return;
+      }
+
+      resolve(value);
+    });
+  },
+  create: function create(type, payload) {
+    var _this7 = this;
+
+    return new Promise(function (resolve) {
+      var id = _this7.identify(payload);
+
+      _this7.store.setItem(_this7.storageKey(type, id), payload);
+      resolve(payload);
+    });
+  },
+  update: function update(type, id, payload) {
+    var _this8 = this;
+
+    return new Promise(function (resolve) {
+      _this8.store.setItem(_this8.storageKey(type, id), payload);
+      resolve(payload);
+    });
+  },
+  storageKey: function storageKey(type, id) {
+    return type + '.' + id;
+  },
+  identify: function identify(payload) {
+    var keys = Object.keys(payload);
+
+    if (keys.length === 1 && _typeof(payload[keys[0]]) === 'object') {
+      return setGuidFor(payload[keys[0]]);
+    }
+
+    return setGuidFor(payload);
+  }
+});
+
+/**
+ * @module shopify-buy
+ * @submodule shop-client
+ */
+
+function fetchFactory(fetchType, type) {
+  var func = void 0;
+
+  switch (fetchType) {
+    case 'all':
+      func = function func() {
+        return this.fetchAll(type);
+      };
+      break;
+    case 'one':
+      func = function func() {
+        return this.fetch.apply(this, [type].concat(Array.prototype.slice.call(arguments)));
+      };
+      break;
+    case 'query':
+      func = function func() {
+        return this.fetchQuery.apply(this, [type].concat(Array.prototype.slice.call(arguments)));
+      };
+      break;
+  }
+
+  return func;
+}
+
+var ShopClient = CoreObject.extend(Object.defineProperties({
+  /**
+   * @class ShopClient
+   * @constructor
+   */
+  constructor: function constructor(config) {
+    this.config = config;
+
+    this.serializers = {
+      products: ListingsSerializer,
+      collections: ListingsSerializer,
+      carts: CartSerializer,
+      references: ReferenceSerializer
+    };
+
+    this.adapters = {
+      products: ListingsAdapter,
+      collections: ListingsAdapter,
+      carts: LocalStorageAdapter,
+      references: LocalStorageAdapter
+    };
+  },
+
+
+  config: null,
+
+  /**
+   * Fetch all of a `type`, returning a promise.
+   *
+   * ```javascript
+   * client.fetchAll('products').then(products => {
+   *   // do things with products
+   * });
+   * ```
+   *
+   * @method fetchAll
+   * @private
+   * @param {String} type The pluralized name of the type, in lower case.
+   * @return {Promise|Array} a promise resolving with an array of `type`
+   */
+  fetchAll: function fetchAll(type) {
+    var _this9 = this;
+
+    var adapter = new this.adapters[type](this.config);
+
+    return adapter.fetchMultiple(type).then(function (payload) {
+      return _this9.deserialize(type, payload, adapter, null, { multiple: true });
+    });
+  },
+
+
+  /**
+   * Fetch one of a `type`, returning a promise.
+   *
+   * ```javascript
+   * client.fetch('products', 123).then(product => {
+   *   // do things with the product
+   * });
+   * ```
+   *
+   * @method fetch
+   * @private
+   * @param {String} type The pluralized name of the type, in lower case.
+   * @param {String|Number} id a unique identifier
+   * @return {Promise|BaseModel} a promise resolving with a single instance of
+   * `type` expressed as a `BaseModel`.
+   */
+  fetch: function fetch(type, id) {
+    var _this10 = this;
+
+    var adapter = new this.adapters[type](this.config);
+
+    return adapter.fetchSingle(type, id).then(function (payload) {
+      return _this10.deserialize(type, payload, adapter, null, { single: true });
+    });
+  },
+
+
+  /**
+   * Fetch many of a `type`, that match `query`
+   *
+   * ```javascript
+   * client.fetchQuery('products', { collection_id: 456 }).then(products => {
+   *   // do things with the products
+   * });
+   * ```
+   *
+   * @method fetchQuery
+   * @private
+   * @param {String} type The pluralized name of the type, in lower case.
+   * @param {Object} query a query sent to the api server.
+   * @return {Promise|Array} a promise resolving with an array of `type`.
+   */
+  fetchQuery: function fetchQuery(type, query) {
+    var _this11 = this;
+
+    var adapter = new this.adapters[type](this.config);
+
+    return adapter.fetchMultiple(type, query).then(function (payload) {
+      return _this11.deserialize(type, payload, adapter, null, { multiple: true });
+    });
+  },
+
+
+  /**
+   * Create an instance of `type`, optionally including `modelAttrs`.
+   *
+   * ```javascript
+   * client.create('carts', { line_items: [ ... ] }).then(cart => {
+   *   // do things with the cart.
+   * });
+   * ```
+   *
+   * @method create
+   * @private
+   * @param {String} type The pluralized name of the type, in lower case.
+   * @param {Object} [modelAttrs={}] attributes representing the internal state
+   * of the model to be persisted.
+   * @return {Promise|CartModel} a promise resolving with a single instance of
+   * `type`
+   */
+  create: function create(type) {
+    var _this12 = this;
+
+    var modelAttrs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    var adapter = new this.adapters[type](this.config);
+    var serializer = new this.serializers[type](this.config);
+    var Model = serializer.modelForType(type);
+    var model = new Model(modelAttrs, { shopClient: this });
+    var attrs = serializer.serialize(type, model);
+
+    return adapter.create(type, attrs).then(function (payload) {
+      return _this12.deserialize(type, payload, adapter, serializer, { single: true });
+    });
+  },
+
+
+  /**
+   * Create an instance of `type`, optionally including `attrs`.
+   *
+   * ```javascript
+   * client.create('carts', { line_items: [ ... ] }).then(cart => {
+   *   // do things with the cart.
+   * });
+   * ```
+   *
+   * @method update
+   * @private
+   * @param {String} type The pluralized name of the type, in lower case.
+   * @param {BaseModel} updatedModel The model that represents new state to
+   * to persist.
+   * @return {Promise|CartModel} a promise resolving with a single instance of
+   * `type`
+   */
+  update: function update(type, updatedModel) {
+    var _this13 = this;
+
+    var adapter = updatedModel.adapter;
+    var serializer = updatedModel.serializer;
+    var serializedModel = serializer.serialize(type, updatedModel);
+    var id = updatedModel.attrs[adapter.idKeyForType(type)];
+
+    return adapter.update(type, id, serializedModel).then(function (payload) {
+      return _this13.deserialize(type, payload, adapter, serializer, { single: true });
+    });
+  },
+
+
+  /**
+   * Proxy to serializer's deserialize.
+   *
+   * @method deserialize
+   * @private
+   * @param {String} type The pluralized name of the type, in lower case.
+   * @param {Object} payload The raw payload returned by the adapter.
+   * @param {BaseAdapter} adapter The adapter that yielded the payload.
+   * @param {BaseSerializer} existingSerializer The serializer to attach. If
+   * none is passed, then `this.deserialize` will create one for the type.
+   * @param {Object} opts Options that determine which deserialization method to
+   * use.
+   * @param {Boolean} opts.multiple true when the payload represents multiple
+   * models
+   * @param {Boolean} opts.single true when the payload represents one model.
+   * @return {BaseModel} an instance of `type` reified into a model.
+   */
+  deserialize: function deserialize(type, payload, adapter, existingSerializer) {
+    var opts = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};
+
+    var serializer = existingSerializer || new this.serializers[type](this.config);
+    var meta = { shopClient: this, adapter: adapter, serializer: serializer, type: type };
+    var serializedPayload = void 0;
+
+    if (opts.multiple) {
+      serializedPayload = serializer.deserializeMultiple(type, payload, meta);
+    } else {
+      serializedPayload = serializer.deserializeSingle(type, payload, meta);
+    }
+
+    return serializedPayload;
+  },
+
+
+  /**
+    * Creates a {{#crossLink "CartModel"}}CartModel{{/crossLink}} instance.
+    *
+    * ```javascript
+    * client.createCart().then(cart => {
+    *   // do something with cart
+    * });
+    * ```
+    *
+    * @method createCart
+    * @public
+    * @return {Promise|CartModel} - new cart instance.
+  */
+  createCart: function createCart() {
+    var userAttrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    var baseAttrs = {
+      line_items: []
+    };
+    var attrs = {};
+
+    assign$1(attrs, baseAttrs);
+    assign$1(attrs, userAttrs);
+
+    return this.create('carts', attrs);
+  },
+
+
+  /**
+    * Updates an existing {{#crossLink "CartModel"}}CartModel{{/crossLink}} instance and persists it to localStorage.
+    *
+    * ```javascript
+    * client.createCart().then(cart => {
+    *   cart.lineItems = [
+    *     // ...
+    *   ];
+    *   client.updateCart(cart);
+    * });
+    * ```
+    *
+    * @param {CartModel} updatedCart an updated CartModel
+    * @method updateCart
+    * @private
+    * @return {Promise|CartModel} - updated cart instance.
+  */
+  updateCart: function updateCart(updatedCart) {
+    return this.update('carts', updatedCart);
+  },
+
+
+  /**
+   * Retrieve a previously created cart by its key.
+   *
+   * ```javascript
+   * client.fetchCart('shopify-buy.1459804699118.2').then(cart => {
+   *   console.log(cart); // The retrieved cart
+   * });
+   *
+   * @method fetchCart
+   * @public
+   * @param {String} id The cart's unique identifier
+   * @return {Promise|CartModel} The cart model.
+   *
+   */
+  fetchCart: fetchFactory('one', 'carts'),
+
+  /**
+   * This function will return an `Array` of products from your store
+   * ```
+   * client.fetchAllProducts()
+   * .then(function(products) {
+   *   // all products in store
+   * });
+   * ```
+   *
+   * @method fetchAllProducts
+   * @public
+   * @return {Promise|Array} The product models.
+   */
+  fetchAllProducts: fetchFactory('all', 'products'),
+
+  /**
+   * This function will return an `Array` of collections from your store
+   * ```
+   * client.fetchAllCollections()
+   * .then(function(collections) {
+   *
+   * });
+   * ```
+   *
+   * @method fetchAllCollections
+   * @public
+   * @return {Promise|Array} The collection models.
+   */
+  fetchAllCollections: fetchFactory('all', 'collections'),
+
+  /**
+   * Fetch one product by its ID.
+   *
+   * ```javascript
+   * client.fetchProduct('8569911558').then(product => {
+   *   console.log(product); // The product with an ID of '8569911558'
+   * });
+   * ```
+   *
+   * @method fetchProduct
+   * @public
+   * @param {String|Number} id a unique identifier
+   * @return {Promise|BaseModel} The product model with the specified ID.
+   */
+  fetchProduct: fetchFactory('one', 'products'),
+
+  /**
+   * Fetch one collection by its ID.
+   *
+   * ```javascript
+   * client.fetchCollection('336903494').then(collection => {
+   *   console.log(collection); // The collection with an ID of '336903494'
+   * });
+   * ```
+   *
+   * @method fetchCollection
+   * @public
+   * @param {String|Number} id a unique identifier
+   * @return {Promise|BaseModel} The collection model with the specified ID.
+   */
+  fetchCollection: fetchFactory('one', 'collections'),
+
+  /**
+   * Fetches a list of products matching a specified query.
+   *
+   * ```javascript
+   * client.fetchQueryProducts({ collection_id: '336903494', tag: ['hats'] }).then(products => {
+   *   console.log(products); // An array of products in collection '336903494' having the tag 'hats'
+   * });
+   * ```
+   * @method fetchQueryProducts
+   * @public
+   * @param {Object} query A query sent to the api server containing one or more of:
+   *   @param {String|Number} [query.collection_id] The ID of a collection to retrieve products from
+   *   @param {Array} [query.tag] A list of tags to filter the products by. Accepts up to 10 tags.
+   *   @param {Array} [query.product_ids] A list of product IDs to retrieve
+   *   @param {String|Number} [query.page=1] The page offset number of the current lookup (based on the `limit`)
+   *   @param {String|Number} [query.limit=50] The number of products to retrieve per page
+   *   @param {String} [query.handle] The handle of the product to look up
+   *   @param {String} [query.updated_at_min] Products updated since the supplied timestamp (format: 2008-12-31 03:00)
+   *   @param {String} [query.sort_by] Will modify how products are ordered. Possible values are:
+   *                                   `"updated_at"`, `"best-selling"`, `"title-ascending"`, `"title-descending"`,
+   *                                   `"price-descending"`, `"price-ascending"`, `"created-descending"`, `"created-ascending"`,
+   *                                   or `"collection-default"`. Using `"collection-default"` means that products will be ordered
+   *                                   the using the custom ordering defined in your Shopify Admin. Default value `"collection-default"`.
+   * @return {Promise|Array} The product models.
+   */
+  fetchQueryProducts: fetchFactory('query', 'products'),
+
+  /**
+   * Fetches a list of collections matching a specified query.
+   *
+   * ```javascript
+   * client.fetchQueryCollections({page: 2, limit: 20}).then(collections => {
+   *   console.log(collections); // An array of collection resources
+   * });
+   * ```
+   *
+   * @method fetchQueryCollections
+   * @public
+   * @param {Object} query a query sent to the api server.
+   *   @param {String|Number} [query.page=1] the page offset number of the current lookup (based on the `limit`)
+   *   @param {String|Number} [query.limit=50] the number of collections to retrieve per page
+   * @return {Promise|Array} The collection models.
+   */
+  fetchQueryCollections: fetchFactory('query', 'collections'),
+
+  /**
+   * This method looks up a reference in localStorage to the most recent cart.
+   * If one is not found, creates one. If the cart the reference points to
+   * doesn't exist, create one and store the new reference.
+   *
+   * ```javascript
+   * client.fetchRecentCart().then(cart => {
+   *  // do stuff with the cart
+   * });
+   * ```
+   *
+   * @method fetchRecentCart
+   * @public
+   * @return {Promise|CartModel} The cart.
+   */
+  fetchRecentCart: function fetchRecentCart() {
+    var _this14 = this;
+
+    return this.fetch('references', this.config.domain + '.recent-cart').then(function (reference) {
+      var cartId = reference.referenceId;
+
+      return _this14.fetchCart(cartId);
+    })['catch'](function () {
+      return _this14.createCart().then(function (cart) {
+        var refAttrs = {
+          referenceId: cart.id
+        };
+
+        refAttrs[GUID_KEY] = _this14.config.domain + '.recent-cart';
+
+        _this14.create('references', refAttrs);
+
+        return cart;
+      });
+    });
+  }
+}, {
+  serializers: {
+    /**
+     * @attribute
+     * @default {
+     *  products: ListingsAdapter,
+     *  collections: ListingsAdapter,
+     *  carts: CartAdapter
+     * }
+     * @type Object
+     * @protected
+     */
+    // Prevent leaky state
+    get: function get() {
+      return assign$1({}, this.shadowedSerializers);
+    },
+    set: function set(values) {
+      this.shadowedSerializers = assign$1({}, values);
+    },
+    configurable: true,
+    enumerable: true
+  },
+  adapters: {
+    get: function get() {
+      return assign$1({}, this.shadowedAdapters);
+    },
+    set: function set(values) {
+      this.shadowedAdapters = assign$1({}, values);
+    },
+    configurable: true,
+    enumerable: true
+  }
+}));
+
+/* globals require */
+
+if (isNodeLikeEnvironment()) {
+  /* this indirection is needed because babel throws errors when
+   * transpiling require('node-fetch') using `amd` plugin with babel6
+   */
+  var localRequire = require;
+  var _fetch = __webpack_require__(187);
+
+  globalVars.set('fetch', _fetch);
+  globalVars.set('Response', _fetch.Response);
+}
+
+/* global Buffer */
+
+if (isNodeLikeEnvironment()) {
+  globalVars.set('btoa', function (string) {
+    return new Buffer(string).toString('base64');
+  });
+}
+
+/**
+ * @module shopify-buy
+ * @submodule shopify
+ */
+
+/**
+ * `ShopifyBuy` only defines one function {{#crossLink "ShopifyBuy/buildClient"}}{{/crossLink}} which can
+ * be used to build a {{#crossLink "ShopClient"}}{{/crossLink}} to query your store using the
+ * provided
+ * {{#crossLink "ShopifyBuy/buildClient/configAttrs:accessToken"}}`accessToken`{{/crossLink}},
+ * {{#crossLink "ShopifyBuy/buildClient/configAttrs:appId"}}`appId`{{/crossLink}},
+ * and {{#crossLink "ShopifyBuy/buildClient/configAttrs:domain"}}`domain`{{/crossLink}}.
+ * @class ShopifyBuy
+ * @static
+ */
+var Shopify = {
+  ShopClient: ShopClient,
+  Config: Config,
+  version: version,
+  NO_IMAGE_URI: NO_IMAGE_URI,
+
+  /**
+   * Create a ShopClient. This is the main entry point to the SDK.
+   *
+   * ```javascript
+   * const client = ShopifyBuy.buildClient({
+   *   accessToken: 'bf081e860bc9dc1ce0654fdfbc20892d',
+   *   appId: 6,
+   *   myShopifyDomain: 'your-shop-subdomain.myshopify.com', //Deprecated. Use `domain` instead
+   *   domain: 'embeds.myshopify.com'
+   * });
+   * ```
+   *
+   * @method buildClient
+   * @for ShopifyBuy
+   * @static
+   * @public
+   * @param {Object} configAttrs An object of required config data such as: `accessToken`, `appId`, `domain`
+   * @param {String} configAttrs.accessToken An access token for your store. Documentation how to get a token:
+   *   https://help.shopify.com/api/sdks/custom-storefront/js-buy-sdk/getting-started#generate-javascript-buy-sdk-credentials
+   * @param {String} configAttrs.appId Typically will be 6 which is the Buy Button App Id. For more info on App Id see:
+   *   https://help.shopify.com/api/sdks/js-buy-sdk/getting-started#app-id
+   * @param {String} configAttrs.domain Your shop's full `myshopify.com` domain. For example: `embeds.myshopify.com`
+   * @param {String} configAttrs.myShopifyDomain You shop's `myshopify.com` domain. [deprecated Use configAttrs.domain]
+   * @return {ShopClient} a client for the shop using your api credentials which you can use to query your store.
+   */
+  buildClient: function buildClient() {
+    var configAttrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    var config = new this.Config(configAttrs);
+
+    return new this.ShopClient(config);
+  }
+};
+
+module.exports = Shopify;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(181), __webpack_require__(184).Buffer))
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function placeHoldersCount (b64) {
+  var len = b64.length
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // the number of equal signs (place holders)
+  // if there are two placeholders, than the two characters before it
+  // represent one byte
+  // if there is only one, then the three characters before it represent 2 bytes
+  // this is just a cheap hack to not do indexOf twice
+  return b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
+}
+
+function byteLength (b64) {
+  // base64 is 4/3 + up to two characters of the original data
+  return b64.length * 3 / 4 - placeHoldersCount(b64)
+}
+
+function toByteArray (b64) {
+  var i, j, l, tmp, placeHolders, arr
+  var len = b64.length
+  placeHolders = placeHoldersCount(b64)
+
+  arr = new Arr(len * 3 / 4 - placeHolders)
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  l = placeHolders > 0 ? len - 4 : len
+
+  var L = 0
+
+  for (i = 0, j = 0; i < l; i += 4, j += 3) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 18) | (revLookup[b64.charCodeAt(i + 1)] << 12) | (revLookup[b64.charCodeAt(i + 2)] << 6) | revLookup[b64.charCodeAt(i + 3)]
+    arr[L++] = (tmp >> 16) & 0xFF
+    arr[L++] = (tmp >> 8) & 0xFF
+    arr[L++] = tmp & 0xFF
+  }
+
+  if (placeHolders === 2) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 2) | (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[L++] = tmp & 0xFF
+  } else if (placeHolders === 1) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 10) | (revLookup[b64.charCodeAt(i + 1)] << 4) | (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[L++] = (tmp >> 8) & 0xFF
+    arr[L++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var output = ''
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    output += lookup[tmp >> 2]
+    output += lookup[(tmp << 4) & 0x3F]
+    output += '=='
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + (uint8[len - 1])
+    output += lookup[tmp >> 10]
+    output += lookup[(tmp >> 4) & 0x3F]
+    output += lookup[(tmp << 2) & 0x3F]
+    output += '='
+  }
+
+  parts.push(output)
+
+  return parts.join('')
+}
+
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+
+
+var base64 = __webpack_require__(183)
+var ieee754 = __webpack_require__(185)
+var isArray = __webpack_require__(186)
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
+  ? global.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
+/*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+  }
+
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'string') {
+    return fromString(that, value, encodingOrOffset)
+  }
+
+  return fromObject(that, value)
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(null, value, encodingOrOffset, length)
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' && Symbol.species &&
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+}
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be a number')
+  } else if (size < 0) {
+    throw new RangeError('"size" argument must not be negative')
+  }
+}
+
+function alloc (that, size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(that, size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(that, size).fill(fill, encoding)
+      : createBuffer(that, size).fill(fill)
+  }
+  return createBuffer(that, size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(null, size, fill, encoding)
+}
+
+function allocUnsafe (that, size) {
+  assertSize(size)
+  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i < size; ++i) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(null, size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(null, size)
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('"encoding" must be a valid string encoding')
+  }
+
+  var length = byteLength(string, encoding) | 0
+  that = createBuffer(that, length)
+
+  var actual = that.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    that = that.slice(0, actual)
+  }
+
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  that = createBuffer(that, length)
+  for (var i = 0; i < length; i += 1) {
+    that[i] = array[i] & 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array, byteOffset, length) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('\'offset\' is out of bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('\'length\' is out of bounds')
+  }
+
+  if (byteOffset === undefined && length === undefined) {
+    array = new Uint8Array(array)
+  } else if (length === undefined) {
+    array = new Uint8Array(array, byteOffset)
+  } else {
+    array = new Uint8Array(array, byteOffset, length)
+  }
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = array
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromArrayLike(that, array)
+  }
+  return that
+}
+
+function fromObject (that, obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    that = createBuffer(that, len)
+
+    if (that.length === 0) {
+      return that
+    }
+
+    obj.copy(that, 0, 0, len)
+    return that
+  }
+
+  if (obj) {
+    if ((typeof ArrayBuffer !== 'undefined' &&
+        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
+      if (typeof obj.length !== 'number' || isnan(obj.length)) {
+        return createBuffer(that, 0)
+      }
+      return fromArrayLike(that, obj)
+    }
+
+    if (obj.type === 'Buffer' && isArray(obj.data)) {
+      return fromArrayLike(that, obj.data)
+    }
+  }
+
+  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
+}
+
+function checked (length) {
+  // Note: cannot use `length < kMaxLength()` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null && b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
+      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    string = '' + string
+  }
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+      case undefined:
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i < sliceLen; ++i) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
+    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
+    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value >>> 24)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 1] = (value >>> 8)
+    this[offset] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 3] = (value >>> 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i < len; ++i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if (code < 256) {
+        val = code
+      }
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : utf8ToBytes(new Buffer(val, encoding).toString())
+    var len = bytes.length
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+function isnan (val) {
+  return val !== val // eslint-disable-line no-self-compare
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(181)))
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports) {
+
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = nBytes * 8 - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = e * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = m * 256 + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = nBytes * 8 - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = (value * c - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+/* 188 */,
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(81);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ShoppingCart = function (_React$Component) {
+  _inherits(ShoppingCart, _React$Component);
+
+  function ShoppingCart(props) {
+    _classCallCheck(this, ShoppingCart);
+
+    var _this = _possibleConstructorReturn(this, (ShoppingCart.__proto__ || Object.getPrototypeOf(ShoppingCart)).call(this, props));
+
+    _this.openCart = _this.openCart.bind(_this);
+    _this.closeCart = _this.closeCart.bind(_this);
+    return _this;
+  }
+
+  _createClass(ShoppingCart, [{
+    key: 'openCart',
+    value: function openCart() {
+      $('.cart').addClass('js-active');
+    }
+  }, {
+    key: 'closeCart',
+    value: function closeCart() {
+      $('.cart .btn--close').click(function () {
+        $('.cart').removeClass('js-active');
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'button',
+          { className: 'btn btn--cart-tab js-prevent-cart-listener' },
+          _react2.default.createElement('span', { className: 'btn__counter' }),
+          _react2.default.createElement('div', { xmlns: 'http://www.w3.org/2000/svg', className: 'icon-cart icon-cart--side' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'cart' },
+          _react2.default.createElement(
+            'div',
+            { className: 'cart-section cart-section--top' },
+            _react2.default.createElement(
+              'h2',
+              { className: 'cart-title' },
+              'Your cart'
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'btn--close' },
+              _react2.default.createElement(
+                'span',
+                { 'aria-role': 'hidden' },
+                '\xD7'
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'visuallyhidden' },
+                'Close'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'cart-form' },
+            _react2.default.createElement('div', { className: 'cart-item-container cart-section' }),
+            _react2.default.createElement(
+              'div',
+              { className: 'cart-bottom' },
+              _react2.default.createElement(
+                'div',
+                { className: 'cart-info clearfix cart-section' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'type--caps cart-info__total cart-info__small' },
+                  'Total'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'cart-info__pricing' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'cart-info__small cart-info__total' },
+                    'CAD'
+                  ),
+                  _react2.default.createElement('span', { className: 'pricing pricing--no-padding' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'cart-actions-container cart-section type--center' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'cart-discount-notice cart-info__small' },
+                  'Shipping and discount codes are added at checkout.'
+                ),
+                _react2.default.createElement('input', { type: 'submit', className: 'btn btn--cart-checkout', id: 'checkout', name: 'checkout', value: 'Checkout' })
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return ShoppingCart;
+}(_react2.default.Component);
+
+exports.default = ShoppingCart;
 
 /***/ })
 /******/ ]);
