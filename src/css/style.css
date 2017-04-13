@@ -61,7 +61,7 @@
 .cart {
   position: fixed;
   width: 100%;
-  max-width: 350px;
+  max-width: 390px;
   height: 100%;
   right: 0;
   top: 0;
@@ -174,6 +174,7 @@
 }
 
 .cart-item__img {
+  object-fit: cover;
   width: 65px;
   height: 65px;
   border-radius: 3px;
@@ -185,12 +186,15 @@
 }
 
 .cart-item__content {
-  width: 100%;
+  width: 70%;
   padding-left: 75px;
 }
 
 .cart-item__content-row {
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  margin-top: 7px;
 }
 
 .cart-item__variant-title {

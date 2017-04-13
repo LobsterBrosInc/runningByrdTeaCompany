@@ -1,4 +1,5 @@
 import React from 'react';
+import ShoppingCartItem from './shopping_cart_item';
 
 class ShoppingCart extends React.Component {
   constructor(props){
@@ -16,7 +17,7 @@ class ShoppingCart extends React.Component {
 
   componentWillReceiveProps(nextProps){
     // debugger;
-    console.log(nextProps);
+    // console.log(nextProps);
     this.setState({cart: nextProps.cart});
   }
 
@@ -31,18 +32,9 @@ class ShoppingCart extends React.Component {
   render() {
     const cartItems = this.state.cart.lineItems.map(item => {
       // debugger;
-      console.log(item);
+      // console.log(item);
       return (
-        <div className='cart-item' key={item.id} >
-          <img className='cart-item__img' src={item.image.src}></img>
-          <div className='cart-item__content'>
-            <div className='cart-item__variant-title'>{item.title}</div>
-            <div className='cart-item__price'>{item.line_price}</div>
-            <div className='cart-item__quantity-container'>
-              <div className='cart-item__quantity'>{item.quantity}</div>
-            </div>
-          </div>
-        </div>
+        <ShoppingCartItem itemInfo={item} />
       )
     });
 
@@ -68,7 +60,7 @@ class ShoppingCart extends React.Component {
           </div>
 
           <div className="cart-items-and-bottom-container">
-            
+
             <div className="cart-form">
               <div className="cart-item-container cart-section">
                 {cartItems}
