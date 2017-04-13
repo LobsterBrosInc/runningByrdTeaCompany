@@ -33,8 +33,15 @@ class ShoppingCart extends React.Component {
       // debugger;
       console.log(item);
       return (
-        <div key={item.id} className='cart-item'>
-          <h3>{item.title}</h3>
+        <div className='cart-item' key={item.id} >
+          <img className='cart-item__img' src={item.image.src}></img>
+          <div className='cart-item__content'>
+            <div className='cart-item__variant-title'>{item.title}</div>
+            <div className='cart-item__price'>{item.line_price}</div>
+            <div className='cart-item__quantity-container'>
+              <div className='cart-item__quantity'>{item.quantity}</div>
+            </div>
+          </div>
         </div>
       )
     });
@@ -52,18 +59,21 @@ class ShoppingCart extends React.Component {
         <div className="cart">
 
           <div className="cart-section cart-section--top">
-            <h2 className="cart-title">Your cart</h2>
+            <div className="cart-title">Your cart</div>
             <button
               className="btn--close"
               onClick={() => this.closeCart()}>
                 <span>×</span>
-                <span className="visuallyhidden">Close</span>
             </button>
           </div>
 
-          <div className="cart-form">
-            <div className="cart-item-container cart-section">
-              {cartItems}
+          <div className="cart-items-and-bottom-container">
+            
+            <div className="cart-form">
+              <div className="cart-item-container cart-section">
+                {cartItems}
+              </div>
+
             </div>
 
             <div className="cart-bottom">
@@ -77,12 +87,10 @@ class ShoppingCart extends React.Component {
               <div className="cart-actions-container cart-section type--center">
                 <div className="cart-discount-notice cart-info__small">Shipping and discount codes are added at checkout.</div>
                 <input type="submit" className="btn btn--cart-checkout" id="checkout" name="checkout" value="Checkout" />
-                </div>
               </div>
-
             </div>
-
           </div>
+        </div>
       </div>
     );
   }

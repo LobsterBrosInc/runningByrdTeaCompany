@@ -10071,11 +10071,30 @@ var ShoppingCart = function (_React$Component) {
         console.log(item);
         return _react2.default.createElement(
           'div',
-          { key: item.id, className: 'cart-item' },
+          { className: 'cart-item', key: item.id },
+          _react2.default.createElement('img', { className: 'cart-item__img', src: item.image.src }),
           _react2.default.createElement(
-            'h3',
-            null,
-            item.title
+            'div',
+            { className: 'cart-item__content' },
+            _react2.default.createElement(
+              'div',
+              { className: 'cart-item__variant-title' },
+              item.title
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'cart-item__price' },
+              item.line_price
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'cart-item__quantity-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'cart-item__quantity' },
+                item.quantity
+              )
+            )
           )
         );
       });
@@ -10100,7 +10119,7 @@ var ShoppingCart = function (_React$Component) {
             'div',
             { className: 'cart-section cart-section--top' },
             _react2.default.createElement(
-              'h2',
+              'div',
               { className: 'cart-title' },
               'Your cart'
             ),
@@ -10115,21 +10134,20 @@ var ShoppingCart = function (_React$Component) {
                 'span',
                 null,
                 '\xD7'
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'visuallyhidden' },
-                'Close'
               )
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'cart-form' },
+            { className: 'cart-items-and-bottom-container' },
             _react2.default.createElement(
               'div',
-              { className: 'cart-item-container cart-section' },
-              cartItems
+              { className: 'cart-form' },
+              _react2.default.createElement(
+                'div',
+                { className: 'cart-item-container cart-section' },
+                cartItems
+              )
             ),
             _react2.default.createElement(
               'div',
