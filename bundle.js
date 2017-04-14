@@ -10039,12 +10039,15 @@ var ShoppingCart = function (_React$Component) {
 
     _this.state = {
       cart: {
-        lineItems: []
+        lineItems: [],
+        lineItemCount: 0
       }
     };
 
     _this.openCart = _this.openCart.bind(_this);
     _this.closeCart = _this.closeCart.bind(_this);
+    _this.incrementQuantity = _this.incrementQuantity.bind(_this);
+    _this.decrementQuantity = _this.decrementQuantity.bind(_this);
     return _this;
   }
 
@@ -10052,7 +10055,6 @@ var ShoppingCart = function (_React$Component) {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       // debugger;
-      // console.log(nextProps);
       this.setState({ cart: nextProps.cart });
     }
   }, {
@@ -10066,14 +10068,32 @@ var ShoppingCart = function (_React$Component) {
       $('.cart').removeClass('js-active');
     }
   }, {
+    key: 'incrementQuantity',
+    value: function incrementQuantity(variantId) {
+      this.props.addSingleQuantityToCart(variantId);
+    }
+  }, {
+    key: 'decrementQuantity',
+    value: function decrementQuantity(variantId) {
+      this.props.removeSingleQuantityFromCart(variantId);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
 
-      var cartItems = this.state.cart.lineItems.map(function (item) {
+      var cartItems = this.state.cart.lineItems.map(function (item, idx) {
         // debugger;
         // console.log(item);
-        return _react2.default.createElement(_shopping_cart_item2.default, { itemInfo: item });
+        return _react2.default.createElement(_shopping_cart_item2.default, {
+          key: idx,
+          itemInfo: item,
+          incrementQuantity: function incrementQuantity() {
+            return _this2.incrementQuantity(item.product_id);
+          },
+          decrementQuantity: function decrementQuantity() {
+            return _this2.decrementQuantity(item.product_id);
+          } });
       });
 
       return _react2.default.createElement(
@@ -10086,8 +10106,23 @@ var ShoppingCart = function (_React$Component) {
             onClick: function onClick() {
               return _this2.openCart();
             } },
-          _react2.default.createElement('span', { className: 'btn__counter' }),
-          _react2.default.createElement('div', { xmlns: 'http://www.w3.org/2000/svg', className: 'icon-cart icon-cart--side' })
+          _react2.default.createElement(
+            'span',
+            { className: 'btn__counter' },
+            this.state.cart.lineItemCount
+          ),
+          _react2.default.createElement('div', { xmlns: 'http://www.w3.org/2000/svg', className: 'icon-cart icon-cart--side' }),
+          _react2.default.createElement(
+            'svg',
+            { xmlns: 'http://www.w3.org/2000/svg', className: 'shopify-buy__icon-cart shopify-buy__icon-cart--side', 'data-element': 'toggle.icon', viewBox: '0 0 25 25', enableBackground: 'new 0 0 25 25' },
+            _react2.default.createElement(
+              'g',
+              { className: 'shopify-buy__icon-cart__group' },
+              _react2.default.createElement('path', { d: 'M24.6 3.6c-.3-.4-.8-.6-1.3-.6h-18.4l-.1-.5c-.3-1.5-1.7-1.5-2.5-1.5h-1.3c-.6 0-1 .4-1 1s.4 1 1 1h1.8l3 13.6c.2 1.2 1.3 2.4 2.5 2.4h12.7c.6 0 1-.4 1-1s-.4-1-1-1h-12.7c-.2 0-.5-.4-.6-.8l-.2-1.2h12.6c1.3 0 2.3-1.4 2.5-2.4l2.4-7.4v-.2c.1-.5-.1-1-.4-1.4zm-4 8.5v.2c-.1.3-.4.8-.5.8h-13l-1.8-8.1h17.6l-2.3 7.1z' }),
+              _react2.default.createElement('circle', { cx: '9', cy: '22', r: '2' }),
+              _react2.default.createElement('circle', { cx: '19', cy: '22', r: '2' })
+            )
+          )
         ),
         _react2.default.createElement(
           'div',
@@ -10143,7 +10178,9 @@ var ShoppingCart = function (_React$Component) {
                   _react2.default.createElement(
                     'span',
                     { className: 'cart-info__small cart-info__total' },
-                    'USD'
+                    '$',
+                    this.state.cart.subtotal,
+                    ' USD'
                   ),
                   _react2.default.createElement('span', { className: 'pricing pricing--no-padding' })
                 )
@@ -12963,7 +13000,8 @@ var Carousel = function (_React$Component) {
       }
     };
 
-    _this.addToCart = _this.addToCart.bind(_this);
+    _this.addSingleQuantityToCart = _this.addSingleQuantityToCart.bind(_this);
+    _this.removeSingleQuantityFromCart = _this.removeSingleQuantityFromCart.bind(_this);
     return _this;
   }
 
@@ -12991,18 +13029,30 @@ var Carousel = function (_React$Component) {
       $('#ca-container').contentcarousel();
     }
   }, {
-    key: 'addToCart',
-    value: function addToCart(itemId) {
+    key: 'addSingleQuantityToCart',
+    value: function addSingleQuantityToCart(itemId) {
       var _this3 = this;
 
-      var selectedVariant = void 0;
+      // debugger;
       this.state.shopifyClient.fetchProduct(itemId).then(function (fetchedProduct) {
-        selectedVariant = fetchedProduct.selectedVariant;
-      }).then(function () {
+        return fetchedProduct.selectedVariant;
+      }).then(function (selectedVariant) {
         _this3.state.cart.createLineItemsFromVariants({ variant: selectedVariant, quantity: 1 }).then(function (cart) {
-          console.log(cart);
+          // console.log(cart);
           _this3.setState({ cart: cart });
         });
+      });
+    }
+  }, {
+    key: 'removeSingleQuantityFromCart',
+    value: function removeSingleQuantityFromCart(itemId) {
+      var _this4 = this;
+
+      // debugger;
+
+      this.state.cart.removeLineItem(itemId).then(function (cart) {
+        // console.log(cart);
+        _this4.setState({ cart: cart });
       });
     }
   }, {
@@ -13013,7 +13063,10 @@ var Carousel = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(_shopping_cart2.default, {
-          cart: this.state.cart }),
+          cart: this.state.cart,
+          addSingleQuantityToCart: this.addSingleQuantityToCart,
+          removeSingleQuantityFromCart: this.removeSingleQuantityFromCart
+        }),
         _react2.default.createElement(
           'div',
           { id: 'ca-container', className: 'ca-container' },
@@ -13045,7 +13098,7 @@ var Carousel = function (_React$Component) {
                   'button',
                   {
                     className: 'buy-button-container',
-                    onClick: this.addToCart.bind(this, 9891387715) },
+                    onClick: this.addSingleQuantityToCart.bind(this, 9891387715) },
                   'ADD TO CART'
                 )
               ),
@@ -13102,7 +13155,7 @@ var Carousel = function (_React$Component) {
                   'button',
                   {
                     className: 'buy-button-container',
-                    onClick: this.addToCart.bind(this, 9904759939) },
+                    onClick: this.addSingleQuantityToCart.bind(this, 9904759939) },
                   'ADD TO CART'
                 )
               ),
@@ -13159,7 +13212,7 @@ var Carousel = function (_React$Component) {
                   'button',
                   {
                     className: 'buy-button-container',
-                    onClick: this.addToCart.bind(this, 9904780419) },
+                    onClick: this.addSingleQuantityToCart.bind(this, 9904780419) },
                   'ADD TO CART'
                 ),
                 _react2.default.createElement('div', { id: 'carousel-buy-button' })
@@ -27836,8 +27889,10 @@ var ShoppingCartItem = function (_React$Component) {
               { className: 'cart-item__quantity-container' },
               _react2.default.createElement(
                 'button',
-                { className: 'btn--seamless quantity-decrement',
-                  type: 'button' },
+                {
+                  className: 'btn--seamless quantity-decrement',
+                  type: 'button',
+                  onClick: this.props.decrementQuantity },
                 _react2.default.createElement(
                   'span',
                   null,
@@ -27854,8 +27909,10 @@ var ShoppingCartItem = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'button',
-                { className: 'btn--seamless quantity-increment',
-                  type: 'button' },
+                {
+                  className: 'btn--seamless quantity-increment',
+                  type: 'button',
+                  onClick: this.props.incrementQuantity },
                 _react2.default.createElement(
                   'span',
                   null,

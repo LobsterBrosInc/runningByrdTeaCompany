@@ -15,7 +15,8 @@ class Carousel extends React.Component {
       }
     }
 
-    this.addToCart = this.addToCart.bind(this);
+    this.addSingleQuantityToCart = this.addSingleQuantityToCart.bind(this);
+    this.removeSingleQuantityFromCart = this.removeSingleQuantityFromCart.bind(this);
   }
 
   componentWillMount() {
@@ -37,18 +38,27 @@ class Carousel extends React.Component {
     $('#ca-container').contentcarousel();
   }
 
-  addToCart(itemId) {
-    let selectedVariant;
+  addSingleQuantityToCart(itemId) {
+    // debugger;
     this.state.shopifyClient.fetchProduct(itemId).then( fetchedProduct => {
-      selectedVariant = fetchedProduct.selectedVariant;
-    }).then( () => {
+      return fetchedProduct.selectedVariant;
+    }).then( (selectedVariant) => {
       this.state.cart.createLineItemsFromVariants({variant: selectedVariant, quantity: 1})
       .then((cart) => {
-        console.log(cart);
+        // console.log(cart);
         this.setState({cart});
       });
     })
+  }
 
+  removeSingleQuantityFromCart(itemId) {
+    // debugger;
+
+    this.state.cart.removeLineItem(itemId)
+    .then((cart) => {
+      // console.log(cart);
+      this.setState({cart});
+    });
   }
 
   render() {
@@ -56,7 +66,10 @@ class Carousel extends React.Component {
     return (
       <div>
         <ShoppingCart
-          cart={this.state.cart} />
+          cart={this.state.cart}
+          addSingleQuantityToCart={this.addSingleQuantityToCart}
+          removeSingleQuantityFromCart={this.removeSingleQuantityFromCart}
+           />
         <div id="ca-container" className="ca-container">
           <div className="ca-wrapper">
             <div className="ca-item ca-item-13">
@@ -69,7 +82,7 @@ class Carousel extends React.Component {
                 <a href="#" className="ca-more">Read the story</a>
                 <button
                   className='buy-button-container'
-                  onClick={this.addToCart.bind(this, 9891387715)}>
+                  onClick={this.addSingleQuantityToCart.bind(this, 9891387715)}>
                     ADD TO CART
                 </button>
               </div>
@@ -92,7 +105,7 @@ class Carousel extends React.Component {
                 <a href="#" className="ca-more">Read the story</a>
                 <button
                   className='buy-button-container'
-                  onClick={this.addToCart.bind(this, 9904759939)}>
+                  onClick={this.addSingleQuantityToCart.bind(this, 9904759939)}>
                     ADD TO CART
                 </button>
               </div>
@@ -115,7 +128,7 @@ class Carousel extends React.Component {
                 <a href="#" className="ca-more">Read the story</a>
                 <button
                   className='buy-button-container'
-                  onClick={this.addToCart.bind(this, 9904780419)}>
+                  onClick={this.addSingleQuantityToCart.bind(this, 9904780419)}>
                     ADD TO CART
                 </button>
                 <div id="carousel-buy-button">

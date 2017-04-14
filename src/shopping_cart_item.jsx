@@ -16,8 +16,10 @@ class ShoppingCartItem extends React.Component {
           </div>
           <div className='cart-item__content-row'>
             <div className='cart-item__quantity-container'>
-              <button className='btn--seamless quantity-decrement'
-                type='button'>
+              <button
+                className='btn--seamless quantity-decrement'
+                type='button'
+                onClick={this.props.decrementQuantity}>
                 <span>-</span>
               </button>
               <div
@@ -26,8 +28,10 @@ class ShoppingCartItem extends React.Component {
                 min='0'>
                 {this.props.itemInfo.quantity}
               </div>
-              <button className='btn--seamless quantity-increment'
-                type='button'>
+              <button
+                className='btn--seamless quantity-increment'
+                type='button'
+                onClick={this.props.incrementQuantity}>
                 <span>+</span>
               </button>
             </div>
