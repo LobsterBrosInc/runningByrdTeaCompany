@@ -10193,7 +10193,15 @@ var ShoppingCart = function (_React$Component) {
                   { className: 'cart-discount-notice cart-info__small' },
                   'Shipping and discount codes are added at checkout.'
                 ),
-                _react2.default.createElement('input', { type: 'submit', className: 'btn btn--cart-checkout', id: 'checkout', name: 'checkout', value: 'Checkout' })
+                _react2.default.createElement('input', {
+                  type: 'submit',
+                  className: 'btn btn--cart-checkout',
+                  id: 'checkout',
+                  name: 'checkout',
+                  value: 'Checkout',
+                  onClick: function onClick() {
+                    return window.open(_this2.state.cart.checkoutUrl, '_blank');
+                  } })
               )
             )
           )
@@ -13002,6 +13010,7 @@ var Carousel = function (_React$Component) {
 
     _this.addSingleQuantityToCart = _this.addSingleQuantityToCart.bind(_this);
     _this.removeSingleQuantityFromCart = _this.removeSingleQuantityFromCart.bind(_this);
+    _this.findCartItemById = _this.findCartItemById.bind(_this);
     return _this;
   }
 
@@ -13029,6 +13038,13 @@ var Carousel = function (_React$Component) {
       $('#ca-container').contentcarousel();
     }
   }, {
+    key: 'findCartItemById',
+    value: function findCartItemById(itemId) {
+      return this.state.cart.lineItems.filter(function (item) {
+        return item.product_id === itemId;
+      })[0];
+    }
+  }, {
     key: 'addSingleQuantityToCart',
     value: function addSingleQuantityToCart(itemId) {
       var _this3 = this;
@@ -13048,10 +13064,10 @@ var Carousel = function (_React$Component) {
     value: function removeSingleQuantityFromCart(itemId) {
       var _this4 = this;
 
-      // debugger;
+      var targetItem = this.findCartItemById(itemId);
+      var newItemQuanity = targetItem.quantity - 1;
 
-      this.state.cart.removeLineItem(itemId).then(function (cart) {
-        // console.log(cart);
+      this.state.cart.updateLineItem(targetItem.id, newItemQuanity).then(function (cart) {
         _this4.setState({ cart: cart });
       });
     }

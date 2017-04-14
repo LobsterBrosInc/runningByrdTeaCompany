@@ -17,6 +17,7 @@ class Carousel extends React.Component {
 
     this.addSingleQuantityToCart = this.addSingleQuantityToCart.bind(this);
     this.removeSingleQuantityFromCart = this.removeSingleQuantityFromCart.bind(this);
+    this.findCartItemById = this.findCartItemById.bind(this);
   }
 
   componentWillMount() {
@@ -38,6 +39,12 @@ class Carousel extends React.Component {
     $('#ca-container').contentcarousel();
   }
 
+  findCartItemById(itemId) {
+    return this.state.cart.lineItems.filter( (item) => {
+      return (item.product_id === itemId);
+    })[0];
+  }
+
   addSingleQuantityToCart(itemId) {
     // debugger;
     this.state.shopifyClient.fetchProduct(itemId).then( fetchedProduct => {
@@ -52,11 +59,10 @@ class Carousel extends React.Component {
   }
 
   removeSingleQuantityFromCart(itemId) {
-    // debugger;
-
-    this.state.cart.removeLineItem(itemId)
-    .then((cart) => {
-      // console.log(cart);
+    let targetItem = this.findCartItemById(itemId);
+    let newItemQuanity = targetItem.quantity - 1;
+    
+    this.state.cart.updateLineItem(targetItem.id, newItemQuanity).then((cart) => {
       this.setState({cart});
     });
   }

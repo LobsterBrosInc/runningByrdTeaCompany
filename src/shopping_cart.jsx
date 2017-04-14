@@ -93,7 +93,13 @@ class ShoppingCart extends React.Component {
               </div>
               <div className="cart-actions-container cart-section type--center">
                 <div className="cart-discount-notice cart-info__small">Shipping and discount codes are added at checkout.</div>
-                <input type="submit" className="btn btn--cart-checkout" id="checkout" name="checkout" value="Checkout" />
+                <input
+                  type="submit"
+                  className="btn btn--cart-checkout"
+                  id="checkout"
+                  name="checkout"
+                  value="Checkout"
+                  onClick={() => window.open(this.state.cart.checkoutUrl, '_blank')} />
               </div>
             </div>
           </div>
