@@ -61,7 +61,7 @@ class Carousel extends React.Component {
   removeSingleQuantityFromCart(itemId) {
     let targetItem = this.findCartItemById(itemId);
     let newItemQuanity = targetItem.quantity - 1;
-    
+
     this.state.cart.updateLineItem(targetItem.id, newItemQuanity).then((cart) => {
       this.setState({cart});
     });
@@ -98,7 +98,12 @@ class Carousel extends React.Component {
                   <div className="ca-content-text">
                     <h3>George's Peach</h3>
                     <h6>George's Peach is dedicated to the memory of my father, the original Runningbyrd. Time spent driving Highway 441 past peach orchards in our home state help define its flavor, along with the stories and laughs we shared over tall jars of iced tea on countless southern porches. While he missed Runningbyrd Tea's final journey to the bottle, I've created George's Peach to share some of his spirit with our customers.</h6>
-                  </div>
+                    <button
+                      className='buy-button-container'
+                      onClick={this.addSingleQuantityToCart.bind(this, 9891387715)}>
+                        ADD TO CART
+                    </button>
+                </div>
                 </div>
               </div>
             </div>
@@ -121,7 +126,12 @@ class Carousel extends React.Component {
                   <div className="ca-content-text">
                     <h3>Summer Rain</h3>
                     <h6>On hot nights, nothing compares to sitting on the front porch swing feeling a thunderstorm roll in, its wind ruffling your feathers, its fire making you cool. We’ve had a long summer, so open a bottle of this spiced tea to swing the breezes your way. If slowly savored, lightning will crash on your palate.</h6>
-                  </div>
+                    <button
+                      className='buy-button-container'
+                      onClick={this.addSingleQuantityToCart.bind(this, 9904759939)}>
+                        ADD TO CART
+                    </button>
+                </div>
                 </div>
               </div>
             </div>
@@ -147,6 +157,11 @@ class Carousel extends React.Component {
                   <div className="ca-content-text">
                     <h3>Spiced Thai</h3>
                     <h6>While visiting tea plantations in Thailand, I met an elderly man who spent his entire working life tasting teas, judging and critiquing their flavor. I created Spicy Thai for him, melding the flavors of my trip with an idea that he might taste something different after all these years, gifting him a new experience that still felt like an old friend.</h6>
+                    <button
+                      className='buy-button-container'
+                      onClick={this.addSingleQuantityToCart.bind(this, 9904780419)}>
+                        ADD TO CART
+                    </button>
                   </div>
                 </div>
               </div>
