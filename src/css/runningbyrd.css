@@ -249,7 +249,8 @@ label > span {
 }
 
 .contact-circle-container{
-	width: 600px;
+	display: flex;
+	justify-content: center;
 	margin: 50px auto;
 	height: 100px;
 }
@@ -276,6 +277,11 @@ label > span {
 .contact-circle.tumblr{
 	background: url('../pics/tumblr-logo.png') 7px 8px no-repeat;
 	background-size: 85%;
+}
+
+.contact-circle.instagram{
+	background: url('../pics/instagram_white.png') 15px 15px no-repeat;
+	background-size: 68%;
 }
 
 @font-face

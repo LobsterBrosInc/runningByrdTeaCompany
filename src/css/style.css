@@ -318,6 +318,29 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: #ffffff;
 }
 
+.buy-button-content-text-container{
+	height: 32px;
+	width: 205px;
+	position: absolute;
+  bottom: 16px;
+  right: 0px;
+	/*padding: 15px;*/
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: landrygo,"Times New Roman",serif;
+	font-weight: bold;
+  text-align: left;
+  text-shadow:1px 1px 1px #897c63;
+	background: #FFFFFF;
+  border: none;
+	z-index: 3;
+}
+
+.buy-button-content-text-container:hover{
+	cursor: pointer;
+	background-color: #b9b9b9;
+}
+
 .buy-button{
 	border: none;
 }
