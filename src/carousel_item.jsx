@@ -8,7 +8,7 @@ class CarouselItem extends React.Component {
 
   render() {
     return (
-
+      
     );
   }
 }
