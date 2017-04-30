@@ -130,9 +130,10 @@ h2{
 }
 
 .contact-circle-container{
-	width: 600px;
 	margin: 50px auto;
 	height: 100px;
+	display: flex;
+	justify-content: center;
 }
 
 .contact-circle{
@@ -141,7 +142,7 @@ h2{
 	width: 88px;
 	border-radius: 200px;
 	border: 5px solid white;
-	margin: 0 25px 0 50px;
+	margin: 0 25px 0 25px;
 }
 
 .contact-circle.twitter{
@@ -159,6 +160,11 @@ h2{
 	background-size: 85%;
 }
 
+.contact-circle.instagram{
+	background: url('../pics/instagram_white.png') 15px 15px no-repeat;
+	background-size: 68%;
+}
+
 @font-face
 {
 	font-family: landrygo;
@@ -170,4 +176,8 @@ h2{
 	overflow: hidden !important;
 }
 
+iframe{
+	display: flex;
+	margin: 25px auto 0 auto;
+}
 
